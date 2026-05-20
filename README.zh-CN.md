@@ -24,10 +24,30 @@
 - 💤 **Stale** — 6 个月以上无提交，可能仍可用但已不再活跃维护
 - ⚠️ **Unverified** — 新提交且第三方使用证据有限（star 少 / 单作者 / 同款 PR 批量铺货）。**仅作可见性收录，不背书**，使用前请自行评估
 - 🇨🇳 **Chinese ecosystem** — 中国大陆团队主导或主要面向中文市场的项目
+- 🔥 **Hot** — 近 30 天 GitHub stars 增长 >20%，社区热度高涨。
+- ⚡ **Updated** — 近 14 天内有显著新版本发布或重要功能迭代。
+- 🧪 **Experimental** — 有潜力但尚不适合生产环境，建议仅用于 R&D 探索。
+- 💰 **Freemium** — 核心功能免费，规模扩展或高级功能需付费。
+- 🔐 **Audited** — 已通过独立第三方安全审计或形式化验证。
+- 🇨🇳 **China-first** — 主要面向中文语言、国内合规或国产云基础设施。
 
 [基础大模型](#-基础大模型-2026) · [多模态](#-多模态与生成式-ai) · [协议](#-agent-协议与标准) · [框架](#️-agent-框架) · [IDE 与构建器](#️-agent-ide-与可视化构建器) · [记忆](#-agent-记忆) · [工具](#-工具与-api-集成) · [沙箱](#-agent-沙箱与计算隔离) · [安全](#️-agent-安全) · [RAG](#-rag-与知识库) · [编程](#-编程-agent) · [Physical AI](#-physical-ai--具身智能) · [仿真](#-agent-仿真与世界模型) · [评测](#-评测与-leaderboard) · [Computer Use](#️-computer-use--桌面-agent) · [浏览器与 Web](#-浏览器与-web-agent) · [语音](#️-语音与多模态-agent) · [个人](#-个人-ai-agent) · [手机](#-手机-agent) · [企业](#-企业级-agent-平台) · [评估](#-agent-评估与可观测性) · [研究工具](#-ai-研究工具) · [学习](#-学习资源) · [中国生态](#-中国-ai-生态) · [对比](#-横向对比表) · [2026 看点](#-2026-年值得关注的-agent-项目) · [时间线](#-2026-ai-时间线)
 
 </div>
+
+---
+
+## 🚀 从这里开始
+
+> **初次接触 AI Agent？** 按这个路径走：
+> 1. 📖 **損清概念** — Agent 和普通聊天機器人到底有什么区别
+> 2. 🗺️ **找到你的场景** → [场景指南](#-场景指南--我应该用什么)
+> 3. 🧩 **复制经过验证的技术栈** → [技术栈免调](#-stack-recipes--curated-tool-combinations)
+> 4. 🔍 **选对工具** → [对比表](#-横向对比表)
+> 5. ⚠️ **避开常见陷阱** → [反推荐清单](#-anti-picks--what-not-to-use-for)
+>
+> **已在开发？** 快速跳转：
+> - 🆕 [最新添加（2026 年 5 月）](#may-2026) • 🛡️ [安全](#️-agent-安全) • 💰 [费用对比](#-foundation-models--cost--context-comparison)
 
 ---
 
@@ -861,6 +881,476 @@
 | [OpenHands](https://github.com/All-Hands-AI/OpenHands) | 自托管 | ✅ | ✅ | 有竞争力 | 自部署 SWE Agent |
 
 *表格于 2026-05-05 验证。数据变化请提 PR。*
+
+---
+
+### 💰 基础大模型 — API 价格与上下文窗口
+
+*价格单位：USD/百万 token。数据：2026-05-20。*
+
+| 模型 | 厂商 | 上下文窗口 | 输入 $/1M | 输出 $/1M | 适用场景 |
+|-------|----------|---------------|-----------|------------|----------|
+| GPT-4o | OpenAI | 128K | $2.50 | $10.00 | 广泛工具调用、视觉、广泛生态 |
+| GPT-4o-mini | OpenAI | 128K | $0.15 | $0.60 | 大规模简单任务 |
+| Claude Sonnet 4.6 | Anthropic | 200K | $3.00 | $15.00 | 编程 Agent、复杂推理 |
+| Claude Opus 4.7 | Anthropic | 200K | $5.00 | $25.00 | 最难推理任务 |
+| Claude Haiku 4.5 | Anthropic | 200K | $1.00 | $5.00 | Anthropic 生态快速任务 |
+| Gemini 2.5 Flash | Google | 1M | $0.30 | $2.50 | 性价比高的多模态 |
+| Gemini 2.5 Pro | Google | 2M | $1.25 | $10.00 | 超长文本、多模态 |
+| Gemini 2.5 Flash-Lite | Google | 1M | $0.10 | $0.40 | 极低成本大量请求 |
+| DeepSeek V3.2 | DeepSeek | 128K | $0.14 | $0.28 | 低成本编程推理 |
+| Qwen3 235B A22B | 阿里巴巴 | 131K | ~$0.29 | ~$1.15 | 最强中文+编程 MoE |
+| Kimi K2.6 | Moonshot AI | 262K | ~$0.60 | ~$2.50 | 中文+超长上下文 |
+| Grok 4 | xAI | 256K | $3.00 | $15.00 | X/Twitter 生态、推理 |
+| Grok 4.20 | xAI | 2M | $2.00 | $6.00 | 超长上下文、Agent 任务 |
+
+---
+
+### 💻 基础大模型 — 本地部署
+
+*Q4_K_M 量化下的估算显存。速度因硬件而异。*
+
+| 模型 | 参数量 | 最小显存（Q4） | 速度（tok/s） | 推荐量化 | 中文能力 | 适用场景 |
+|-------|--------|--------------|----------------|-------------------|-----------------|----------|
+| Qwen3.6-27B | 27B dense | ~17 GB | ~23（M5 Max） | Q4_K_M / FP8 | ⭐⭐⭐⭐⭐ | 编程、中文、Agent |
+| Qwen3 235B A22B | 235B MoE | ~40 GB（激活） | ~15–20 | Q2_K / Q4_K_M | ⭐⭐⭐⭐⭐ | 本地最强质量 |
+| Llama 3.3 70B | 70B dense | ~42 GB | ~12–18 | Q4_K_M | ⭐⭐☆☆☆ | 最强英文开源 |
+| DeepSeek V3-671B | 671B MoE | ~40 GB（激活） | ~10–15 | Q2_K | ⭐⭐⭐⭐☆ | 开源编程冠军 |
+| Gemma 4 27B | 27B dense | ~17 GB | ~20–25 | Q4_K_M | ⭐⭐⭐☆☆ | 多语言推理 Apache-2.0 |
+| Phi-4 14B | 14B dense | ~9 GB | ~35–45 | Q4_K_M | ⭐⭐☆☆☆ | 8–16GB 显存编程首选 |
+| Mistral Small 4 24B | 24B dense | ~14 GB | ~25–30 | Q4_K_M | ⭐⭐⭐☆☆ | 多语言、函数调用 |
+
+---
+
+### 🧠 Agent 记忆系统
+
+| 系统 | 存储 | 检索 | 本地 | 自托管 | 时序支持 | 许可证 | 适合场景 |
+|--------|---------|-----------|-------|-----------|----------|---------|----------|
+| [Mem0](https://github.com/mem0ai/mem0) | 向量+图谱 | 语义 | ✅ | ✅ | ✅ | Apache-2.0 | 任意 LLM 应用即插即用 |
+| [Basic Memory](https://github.com/basicmachines-co/basic-memory) | Markdown 文件 | 关键词+嵌入 | ✅ | ✅ | ⚠️ | MIT | 可读，兼容 Obsidian |
+| [Graphiti](https://github.com/getzep/graphiti) | 时序知识图谱 | 图谱遍历 | ✅ | ✅ | ⭐ 原生 | Apache-2.0 | 时间感知的 Agent 记忆 |
+| [Zep](https://github.com/getzep/zep) | 向量+摘要 | 语义 | ✅ | ✅ | ✅ | Apache-2.0 | 生产级对话 Agent 记忆 |
+| [Memary](https://github.com/kingjulio8238/Memary) | 知识图谱 | 图谱+语义 | ✅ | ✅ | ⚠️ | MIT | 开源 Agent 记忆层 |
+| [Letta (MemGPT)](https://github.com/cpacker/MemGPT) | 分层存储 | 分页检索 | ✅ | ✅ | ✅ | Apache-2.0 | 无限上下文幻觉的长期记忆 |
+
+---
+
+### 🎙️ 语音与音频模型
+
+| 模型/服务 | STT | TTS | 实时 | 本地 | 延迟 | 语言 | 许可证 |
+|----------------|-----|-----|---------|-------|---------|-----------|--------|
+| ElevenLabs v3 | ❌ | ⭐⭐⭐⭐⭐ | ✅ | ❌ | ~200ms | 32+ | 闭源 |
+| Whisper v3（本地） | ⭐⭐⭐⭐★ | ❌ | ❌ | ✅ | ~1s | 99 | MIT |
+| Deepgram Nova-3 | ⭐⭐⭐⭐⭐ | ✅ | ✅ | ❌ | <100ms | 30+ | 闭源 |
+| Gemini Live API | ✅ | ✅ | ⭐ 原生 | ❌ | <300ms | 30+ | 闭源 |
+| OpenAI Realtime | ✅ | ✅ | ⭐ 原生 | ❌ | ~300ms | 57 | 闭源 |
+| MiniMax TTS | ❌ | ⭐⭐⭐⭐☆ | ✅ | ❌ | ~200ms | 20+ | 闭源 |
+| Kokoro | ❌ | ⭐⭐⭐⭐☆ | ❌ | ✅ | ~100ms | 8 | Apache-2.0 |
+| Voxtral | ⭐⭐⭐⭐☆ | ❌ | ❌ | ✅ | 批量 | 20+ | Apache-2.0 |
+
+---
+
+### 🎨 图片生成模型
+
+| 模型 | 最大分辨率 | API/本地 | 真实感 | 适用场景 | 大致价格 |
+|-------|---------------|-------------|-------------|----------|------------------|
+| DALL-E 3 | 1024×1024 | API | 高 | 指令遵循 | $0.04/张（标准） |
+| gpt-image-2 | 2048×2048 | API | 非常高 | API 工作流、4K | $0.04–$0.17/张 |
+| Flux 2 Pro | 2K+ | API | ⭐高 | 写实、快速 | ~$0.05/张 |
+| Midjourney V8 | 2K+ | 仅网页 | 艺术风格最强 | 艺术创作 | $10–$120/月 |
+| Stable Diffusion 3.5 | 2K | 本地+API | 良好 | 开源、自托管 | Apache-2.0 |
+| Ideogram 3 | 2K | API+网页 | 良好 | 图内文字最强 | 免费增值 |
+
+---
+
+### 🎥 视频生成模型
+
+| 模型 | 最大时长 | 分辨率 | API/本地 | 适用场景 | 状态 |
+|-------|-----------|-----------|-------------|----------|------------------|
+| Veo 3.1 | 2分钟 | 4K | API（Vertex） | 最高保真度 | GA（Google） |
+| Kling VIDEO 3.0 | 3分钟 | 1080p | API+网页 | 电影风格领先 | GA（快手） |
+| Runway Gen-4 | 10s/片段 | 1080p | API+网页 | 精确运动控制 | GA |
+| Pika 2.0 | 10s | 1080p | 网页 | 创意/社交媒体 | GA |
+| Seedance 2.0 | 60s | 1080p | API | 快速、高性价比 | GA（字节） |
+| Hailuo 02 | 60s | 1080p | 网页+API | 平滑动作 | GA（MiniMax） |
+| ~~Sora~~ | ❌ | ❌ | ❌ | — | **2026.4 已废弃** |
+
+---
+
+### 🔍 RAG 框架
+
+| 框架 | 语言 | 向量库 | 混合检索 | 流式 | 许可证 | 适合场景 |
+|-----------|---------|-----------|--------------|-----------|---------|----------|
+| LlamaIndex | Python | 任意 | ✅ | ✅ | MIT | 生产级 RAG、文档流水线 |
+| Haystack | Python | 任意 | ✅ | ✅ | Apache-2.0 | 搜索密集的 RAG |
+| LangChain LCEL | Python/JS | 任意 | ✅ | ✅ | MIT | 适应性强、大生态 |
+| RAGFlow | Python | 内置 | ✅ | ✅ | Apache-2.0 | 深度文档解析、OCR |
+| Cognee | Python | 向量+图谱 | ✅ | ⚠️ | Apache-2.0 | 知识图谱+RAG 混合 |
+| txtai | Python | 内置 | ✅ | ❌ | Apache-2.0 | 轻量嵌入优先 |
+
+---
+
+### 🗄️ 向量数据库
+
+| 数据库 | 自托管 | 云 | 规模 | 混合检索 | 许可证 | 适合场景 |
+|----------|-----------|-------|-------|--------------|---------|----------|
+| Qdrant | ✅ | ✅ | 大规模 | ✅ | Apache-2.0 | 最全面开源向量库 |
+| Weaviate | ✅ | ✅ | 大规模 | ✅ | BSD-3 | 多模态、GraphQL |
+| Pinecone | ❌ | ✅ | 大规模 | ✅ | 闭源 | 托管、最易上手 |
+| Chroma | ✅ | ⚠️ | 中等 | ❌ | Apache-2.0 | 快速原型、Python 原生 |
+| Milvus | ✅ | ✅ | 十亿级 | ✅ | Apache-2.0 | 生产级十亿规模 |
+| pgvector | ✅ | ✅ | 中等 | ⚠️ | PostgreSQL | 现有 Postgres 扩展 |
+| FAISS | ✅ | ❌ | 大规模 | ❌ | MIT | 内存内 GPU 加速搜索 |
+
+---
+
+### 📱 个人 AI 助手（2026）
+
+| 工具 | 开源 | 本地模型 | 记忆 | 多渠道 | 自托管 | 适合场景 |
+|------|------------|-----------|--------|--------------|-----------|----------|
+| OpenClaw | ❌ | ✅ | ✅ 原生 | ✅（TG/Discord/WA） | ✅ | 全能自托管个人 Agent |
+| Khoj | ✅ | ✅ | ✅ | ⚠️ | ✅ | 研究、笔记、日历 |
+| Jan.ai | ✅ | ✅ | ❌ | ❌ | ✅ | 离线 ChatGPT 替代品 |
+| Claude.ai Pro | ❌ | ❌ | ✅ Projects | ❌ | ❌ | 最强推理+MCP工具 |
+| Perplexity | ❌ | ❌ | ⚠️ | ❌ | ❌ | 搜索优先、带引用 |
+
+---
+
+### 🔌 MCP 服务器 — 主要集成
+
+| MCP 服务器 | 类别 | 认证 | 安全审计 | 许可证 |
+|-----------|----------|------|---------------|--------|
+| GitHub MCP | 开发/代码 | OAuth | ✅（GitHub） | MIT |
+| Playwright MCP | 浏览器 | 无（本地） | ⚠️ | Apache-2.0 |
+| Filesystem MCP | 文件 | 无（本地） | ⚠️ 需沙箱 | MIT |
+| Brave Search MCP | 搜索 | API密钥 | ❌ | MIT |
+| Slack MCP | 通讯 | OAuth | ❌ | MIT |
+| Notion MCP | 笔记 | OAuth | ❌ | MIT |
+| PostgreSQL MCP | 数据库 | 连接串 | ⚠️ 建议只读 | MIT |
+| Google Maps MCP | 地理 | API密钥 | ❌ | MIT |
+
+*部署前建议用 **mcp-scan**（Invariant Labs）对任意 MCP 服务器进行安全扫描。*
+
+---
+
+### 🏢 企业级 Agent 平台
+
+| 平台 | 开源 | MCP | A2A | 自托管 | 合规 | 适合场景 |
+|---------|------------|------------|------------|-----------|-----------|----------|
+| Microsoft Agent Framework | ⚠️ | ✅ | ✅ | ⚠️（Azure） | SOC2, ISO | Azure 原生企业 |
+| Salesforce Agentforce | ❌ | ⚠️ | ❌ | ❌ | SOC2, GDPR | Salesforce CRM 组织 |
+| SAP Joule | ❌ | ❌ | ❌ | ⚠️ | SOC2 | SAP ERP 环境 |
+| Google Gemini Enterprise | ❌ | ✅ | ✅ | ❌ | SOC2, FedRAMP | Google Workspace |
+| IBM watsonx | ⚠️ | ✅ | ⚠️ | ✅（本地） | FedRAMP, HIPAA | 合规/本地企业 |
+| Dify Enterprise | ✅（CE） | ✅ | ✅ | ✅ | SOC2（云） | 多模型低代码 |
+
+---
+
+### 📏 嵌入模型
+
+*MTEB = 大规模文本嵌入基准排行最高分（英文，2026-05 近似）。*
+
+| 模型 | 维度 | 上下文 | 本地 | API | 语言 | 许可证 | MTEB ≈ |
+|-------|------|---------|-------|-----|-----------|---------|--------|
+| OpenAI text-embedding-3-large | 3072 | 8K | ❌ | ✅ | 多语言 | 闭源 | ~64 |
+| Cohere embed-v4 | 1024 | 512 | ❌ | ✅ | 多语言 | 闭源 | ~66 |
+| BGE-M3 | 1024 | 8K | ✅ | ❌ | 多语言 | MIT | ~65 |
+| Jina-embeddings-v3 | 1024 | 8K | ✅ | ✅ | 多语言 | CC-BY-NC | ~65 |
+| Nomic-embed-text-v2 | 768 | 8K | ✅ | ✅ | 多语言 | Apache-2.0 | ~62 |
+| Voyage-3 | 1024 | 32K | ❌ | ✅ | 多语言 | 闭源 | ~67 |
+
+---
+
+### 🛡️ Agent 安全工具
+
+| 工具 | MCP 扫描 | 提示词注入防御 | 审计日志 | 自托管 | 许可证 |
+|------|---------|------------------------|-----------|-----------|--------|
+| mcp-scan | ⭐ 原生 | ✅ | ❌ | ✅ | MIT |
+| Lakera Guard | ❌ | ⭐⭐⭐⭐⭐ | ✅ | ❌ | 闭源 |
+| Zenity | ✅ | ✅ | ✅ | ❌ | 闭源 |
+| Prompt Armor | ❌ | ⭐⭐⭐⭐☆ | ✅ | ❌ | 闭源 |
+| Azure AI Content Safety | ❌ | ✅ | ✅ | ❌（Azure） | 闭源 |
+| Rebuff | ❌ | ⭐⭐⭐⭐☆ | ❌ | ✅ | MIT |
+
+---
+
+### 🖥️ 电脑使用与桌面 Agent
+
+| 工具 | 系统 | 视觉 | 本地 | API | 开源 | 适合场景 |
+|------|----|----|-------|-----|------------|----------|
+| Claude Desktop Intelligence | Mac/Linux | ✅ | ❌ | ✅ | ❌ | 最全面屏幕 Agent |
+| UFO（微软） | Windows | ✅ | ✅ | 可选 | ✅ | Windows 原生自动化 |
+| OSWorld | 多平台 | ✅ | ✅ | 可选 | ✅ | 跨平台基准+Agent |
+| Screenpipe | Mac/Linux | ✅ | ✅ | ❌ | ✅ | 屏幕记忆、隐私优先 |
+
+---
+
+### 🤖 Physical AI 平台
+
+| 平台 | 类型 | 开源 | SDK | 仿真 | 适合场景 |
+|---------|------|------------|-----|-----------|----------|
+| NVIDIA Isaac GR00T N1.5 | 人形机基础模型 | ⚠️（权重） | ✅ | ✅ Isaac Sim | 通用人形机基础模型 |
+| ROS 2 Jazzy | 机器人操作系统 | ✅ | ✅ | ✅ Gazebo | 标准机器人中间件 |
+| Gemini Robotics | 灵巧操作 | ❌ | ⚠️ | ✅ | 视觉+语言+灵巧操作 |
+| Unitree SDK2 | 四足/人形 | ✅ | ✅ | ⚠️ | Go2, H1, G1 开发 |
+| Boston Dynamics API | 四足 | ❌ | ✅ | ❌ | Spot 工业部署 |
+| Genesis Sim | 仿真平台 | ✅ | ✅ | ⭐ 原生 | 超高速物理仿真 |
+
+---
+
+### 🇨🇳 中文大模型横向对比
+
+| 模型 | 厂商 | 上下文 | 中文能力≈ | 编程 | 开源权重 | 输入 $/1M |
+|-------|----------|---------|---------------|--------|------------|----------|
+| Qwen3 235B A22B | 阿里 | 131K | 顶级 | ⭐⭐⭐⭐⭐ | ✅ Apache-2.0 | ~$0.29 |
+| DeepSeek V3.2 | DeepSeek | 128K | 非常高 | ⭐⭐⭐⭐⭐ | ✅ MIT | $0.14 |
+| Kimi K2.6 | Moonshot AI | 262K | 高 | ⭐⭐⭐⭐☆ | ❌ | ~$0.60 |
+| GLM-5.1 | 智谱 AI | 128K | 高 | ⭐⭐⭐⭐☆ | ⚠️ 部分 | ~$0.50 |
+| 混元 Pro | 腾讯 | 256K | 高 | ⭐⭐⭐⭐☆ | ❌ | ~$0.45 |
+| 豆包 Pro 256K | 字节 | 256K | 高 | ⭐⭐⭐☆☆ | ❌ | ~$0.80 |
+| ERNIE 5 | 百度 | 128K | 高 | ⭐⭐⭐☆☆ | ❌ | ~$0.70 |
+
+---
+
+### 📦 Agent 框架 — TypeScript / JavaScript
+
+| 框架 | 多 Agent | 流式 | MCP | A2A | stars ≈ | 许可证 |
+|-----------|-----------|----------|-----|-----|-------|---------|
+| Mastra | ✅ | ✅ | ✅ | ✅ | ~12K | Elastic-2.0 |
+| Vercel AI SDK | ⚠️ | ✅ | ✅ | ❌ | ~12K | Apache-2.0 |
+| LangChain.js | ✅ | ✅ | ✅ | ❌ | ~14K | MIT |
+| Genkit | ✅ | ✅ | ✅ | ❌ | ~3K | Apache-2.0 |
+| OpenAI Agents SDK (Node) | ✅ | ✅ | ✅ | ❌ | ~2K | MIT |
+| Flowise | ✅ | ✅ | ✅ | ❌ | ~35K | Apache-2.0 |
+
+---
+
+### 📊 元对比 — 编排/框架/IDE 分类
+
+| 类型 | 典型工具 | 适合对象 | 抽象级别 | 灵活性 |
+|---------|--------------|----------|--------------------|-------------|
+| 编排平台 | Dify, n8n, Flowise | 非工程师、快速上线 | 极高 | 中低 |
+| Agent 框架 | LangGraph, CrewAI, Mastra | 工程师自定义 | 中等 | 高 |
+| Agent IDE | Claude Code, Cursor, Cline | 开发者配对 | 低 | 非常高 |
+| 低代码构建器 | Voiceflow, Botpress | 业务/产品团队 | 极高 | 低 |
+| AI 原生平台 | Vertex AI Agent Builder | 企业托管基础设施 | 高 | 中等 |
+
+---
+
+### 📱 移动端 AI 框架
+
+| 框架 | iOS | Android | 本地模型 | 端上推理 | 许可证 | 适合场景 |
+|-----------|-----|---------|-----------|--------------------|---------|-----------| 
+| MLX | ✅ | ❌ | ✅ | ⭐ Apple Silicon | MIT | Apple 原生快速 LLM |
+| llama.cpp（移动） | ✅ | ✅ | ✅ | ✅ | MIT | 全平台通用本地 LLM |
+| MediaPipe | ✅ | ✅ | ✅ | ✅ | Apache-2.0 | 端上 ML（视觉/NLP） |
+| Core ML | ✅ | ❌ | ✅ | ✅（ANE） | Apple SDK | iOS/macOS 原生推理 |
+| Google AI Edge | ✅ | ✅ | ✅ | ✅ | Apache-2.0 | Gemma Nano 端上 |
+| Qualcomm AI Hub | ❌ | ✅ | ✅ | ✅（骁龙 NPU） | SDK | 骁龙芯片优化部署 |
+
+*所有对比表数据来源：2026-05-20。数据变化请提 PR。*
+
+---
+
+---
+
+## 🗺️ 场景指南 — 我应该用什么…
+
+*50+ 场景与工具对应。每周更新。*
+
+---
+
+### 🏗️ 构建类：编程 Agent
+
+**创业公司要一个最低成本高质量的编程 Agent**
+→ **Claude Code**（CLI）+ **E2B** 沙箱 + **Langfuse** 可观测。SWE-bench 80.9%。中等使用量 ~$200/月。
+
+**企业级编程 Agent（有安全控制）**
+- **GitHub Copilot Enterprise** — GitHub 已深度集成、IP 赔偿、SSO/SAML。→ 已在 GitHub Enterprise 上
+- **Cursor Business** — 隐私模式、代码不离开企业。→ 需要 IDE 优先体验
+- **Devin 3.0** — 自动重规划、全自动。→ 完全托管长任务
+
+**要一个完全开源的编程 Agent（无厂商锁定）**
+- **OpenHands** — MIT 许可，自部署、自带模型选择。
+- **Cline**（VS Code 插件）— BYO 密钥，社区活跃。
+- **Aider** — Git-aware CLI 重构。
+
+**浏览器自动化 / 网页抓取 Agent**
+- **Browser Use** — 92K stars，业界最大社区。
+- **Stagehand** — 强类型 + 结构化输出。
+- **Skyvern** — Vision 优先，抵抗动态页面。
+
+**文档处理 / PDF 分析 Agent**
+→ **LlamaIndex** + **Gemini 2.5 Pro**（2M 上下文）或 **Claude Opus 4.7** + **Unstructured.io**。
+
+**客户服务 Agent**
+- **Dify** — 无代码、内置 RAG、自托管。
+- **LangGraph + Zendesk MCP** — 工程师主导的业务。
+- **Salesforce Agentforce** — CRM 原生。
+
+**深度研究 Agent**
+→ **Perplexity Deep Research**（托管）或 **OpenHands + Tavily + Claude Opus 4.7**。
+
+**数据分析 / BI Agent**
+- **Julius AI** — 无需工程师，托管。
+- **LangChain + Pandas Agent** — 完全自定义。
+
+**Computer Use / 桌面 Agent**
+- **Claude Desktop Intelligence** — macOS/Linux 最全面。
+- **UFO**（微软）— Windows 原生。
+- **Screenpipe** — 本地隐私优先。
+
+**语音 / 对话 Agent**
+- **Gemini Live API** — <300ms 延迟。
+- **OpenAI Realtime API** — 原生语音 + 工具调用。
+- **LiveKit + Whisper + ElevenLabs v3** — 完全自托管。
+
+**多 Agent 编排系统**
+- **LangGraph** — Python 生产级有状态图式工作流。
+- **Google ADK** — 层级 Agent + Gemini 生态。
+- **Mastra** — TypeScript 优先。
+
+**个人 AI 助手（自托管）**
+→ **OpenClaw** — 多渠道、记忆、cron、MCP、全套自托管。
+
+**个人 AI 助手（托管/开箱即用）**
+- **Claude.ai Pro** — 最强推理+MCP工具。
+- **Perplexity Pro** — 搜索为主。
+
+**RAG 应用**
+→ **LlamaIndex** + **Qdrant** + **Cohere embed-v4** + **BGE reranker**。
+
+**金融分析 Agent**
+→ **LangChain** + **yfinance MCP** + **Claude Sonnet 4.6** + 结构化输出验证。
+
+**法律文档 Agent**
+→ **Claude Opus 4.7**（200K 上下文）+ **LlamaIndex** + **pgvector**。必须保留人工审核。
+
+**创意写作助手**
+→ **Claude Opus 4.7**（最佳散文质量）或 **Gemini 2.5 Pro**（2M 上下文）。
+
+**安全扫描 Agent**
+→ **Semgrep** + **Claude Sonnet 4.6** + **mcp-scan**。
+
+---
+
+### 🧠 模型选择类
+
+**需要最强模型做复杂推理**
+- **Claude Opus 4.7** (/think xhigh) — $5/$25/1M。
+- **Gemini 2.5 Pro** — 2M 上下文，$1.25/$10。
+- **GPT-4o** — 广泛生态，$2.50/$10。
+
+**需要最快最便宜的模型（简单高频任务）**
+- **Gemini 2.5 Flash-Lite** — $0.10/$0.40/1M。
+- **DeepSeek V3.2** — $0.14/$0.28/1M，惊人的性价比。
+
+**需要最强中文能力**
+- **Qwen3 235B A22B** — 中文评测居首。
+- **Kimi K2.6** — 262K 上下文。
+- **DeepSeek V3.2** — 开源权重中文编程。
+
+**需要本地/离线模型（16GB 显存）**
+- **Qwen3.6-27B Q4_K_M** — ~17GB，最佳 16GB 首选。
+- **Phi-4 14B** — ~9GB，编程首选。
+
+**需要本地/离线模型（40GB+）**
+- **Llama 3.3 70B Q4_K_M** — ~42GB。
+- **Qwen3 235B A22B Q2** — MoE 主力。
+
+**需要最强编程能力**
+→ **Claude Sonnet 4.6**（通过 Claude Code，SWE-bench 80.9%）。
+
+**需要超长上下文 (500K+)**
+- **Gemini 2.5 Pro** — 2M 上下文。
+- **Kimi K2.6** — 262K。
+
+**需要开源权重模型（MIT/Apache）**
+- **Llama 3.3 70B** (Apache-2.0)、**DeepSeek V3.2** (MIT)、**Qwen3 235B A22B** (Apache-2.0)。
+
+---
+
+### 🏗️ 基础设施类
+
+**全本地运行（隐私优先，零云端）**
+→ **Ollama** + **Open WebUI** + **Qdrant** + **Qwen3.6-27B**（16GB）/ **Llama 3.3 70B**（40GB+）。
+
+**压缩 API 费用（每月 <$50）**
+→ **DeepSeek V3.2** + **Gemini 2.5 Flash** + Anthropic Batch API 折扣。
+
+**企业资源伸缩**
+→ **Google Vertex AI** 或 **Azure OpenAI** + **LiteLLM** 路由网关。
+
+**集群 / 受监控环境部署**
+→ **Ollama + 开源权重** + **IBM watsonx** 或 **Azure Government**。
+
+**避免厂商锁定**
+→ **LiteLLM**（统一 API 路由）+ **LangGraph** + **BGE-M3 嵌入**。
+
+---
+
+### 📊 评估与监控类
+
+**评估 Agent 输出质量** → **DeepEval** + **Langfuse**。
+
+**调试 Agent 失败原因** → **Langfuse** trace + **Arize Phoenix** 根因分析。
+
+**实时监控生产 Agent** → **Langfuse**（OpenTelemetry，自托管）或 **Helicone**。
+
+**A/B 测试不同模型** → **Braintrust** 或 **LangSmith**。
+
+**对自定义任务进行 benchmark** → DeepEval + 自己的黄金测试集（50 个示例起步）。
+
+**评估 MCP 服务器安全** → **mcp-scan**（Invariant Labs）。
+
+---
+
+### 🌍 生态选择类
+
+**OpenAI 生态** → OpenAI Agents SDK + GPT-4o + E2B + LangSmith。
+
+**Anthropic 生态** → Claude Code + Claude Sonnet/Opus + MCP + Langfuse。
+
+**Google 生态** → Google ADK + Gemini 2.5 Pro/Flash + Vertex AI。
+
+**国内市场** → Qwen3 235B（DashScope）+ RAGFlow + Milvus + Langfuse。
+
+**TypeScript 优先** → Mastra + Vercel AI SDK + Gemini 2.5 Flash + Qdrant。
+
+**全开源栈** → Ollama + Llama 3.3 70B + LangGraph + Qdrant + Langfuse。
+
+---
+
+## 📋 技术栈免调 — 经过验证的工具组合
+
+| # | 配方名 | 技术栈 | 适合对象 |
+|---|------------|-------|----------|
+| 1 | **轻量编程 Agent** | Claude Code + E2B + Langfuse | 独立开发/创业，性价比最高 |
+| 2 | **开源 SWE Agent** | OpenHands + Ollama + Qwen3.6-27B + Qdrant | 全本地，隐私优先 |
+| 3 | **企业级 RAG** | LlamaIndex + Qdrant + Cohere embed-v4 + Langfuse + Claude Sonnet 4.6 | 内部文档生产问答 |
+| 4 | **语音助手流水线** | LiveKit + Whisper + Claude Sonnet 4.6 + ElevenLabs v3 | 定制品牌语音 AI |
+| 5 | **浏览器自动化** | Browser Use + Stagehand + Claude Sonnet 4.6 + Langfuse | 可靠网页抓取 |
+| 6 | **本地隐私栈** | Ollama + Qwen3.6-27B + Open WebUI + Qdrant + n8n | 零云端、离线部署 |
+| 7 | **TypeScript Agent** | Mastra + Vercel AI SDK + Gemini 2.5 Flash + Qdrant | TS 优先生产 SaaS |
+| 8 | **国内市场栈** | Qwen3 235B API + RAGFlow + Milvus + Langfuse | 国内部署，ICP 合规 |
+
+---
+
+## ⚠️ 反推荐 — 不应该用在哪里
+
+| ❌ 不要用 | ❌ 用于 | ✅ 改用 | 原因 |
+|------------|-----------|---------------|-----|
+| LangChain v0.x | 新的生产 Agent | **LangGraph** | 旧版 chain 已废弃 |
+| AutoGPT（旧） | 生产工作负载 | **OpenHands / LangGraph** | 体系过时，可靠性差 |
+| GPT-3.5-Turbo | 复杂推理 | **Gemini 2.5 Flash / Claude Haiku 4.5** | 已超龄，同价有更好选择 |
+| Pinecone Starter | 自托管/成本敏感 | **Qdrant / pgvector** | 2025 年已取消免费档、开源更便宜 |
+| LLM 直接做实时股票交易 | 金融执行 | 确定性规则引擎 | LLM 会幻觉数字，对实盘交易破坏性极大 |
+| ChatGPT Plus | 生产 API 工作流 | **OpenAI API** 直接调用 | 无 SLA、无配额控制 |
+| Hugging Face 免费推理 | 生产负载 | **Modal / 自托管 Ollama** | 免费层极限，冷启动 >30s |
+| Agent 无人工审核 | 医疗/法律决策 | 任意模型 + 必须人工审核 | 无模型可靠性足够高 |
+| Midjourney | 程序化/API 图片生成 | **gpt-image-2 / Flux 2 Pro API** | Midjourney 无公开 API |
+| Sora | 视频生成 | **Kling VIDEO 3.0 / Veo 3.1** | Sora 2026.4 已停运 |
+| 不带 reranker 的向量检索 | 高精度 RAG | 向量 DB + **BGE reranker** | 纯向量召回率只有 ~70% |
 
 ---
 

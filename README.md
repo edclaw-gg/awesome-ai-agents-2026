@@ -7,7 +7,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2020%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-380%2B-orange.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-420%2B-orange.svg)](#)
 [![Categories](https://img.shields.io/badge/Categories-25-purple.svg)](#)
 [![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--20-success.svg)](#️-status-legend)
 [![Chinese](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
@@ -26,10 +26,30 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - 💤 **Stale** — No commits in 6+ months; project may still work but is no longer actively maintained.
 - ⚠️ **Unverified** — Recent submission with limited independent traction (low stars / no third-party adoption / sole-maintainer / submitted to many awesome lists in parallel). Listed for completeness, **not endorsed** — vet before using.
 - 🇨🇳 **Chinese ecosystem** — Project from a mainland-China team or primarily targeting the Chinese market.
+- 🔥 **Hot** — GitHub stars grew >20% in the last 30 days; community momentum.
+- ⚡ **Updated** — Received a notable release or major feature in the last 14 days.
+- 🧪 **Experimental** — Promising but not production-ready; use for R&D only.
+- 💰 **Freemium** — Core functionality free; paid tiers for scale/advanced features.
+- 🔐 **Audited** — Has undergone independent security audit or formal verification.
+- 🇨🇳 **China-first** — Optimized for Chinese language, regulation, or infra stack.
 
 [Foundation Models](#-foundation-models-2026) · [Multimodal AI](#-multimodal--generative-ai) · [Protocols](#-agent-protocols--standards) · [Frameworks](#️-agent-frameworks) · [IDEs & Builders](#️-agent-ides--visual-builders) · [Memory](#-agent-memory) · [Tools](#-tool--api-integration) · [Sandboxing](#-agent-sandboxing--compute-isolation) · [Security](#️-agent-security) · [RAG](#-rag--knowledge) · [Coding](#-coding-agents) · [Physical AI](#-physical-ai--embodied-agents) · [Simulation](#-agent-simulation--world-models) · [Benchmarks](#-benchmarks--leaderboards) · [Computer Use](#️-computer-use--desktop-agents) · [Browser & Web](#-browser--web-agents) · [Voice](#️-voice--multimodal-agents) · [Personal](#-personal-ai-agents) · [Mobile](#-mobile-agents) · [Enterprise](#-enterprise-agent-platforms) · [Evaluation](#-agent-evaluation--observability) · [Research Tools](#-ai-research-tools) · [Learning](#-learning-resources) · [Chinese Ecosystem](#-chinese-ai-ecosystem) · [Compare](#-compare--side-by-side-tables) · [Notable 2026](#-notable-agent-projects-of-2026) · [Timeline](#-2026-ai-timeline)
 
 </div>
+
+---
+
+## 🚀 Start Here
+
+> **New to AI agents?** Follow this path:
+> 1. 📖 **Understand** — what an agent actually is vs. a chatbot
+> 2. 🗺️ **Find your scenario** → [Scenario Guide](#-scenario-guide--what-should-i-use-for)
+> 3. 🧩 **Copy a proven setup** → [Stack Recipes](#-stack-recipes--curated-tool-combinations)
+> 4. 🔍 **Pick the right tool** → [Compare Tables](#-compare--side-by-side-tables)
+> 5. ⚠️ **Avoid common mistakes** → [Anti-Picks](#-anti-picks--what-not-to-use-for)
+>
+> **Already building?** Jump to:
+> - 🆕 [Latest additions (May 2026)](#may-2026) • 🛡️ [Security](#️-agent-security) • 💰 [Cost comparison](#-foundation-models--cost--context-comparison)
 
 ---
 
@@ -989,6 +1009,582 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 ---
 
+### 💰 Foundation Models — API Cost & Context
+
+*Prices in USD per 1M tokens. Data: 2026-05-20.*
+
+| Model | Provider | Context Window | Input $/1M | Output $/1M | Best For |
+|-------|----------|---------------|-----------|------------|----------|
+| GPT-4o | OpenAI | 128K | $2.50 | $10.00 | Broad tool-use, vision, broad ecosystem |
+| GPT-4o-mini | OpenAI | 128K | $0.15 | $0.60 | High-volume simple tasks |
+| Claude Sonnet 4.6 | Anthropic | 200K | $3.00 | $15.00 | Coding agents, complex reasoning |
+| Claude Opus 4.7 | Anthropic | 200K | $5.00 | $25.00 | Hardest reasoning tasks |
+| Claude Haiku 4.5 | Anthropic | 200K | $1.00 | $5.00 | Fast Anthropic-ecosystem tasks |
+| Gemini 2.5 Flash | Google | 1M | $0.30 | $2.50 | Cost-effective multimodal |
+| Gemini 2.5 Pro | Google | 2M | $1.25 | $10.00 | Long-context, multimodal |
+| Gemini 2.5 Flash-Lite | Google | 1M | $0.10 | $0.40 | Ultra-cheap high-volume |
+| DeepSeek V3.2 | DeepSeek | 128K | $0.14 | $0.28 | Budget-friendly coding + reasoning |
+| Qwen3 235B A22B | Alibaba | 131K | ~$0.29 | ~$1.15 | Best Chinese + coding, MoE |
+| Kimi K2.6 | Moonshot AI | 262K | ~$0.60 | ~$2.50 | Chinese + long-context tasks |
+| Grok 4 | xAI | 256K | $3.00 | $15.00 | X/Twitter integration, reasoning |
+| Grok 4.20 | xAI | 2M | $2.00 | $6.00 | Very long context, agentic tasks |
+
+*Sources: Anthropic, OpenAI, Google, DeepSeek, Alibaba, Moonshot, xAI official pricing pages — May 2026.*
+
+---
+
+### 💻 Foundation Models — Local Deployment
+
+*Estimated VRAM at Q4_K_M quantization. Speed varies by hardware.*
+
+| Model | Params | Min VRAM (Q4) | Speed (tok/s)* | Best Quantization | Chinese Support | Best For |
+|-------|--------|--------------|----------------|-------------------|-----------------|----------|
+| Qwen3.6-27B | 27B dense | ~17 GB | ~23 (M5 Max) | Q4_K_M / FP8 | ⭐⭐⭐⭐⭐ | Coding, Chinese, agentic tasks |
+| Qwen3 235B A22B | 235B MoE | ~40 GB (active) | ~15–20 | Q2_K / Q4_K_M | ⭐⭐⭐⭐⭐ | Best local quality, huge context |
+| Llama 3.3 70B | 70B dense | ~42 GB | ~12–18 | Q4_K_M | ⭐⭐☆☆☆ | Best English open-weight |
+| DeepSeek V3-671B | 671B MoE | ~40 GB (active) | ~10–15 | Q2_K | ⭐⭐⭐⭐☆ | Open-weight coding champion |
+| Gemma 4 27B | 27B dense | ~17 GB | ~20–25 | Q4_K_M | ⭐⭐⭐☆☆ | Multilingual reasoning, Apache-2.0 |
+| Phi-4 14B | 14B dense | ~9 GB | ~35–45 | Q4_K_M | ⭐⭐☆☆☆ | Best 8–16GB VRAM coding model |
+| Mistral Small 4 24B | 24B dense | ~14 GB | ~25–30 | Q4_K_M | ⭐⭐⭐☆☆ | Multilingual, function calling |
+
+*\* tok/s measured at typical decode context; varies with hardware, context length, and batch size.*
+
+---
+
+### 🧠 Agent Memory Systems
+
+| System | Storage | Retrieval | Local | Self-host | Temporal | License | Best For |
+|--------|---------|-----------|-------|-----------|----------|---------|----------|
+| [Mem0](https://github.com/mem0ai/mem0) | Vector + Graph | Semantic | ✅ | ✅ | ✅ | Apache-2.0 | Drop-in memory for any LLM app |
+| [Basic Memory](https://github.com/basicmachines-co/basic-memory) | Markdown files | Keyword + embedding | ✅ | ✅ | ⚠️ | MIT | Human-readable, Obsidian-compatible |
+| [Graphiti](https://github.com/getzep/graphiti) | Temporal knowledge graph | Graph traversal | ✅ | ✅ | ⭐ native | Apache-2.0 | Time-aware agent memory |
+| [Zep](https://github.com/getzep/zep) | Vector + summary | Semantic | ✅ | ✅ | ✅ | Apache-2.0 | Production memory for chat agents |
+| [Memary](https://github.com/kingjulio8238/Memary) | Knowledge graph | Graph + semantic | ✅ | ✅ | ⚠️ | MIT | Open-source agent memory layer |
+| [CORE](https://github.com/the-agent-company/CORE) | Episodic + semantic | Hybrid | ✅ | ✅ | ✅ | Apache-2.0 | Structured episodic + semantic memory |
+| [Letta (fka MemGPT)](https://github.com/cpacker/MemGPT) | Tiered (core/archival) | Paged retrieval | ✅ | ✅ | ✅ | Apache-2.0 | Long-term memory with infinite context illusion |
+
+---
+
+### 🎙️ Voice & Audio Models
+
+| Model / Service | STT | TTS | Realtime | Local | Latency | Languages | License |
+|----------------|-----|-----|---------|-------|---------|-----------|--------|
+| [ElevenLabs v3](https://elevenlabs.io/) | ❌ | ⭐⭐⭐⭐⭐ | ✅ | ❌ | ~200ms | 32+ | Proprietary |
+| [Whisper v3 (local)](https://github.com/openai/whisper) | ⭐⭐⭐⭐★ | ❌ | ❌ | ✅ | ~1s (large) | 99 | MIT |
+| [Deepgram Nova-3](https://deepgram.com/) | ⭐⭐⭐⭐⭐ | ✅ | ✅ | ❌ | <100ms | 30+ | Proprietary |
+| [Gemini Live API](https://ai.google.dev/) | ✅ | ✅ | ⭐ native | ❌ | <300ms | 30+ | Proprietary |
+| [OpenAI Realtime API](https://platform.openai.com/) | ✅ | ✅ | ⭐ native | ❌ | ~300ms | 57 | Proprietary |
+| [MiniMax TTS](https://www.minimax.io/) | ❌ | ⭐⭐⭐⭐☆ | ✅ | ❌ | ~200ms | 20+ | Proprietary |
+| [Kokoro](https://github.com/hexgrad/kokoro) | ❌ | ⭐⭐⭐⭐☆ | ❌ | ✅ | ~100ms | 8 | Apache-2.0 |
+| [Voxtral](https://mistral.ai/) | ⭐⭐⭐⭐☆ | ❌ | ❌ | ✅ | batch | 20+ | Apache-2.0 |
+
+---
+
+### 🎨 Image Generation Models
+
+| Model | Max Resolution | API / Local | Photorealism | Best For | Pricing (approx) |
+|-------|---------------|-------------|-------------|----------|------------------|
+| [DALL-E 3](https://platform.openai.com/docs/guides/images) | 1024×1024 | API | High | Instruction-following, broad | $0.04/image (std) |
+| [gpt-image-2](https://platform.openai.com/docs/guides/images) | 2048×2048 | API | Very high | API workflows, 4K output | $0.04–$0.17/image |
+| [Flux 2 Pro](https://blackforestlabs.ai/) | 2K+ | API | ⭐ high | Photorealistic, fast generation | ~$0.05/image |
+| [Midjourney V8](https://www.midjourney.com/) | 2K+ | Web only | Artistic | Best artistic quality | $10–$120/mo plan |
+| [Stable Diffusion 3.5](https://stability.ai/) | 2K | Local + API | Good | Open-weight, self-hostable | Open weights (Apache-2.0) |
+| [Ideogram 3](https://ideogram.ai/) | 2K | API + Web | Good | Typography + text in images | Freemium |
+| [Gemini 3 Pro Image](https://deepmind.google/) | 1K | API | High | Native multimodal edit | Vertex AI pricing |
+
+---
+
+### 🎥 Video Generation Models
+
+| Model | Max Length | Resolution | API / Local | Best For | Status (2026-05) |
+|-------|-----------|-----------|-------------|----------|------------------|
+| [Veo 3.1](https://deepmind.google/technologies/veo/) | 2 min | 4K | API (Vertex) | Highest fidelity, physics-aware | GA (Google) |
+| [Kling VIDEO 3.0](https://kling.ai/) | 3 min | 1080p | API + Web | Cinematic style, leading post-Sora | GA (Kuaishou) |
+| [Runway Gen-4](https://runwayml.com/) | 10s/clip | 1080p | API + Web | Precise motion control, professional | GA |
+| [Pika 2.0](https://pika.art/) | 10s | 1080p | Web | Creative / social media | GA |
+| [Seedance 2.0](https://bytedance.com/) | 60s | 1080p | API | Fast, cost-effective, social media | GA (ByteDance) |
+| [Hailuo 02](https://hailuoai.video/) | 60s | 1080p | Web + API | Smooth motion, accessible | GA (MiniMax) |
+| ~~Sora~~ | ❌ | ❌ | ❌ | — | **Discontinued Apr 2026** |
+
+---
+
+### 🔍 RAG Frameworks
+
+| Framework | Language | Vector DB | Hybrid Search | Streaming | License | Best For |
+|-----------|---------|-----------|--------------|-----------|---------|----------|
+| [LlamaIndex](https://github.com/run-llama/llama_index) | Python | Any | ✅ | ✅ | MIT | Production RAG, document pipelines |
+| [Haystack](https://github.com/deepset-ai/haystack) | Python | Any | ✅ | ✅ | Apache-2.0 | Pipelines, search-heavy RAG |
+| [LangChain LCEL](https://python.langchain.com/docs/expression_language/) | Python / JS | Any | ✅ | ✅ | MIT | Flexible chaining, large ecosystem |
+| [RAGFlow](https://github.com/infiniflow/ragflow) | Python | Built-in | ✅ | ✅ | Apache-2.0 | Deep document parsing, OCR-aware |
+| [Cognee](https://github.com/topoteretes/cognee) | Python | Vector + Graph | ✅ | ⚠️ | Apache-2.0 | Knowledge graph + RAG hybrid |
+| [txtai](https://github.com/neuml/txtai) | Python | Built-in | ✅ | ❌ | Apache-2.0 | Lightweight, embeddings-first |
+| [Verba](https://github.com/weaviate/Verba) | Python | Weaviate | ⚠️ | ❌ | BSD-3 | Weaviate-native RAG chatbot |
+
+---
+
+### 🗄️ Vector Databases
+
+| Database | Self-host | Cloud | Scale | Hybrid Search | License | Best For |
+|----------|-----------|-------|-------|--------------|---------|----------|
+| [Qdrant](https://github.com/qdrant/qdrant) | ✅ | ✅ | Very large | ✅ | Apache-2.0 | Best all-round OSS vector DB |
+| [Weaviate](https://github.com/weaviate/weaviate) | ✅ | ✅ | Large | ✅ | BSD-3 | Multi-modal, GraphQL API |
+| [Pinecone](https://www.pinecone.io/) | ❌ | ✅ | Very large | ✅ | Proprietary | Managed, easiest setup |
+| [Chroma](https://github.com/chroma-core/chroma) | ✅ | ⚠️ | Medium | ❌ | Apache-2.0 | Fast prototyping, Python-native |
+| [Milvus](https://github.com/milvus-io/milvus) | ✅ | ✅ | Very large | ✅ | Apache-2.0 | Billion-scale production |
+| [pgvector](https://github.com/pgvector/pgvector) | ✅ | ✅ | Medium | ⚠️ | PostgreSQL | Existing Postgres stack |
+| [FAISS](https://github.com/facebookresearch/faiss) | ✅ | ❌ | Large | ❌ | MIT | In-memory, GPU-accelerated search |
+
+---
+
+### 📱 Personal AI Assistants (2026)
+
+| Tool | Open Source | Local LLM | Memory | Multi-channel | Self-host | Best For |
+|------|------------|-----------|--------|--------------|-----------|----------|
+| [OpenClaw](https://openclaw.io/) | ❌ | ✅ | ✅ native | ✅ (TG/Discord/WA) | ✅ | All-in-one personal agent platform |
+| [Khoj](https://github.com/khoj-ai/khoj) | ✅ | ✅ | ✅ | ⚠️ (web/app) | ✅ | Research, notes, calendar integration |
+| [Jan.ai](https://github.com/janhq/jan) | ✅ | ✅ | ❌ | ❌ | ✅ | Offline ChatGPT replacement, GUI |
+| [LM Studio](https://lmstudio.ai/) | ❌ | ✅ | ❌ | ❌ | ✅ | Easy local model runner, non-technical |
+| [Perplexity](https://www.perplexity.ai/) | ❌ | ❌ | ⚠️ | ❌ | ❌ | Search-first, cited answers |
+| [Claude.ai Pro](https://claude.ai/) | ❌ | ❌ | ✅ Projects | ❌ | ❌ | Best reasoning, MCP tools |
+| [Zo Computer](https://zo.computer/) | ❌ | ❌ | ✅ | ❌ | ❌ | Autonomous computer use assistant |
+
+---
+
+### 🔌 MCP Servers — Top Integrations
+
+*Stars data approximate, 2026-05.*
+
+| MCP Server | Category | Stars | Auth | Security Audit | License |
+|-----------|----------|-------|------|---------------|--------|
+| [GitHub MCP](https://github.com/github/github-mcp-server) | Dev / Code | 🔥 High | OAuth | ✅ (GitHub) | MIT |
+| [Playwright MCP](https://github.com/microsoft/playwright-mcp) | Browser | 🔥 High | None (local) | ⚠️ | Apache-2.0 |
+| [Filesystem MCP](https://github.com/modelcontextprotocol/servers) | Files | 🔥 High | None (local) | ⚠️ sandboxing | MIT |
+| [Brave Search MCP](https://github.com/modelcontextprotocol/servers) | Search | High | API key | ❌ | MIT |
+| [Slack MCP](https://github.com/modelcontextprotocol/servers) | Comms | Medium | OAuth | ❌ | MIT |
+| [Notion MCP](https://github.com/modelcontextprotocol/servers) | Notes | Medium | OAuth | ❌ | MIT |
+| [PostgreSQL MCP](https://github.com/modelcontextprotocol/servers) | Database | Medium | Conn string | ⚠️ read-only mode | MIT |
+| [Google Maps MCP](https://github.com/modelcontextprotocol/servers) | Location | Medium | API key | ❌ | MIT |
+
+*Use **mcp-scan** (Invariant Labs) to audit any MCP server before production deployment.*
+
+---
+
+### 🏢 Enterprise AI Agent Platforms
+
+| Platform | Open Source | MCP Support | A2A Support | Self-host | Compliance | Best For |
+|---------|------------|------------|------------|-----------|-----------|----------|
+| [Microsoft Agent Framework](https://learn.microsoft.com/en-us/agent-framework/) | ⚠️ (AutoGen OSS) | ✅ | ✅ | ⚠️ (Azure) | SOC2, ISO 27001 | Azure-native enterprise |
+| [Salesforce Agentforce](https://www.salesforce.com/agentforce/) | ❌ | ⚠️ | ❌ | ❌ | SOC2, GDPR | Salesforce CRM orgs |
+| [SAP Joule](https://www.sap.com/products/artificial-intelligence/ai-assistant.html) | ❌ | ❌ | ❌ | ⚠️ | SOC2, ISO | SAP ERP environments |
+| [Google Gemini Enterprise](https://workspace.google.com/products/gemini/) | ❌ | ✅ | ✅ | ❌ (cloud) | SOC2, FedRAMP | Google Workspace orgs |
+| [IBM watsonx](https://www.ibm.com/watsonx) | ⚠️ | ✅ | ⚠️ | ✅ (on-prem) | FedRAMP, HIPAA | Regulated / on-prem enterprise |
+| [ServiceNow AI Agents](https://www.servicenow.com/) | ❌ | ✅ | ⚠️ | ❌ | SOC2 | IT service management |
+| [Dify Enterprise](https://github.com/langgenius/dify) | ✅ (CE) | ✅ | ✅ | ✅ | SOC2 (cloud) | Multi-model, low-code agent platform |
+
+---
+
+### 📏 Embedding Models
+
+*MTEB = Massive Text Embedding Benchmark leaderboard score (EN, 2026-05 approx).*
+
+| Model | Dims | Context | Local | API | Languages | License | MTEB ≈ |
+|-------|------|---------|-------|-----|-----------|---------|--------|
+| [OpenAI text-embedding-3-large](https://platform.openai.com/docs/guides/embeddings) | 3072 | 8K | ❌ | ✅ | Multi | Proprietary | ~64 |
+| [Cohere embed-v4](https://cohere.com/embed) | 1024 | 512 | ❌ | ✅ | Multi | Proprietary | ~66 |
+| [Gemini text-embedding-004](https://ai.google.dev/) | 768 | 2K | ❌ | ✅ | Multi | Proprietary | ~63 |
+| [BGE-M3](https://github.com/FlagAI-Open/FlagEmbedding) | 1024 | 8K | ✅ | ❌ | Multi | MIT | ~65 |
+| [Jina-embeddings-v3](https://github.com/jina-ai/jina) | 1024 | 8K | ✅ | ✅ | Multi | CC-BY-NC | ~65 |
+| [Nomic-embed-text-v2](https://github.com/nomic-ai/nomic) | 768 | 8K | ✅ | ✅ | Multi | Apache-2.0 | ~62 |
+| [Voyage-3](https://www.voyageai.com/) | 1024 | 32K | ❌ | ✅ | Multi | Proprietary | ~67 |
+
+---
+
+### 🛡️ Agent Security Tools
+
+| Tool | MCP Scan | Prompt Injection Defense | Audit Logs | Self-host | License |
+|------|---------|------------------------|-----------|-----------|--------|
+| [mcp-scan](https://github.com/invariantlabs-ai/mcp-scan) | ⭐ native | ✅ | ❌ | ✅ | MIT |
+| [Lakera Guard](https://www.lakera.ai/) | ❌ | ⭐⭐⭐⭐⭐ | ✅ | ❌ | Proprietary |
+| [Zenity](https://www.zenity.io/) | ✅ | ✅ | ✅ | ❌ | Proprietary |
+| [Prompt Armor](https://promptarmor.com/) | ❌ | ⭐⭐⭐⭐☆ | ✅ | ❌ | Proprietary |
+| [Azure AI Content Safety](https://azure.microsoft.com/en-us/products/ai-services/ai-content-safety) | ❌ | ✅ | ✅ | ❌ (Azure) | Proprietary |
+| [Rebuff](https://github.com/protectai/rebuff) | ❌ | ⭐⭐⭐⭐☆ | ❌ | ✅ | MIT |
+
+---
+
+### 🖥️ Computer Use & Desktop Agents
+
+| Tool | OS | Vision | Local | API | Open Source | Best For |
+|------|----|----|-------|-----|------------|----------|
+| [Claude Desktop Intelligence](https://www.anthropic.com/) | Mac / Linux | ✅ | ❌ | ✅ | ❌ | Best all-round screen agent |
+| [UFO](https://github.com/microsoft/UFO) | Windows | ✅ | ✅ | Optional | ✅ | Windows native automation |
+| [OSWorld](https://github.com/xlang-ai/OSWorld) | Mac/Win/Linux | ✅ | ✅ | Optional | ✅ | Cross-platform benchmark + agent |
+| [Nemo Agent](https://github.com/sternakt/nemo-agent) | Linux | ✅ | ✅ | Optional | ✅ | Open desktop control |
+| [Screenpipe](https://github.com/mediar-ai/screenpipe) | Mac / Linux | ✅ | ✅ | ❌ | ✅ | Screen + audio memory, privacy-first |
+| [Claude Computer Use (API)](https://docs.anthropic.com/) | Any (via API) | ✅ | ❌ | ✅ | ❌ | API-driven desktop control |
+
+---
+
+### 🤖 Physical AI Platforms
+
+| Platform | Type | Open Source | SDK | Simulation | Best For |
+|---------|------|------------|-----|-----------|----------|
+| [NVIDIA Isaac GR00T N1.5](https://developer.nvidia.com/isaac) | Humanoid foundation | ⚠️ (weights) | ✅ | ✅ (Isaac Sim) | Universal humanoid robot foundation model |
+| [ROS 2 Jazzy](https://docs.ros.org/) | Robot OS | ✅ | ✅ | ✅ (Gazebo) | Standard robot middleware |
+| [Gemini Robotics](https://deepmind.google/) | Manipulation | ❌ | ⚠️ | ✅ | Vision + language + dexterous manipulation |
+| [Unitree SDK2](https://github.com/unitreerobotics) | Quadruped / Humanoid | ✅ | ✅ | ⚠️ | Go2, H1, G1 robot dev |
+| [Boston Dynamics API](https://dev.bostondynamics.com/) | Quadruped | ❌ | ✅ | ❌ | Spot industrial deployment |
+| [Genesis Sim](https://github.com/Genesis-Embodied-AI/Genesis) | Simulation | ✅ | ✅ | ⭐ native | Ultra-fast physics sim for embodied AI |
+
+---
+
+### 🇨🇳 Chinese AI Models — Head-to-Head
+
+*Chinese language capability benchmarks are approximate. API prices in USD/1M tokens, May 2026.*
+
+| Model | Provider | Context | Chinese Bench≈ | Coding | Open Weight | Input $/1M |
+|-------|----------|---------|---------------|--------|------------|----------|
+| Qwen3 235B A22B | Alibaba | 131K | Top | ⭐⭐⭐⭐⭐ | ✅ Apache-2.0 | ~$0.29 |
+| DeepSeek V3.2 | DeepSeek | 128K | Very high | ⭐⭐⭐⭐⭐ | ✅ MIT | $0.14 |
+| Kimi K2.6 | Moonshot AI | 262K | High | ⭐⭐⭐⭐☆ | ❌ | ~$0.60 |
+| GLM-5.1 | Zhipu AI | 128K | High | ⭐⭐⭐⭐☆ | ⚠️ partial | ~$0.50 |
+| Hunyuan Pro | Tencent | 256K | High | ⭐⭐⭐⭐☆ | ❌ | ~$0.45 |
+| Doubao Pro 256K | ByteDance | 256K | High | ⭐⭐⭐☆☆ | ❌ | ~$0.80 |
+| ERNIE 5 | Baidu | 128K | High | ⭐⭐⭐☆☆ | ❌ | ~$0.70 |
+
+---
+
+### 📦 Agent Frameworks — TypeScript / JavaScript
+
+| Framework | Multi-Agent | Streaming | MCP | A2A | Stars≈ | License |
+|-----------|-----------|----------|-----|-----|-------|---------|
+| [Mastra](https://github.com/mastra-ai/mastra) | ✅ | ✅ | ✅ | ✅ | ~12K | Elastic-2.0 |
+| [Vercel AI SDK](https://github.com/vercel/ai) | ⚠️ | ✅ | ✅ | ❌ | ~12K | Apache-2.0 |
+| [LangChain.js](https://github.com/langchain-ai/langchainjs) | ✅ | ✅ | ✅ | ❌ | ~14K | MIT |
+| [Genkit](https://github.com/firebase/genkit) | ✅ | ✅ | ✅ | ❌ | ~3K | Apache-2.0 |
+| [OpenAI Agents SDK (Node)](https://github.com/openai/openai-agents-js) | ✅ | ✅ | ✅ | ❌ | ~2K | MIT |
+| [Rivet](https://github.com/Ironclad/rivet) | ✅ | ✅ | ⚠️ | ❌ | ~4K | MIT |
+| [Flowise](https://github.com/FlowiseAI/Flowise) | ✅ | ✅ | ✅ | ❌ | ~35K | Apache-2.0 |
+
+---
+
+### 📊 Meta-Comparison — Orchestration vs Framework vs IDE
+
+| Category | Example Tools | Best For | Abstraction Level | Flexibility |
+|---------|--------------|----------|--------------------|-------------|
+| **Orchestration Platform** | Dify, n8n, Flowise, Langflow | Non-engineers, fast deployment | Very high | Low-medium |
+| **Agent Framework** | LangGraph, CrewAI, Mastra, OpenAI Agents SDK | Engineers building custom agents | Medium | High |
+| **Agent IDE / Coding Agent** | Claude Code, Cursor, Cline, Devin | Developers pair-programming | Low | Very high |
+| **Low-code Builder** | Voiceflow, Botpress, Microsoft Copilot Studio | Business / product teams | Very high | Low |
+| **AI-native App Platform** | Vertex AI Agent Builder, Azure AI Foundry | Enterprise with managed infra | High | Medium |
+
+---
+
+### 📱 Mobile AI Frameworks
+
+| Framework | iOS | Android | Local LLM | On-device Inference | License | Best For |
+|-----------|-----|---------|-----------|--------------------|---------|-----------|
+| [MLX](https://github.com/ml-explore/mlx) | ✅ | ❌ | ✅ | ⭐ Apple Silicon | MIT | Apple-native, fast LLM on Mac/iPhone |
+| [llama.cpp (mobile)](https://github.com/ggerganov/llama.cpp) | ✅ | ✅ | ✅ | ✅ (arm/x86) | MIT | Universal local LLM, all platforms |
+| [MediaPipe](https://github.com/google-ai-edge/mediapipe) | ✅ | ✅ | ✅ | ✅ | Apache-2.0 | On-device ML tasks (vision, NLP) |
+| [Core ML](https://developer.apple.com/documentation/coreml) | ✅ | ❌ | ✅ | ✅ (ANE) | Apple SDK | iOS/macOS native model inference |
+| [Google AI Edge](https://ai.google.dev/edge) | ✅ | ✅ | ✅ | ✅ | Apache-2.0 | LiteRT + Gemma Nano on-device |
+| [Ollama (mobile proxy)](https://ollama.com/) | ⚠️ via API | ⚠️ via API | ✅ | ❌ (server-side) | MIT | Run Ollama server, hit from mobile |
+| [Qualcomm AI Hub](https://aihub.qualcomm.com/) | ❌ | ✅ | ✅ | ✅ (Snapdragon NPU) | SDK | Snapdragon-optimized model deployment |
+
+*All Compare tables data: 2026-05-20. Send PRs with sources when figures change.*
+
+---
+
+## 🗺️ Scenario Guide — What Should I Use For…
+
+*50+ curated scenarios matching your goal to the right tool or stack. Updated weekly.*
+
+---
+
+### 🏗️ Building: Coding Agents
+
+**I want to build a coding agent for my startup (lowest cost, high quality)**
+→ **Claude Code** (CLI) + **E2B** sandbox + **Langfuse** observability. SWE-bench 80.9%. ~$200/mo at moderate usage.
+
+**I want an enterprise coding agent with security controls**
+- **GitHub Copilot Enterprise** — Deep GitHub integration, IP indemnity, SSO/SAML, SOC 2. → best if already on GitHub Enterprise
+- **Cursor Business** — Privacy mode, code never leaves your infra, admin dashboard. → best for teams needing IDE-first UX
+- **Devin 3.0** (Cognition) — Fully autonomous PR-to-merge with re-planning. → best for hands-off long-horizon tasks
+
+**I want an open-source self-hosted coding agent (no vendor lock-in)**
+- **OpenHands** (All-Hands-AI) — MIT, competitive SWE-bench, BYO model. → best if you need full control
+- **Cline** (VS Code ext) — BYO key, large community, free. → best for VS Code users
+- **Aider** — Git-aware CLI refactoring, excellent polyglot support. → best for terminal-based git workflows
+
+**I want a browser automation / web scraping agent**
+- **Browser Use** — 92K stars, vision + DOM, MIT. → best for general web automation
+- **Stagehand** (Browserbase) — Typed `act/extract/observe` API, structured output. → best for reliability-critical scraping
+- **Skyvern** — Vision-first, handles dynamic pages without CSS selectors. → best for changing / heavily JS-rendered sites
+
+**I want a document processing / PDF analysis agent**
+→ **LlamaIndex** (document pipeline) + **Gemini 2.5 Pro** (2M context) or **Claude Opus 4.7** (200K, best reasoning) + **Unstructured.io** for ingestion. For local: **Ollama** + **Qwen3.6-27B**.
+
+**I want a customer service / support agent**
+- **Dify** — No-code LLM workflow builder, self-hostable, RAG built-in. → best for non-technical teams
+- **LangGraph** + **Zendesk MCP** — Stateful workflows, ticket resolution loop. → best for engineering-led teams
+- **Salesforce Agentforce** — CRM-native, works within existing Salesforce data. → best for Salesforce-first orgs
+
+**I want a research / deep-research agent**
+→ **Perplexity Deep Research** (managed) or **OpenDevin / OpenHands** + **Tavily Search** + **Claude Opus 4.7**. For local: **Khoj** (self-hosted). Expect multi-minute runs and $1–5 per deep report at cloud rates.
+
+**I want a data analysis / BI agent**
+- **Julius AI** / **Code Interpreter (ChatGPT)** — Managed, no setup. → best for analysts without eng support
+- **LangChain** + **Pandas Agent** + **Langfuse** — Fully custom, code-gen for queries. → best for eng teams with custom data
+- **Metabase AI** / **Tableau Pulse** — Embedded BI copilot. → best inside existing BI stack
+
+**I want a computer use / desktop automation agent**
+- **Claude Desktop Intelligence** (Anthropic) — Screen-aware, controls any GUI app. → best all-around for macOS/Linux
+- **UFO** (Microsoft, open-source) — Windows-native, Win32 + UI Automation APIs. → best for Windows automation
+- **Screenpipe** — Continuous screen + audio recording + local LLM inference. → best for local privacy-first
+
+**I want a voice / conversational agent**
+- **Gemini Live API** — Real-time voice, <300ms latency, Google cloud. → best for Google ecosystem
+- **OpenAI Realtime API (GPT-4o Audio)** — Native voice with tool calling. → best for OpenAI ecosystem
+- **LiveKit** + **Whisper** + **ElevenLabs v3** — Self-hostable voice pipeline. → best for custom, brand-specific voice
+
+**I want a multi-agent orchestration system**
+- **LangGraph** — Stateful graph workflows, best Python production option. → best for complex state machines
+- **OpenAI Swarm / Agents SDK** — Lightweight handoffs, OpenAI-native. → best for simple OpenAI agent networks
+- **Google ADK** — Hierarchical agent coordination, Gemini-native. → best for Google/Vertex stack
+- **Mastra** (TypeScript) — Type-safe workflows, TS-first teams. → best for TypeScript stacks
+
+**I want a personal AI assistant (self-hosted)**
+- **OpenClaw** — Multi-channel (Telegram/Discord/WhatsApp), memory, cron, MCP support, full local LLM option. → best all-in-one self-hosted
+- **Khoj** — Search + research + calendar, open-source, self-host. → best for knowledge workers
+- **Jan.ai** / **LM Studio** — GUI-first local model runners. → best for non-technical local LLM
+
+**I want a personal AI assistant (managed / easy setup)**
+- **Claude.ai (Pro)** — Projects, memory, MCP tools, best reasoning. → best for power users
+- **Perplexity Pro** — Search-first, cites sources. → best for research-heavy use
+- **ChatGPT Plus** — Code interpreter, image gen, broad tools. → best for general-purpose
+
+**I want to build a RAG application**
+→ **LlamaIndex** (orchestration) + **Qdrant** (vector DB) + **Cohere embed-v4** (embeddings) + **BGE reranker** (reranking). Managed alternative: **Ragie** or **Cognee**. Production telemetry: **Langfuse**.
+
+**I want a financial analysis agent**
+→ **LangChain** + **yfinance / Alpha Vantage MCP** + **Claude Sonnet 4.6** (Excel/table reasoning) + **Langfuse**. Avoid: don’t use hallucination-prone models for numbers — always validate with structured output + code execution.
+
+**I want a legal document agent**
+→ **Claude Opus 4.7** (200K context, best contract analysis) + **LlamaIndex** (ingestion) + **pgvector** (self-hosted vector). Important: always have a human-in-the-loop for final legal decisions.
+
+**I want an education / tutoring agent**
+- **Khanmigo** (Khan Academy) — Purpose-built for K–12, COPPA-compliant. → best for K–12 safe deployment
+- **Custom** with **GPT-4o** + **LangGraph** state machine + spaced repetition logic. → best for HEd or corporate training
+
+**I want a creative writing assistant**
+→ **Claude Opus 4.7** (best prose quality) or **Gemini 2.5 Pro** (long-form, 2M context) + **Notion / Obsidian MCP** for knowledge base. For structured fiction: **Sudowrite** (managed).
+
+**I want an IoT / physical AI agent**
+→ **ROS 2** (robot OS) + **NVIDIA Isaac GR00T** (humanoid foundation model) + **Genesis Sim** (simulation). For home automation: **Home Assistant** + custom LLM backend.
+
+**I want a game playing / simulation agent**
+→ **PettingZoo** (multi-agent RL env) + **Gymnasium** + **GPT-4o Vision** for game-state parsing. For LLM-in-the-loop games: **Concordia** (Google DeepMind).
+
+**I want a security scanning / vulnerability agent**
+→ **Semgrep** (static analysis) + **Claude Sonnet 4.6** (explain + triage findings) + **mcp-scan** (MCP server audit). See also: [Agent Security](#️-agent-security) table.
+
+**I want a healthcare AI tool (non-clinical / administrative)**
+→ **Claude Opus 4.7** + **RAG** on medical knowledge base + **strict output validation**. Always: disclose AI, human oversight for any clinical decision, check HIPAA/GDPR compliance. Never automate clinical diagnosis.
+
+**I want a code review / PR security agent**
+→ **CodeRabbit** (managed, instant PR reviews) or **Claude Code** in CI + **Semgrep** + custom rules. For enterprise: **Copilot Code Review** (GitHub).
+
+**I want a social media / content creation agent**
+→ **n8n** (workflow automation) + **Claude Sonnet 4.6** (drafting) + **gpt-image-2** (images) + **Buffer/Later MCP** (scheduling). Self-hosted option: all via n8n + Ollama.
+
+**I want a translation / localization agent**
+→ **DeepL API** (best quality for EU languages) or **Claude Sonnet 4.6** (nuanced context-aware) + **Weblate** (open-source TMS). For Chinese: **Qwen3 235B** + human review loop.
+
+---
+
+### 🧠 Model Selection
+
+**I need the smartest model for complex multi-step reasoning**
+- **Claude Opus 4.7** (/think xhigh) — Best in class for math, logic, long-horizon reasoning. $5/$25 per M tokens.
+- **Gemini 2.5 Pro** — 2M context, strong multimodal, competitive pricing. $1.25/$10 per M tokens.
+- **GPT-4o** — Broadly capable, strong tool-use ecosystem. $2.50/$10 per M tokens.
+
+**I need the fastest + cheapest model for simple, high-volume tasks**
+- **Gemini 2.5 Flash-Lite** — $0.10/$0.40 per M tokens, 1M context.
+- **DeepSeek V3.2** — $0.14/$0.28 per M tokens, surprisingly strong quality.
+- **Claude Haiku 4.5** — $1/$5 per M tokens, Anthropic ecosystem integration.
+- **GPT-4o-mini** — $0.15/$0.60 per M tokens, broad OpenAI tooling.
+
+**I need the best Chinese language support**
+- **Qwen3 235B A22B** (Alibaba) — Strongest Chinese benchmark, MoE architecture, $0.29/$1.15 per M. → cloud API
+- **Kimi K2.6** (Moonshot) — 262K context, great Chinese instruction-following. → both API + local
+- **DeepSeek V3.2** — Open weights, excellent Chinese coding. → self-host or API
+- **GLM-5.1** (Zhipu AI) — Strong long-context, Chinese-first. → API or local
+
+**I need the best local/offline model with ~16GB VRAM**
+- **Qwen3.6-27B Q4_K_M** — ~17GB VRAM, ~23 tok/s, excellent coding + Chinese. Best overall 16GB pick.
+- **Gemma 4 27B** (Google) — Strong reasoning, multilingual, Apache-2.0.
+- **Phi-4 14B** (Microsoft) — ~9GB VRAM (Q4), punches above its weight on coding.
+- **Mistral Small 4 24B** — Fast, multilingual, well-rounded.
+
+**I need the best local/offline model with 40GB+ VRAM**
+- **Llama 3.3 70B Q4_K_M** — ~42GB VRAM, strong English + coding, Meta Apache-2.0.
+- **DeepSeek V3-671B Q2** — MoE, only 40GB active params in Q2 but requires 2×A100 setup.
+- **Qwen3 235B A22B Q2** — MoE flagship, 40-48GB VRAM at Q2, best local quality.
+
+**I need the best coding capability**
+→ **Claude Sonnet 4.6** (SWE-bench 80.9% via Claude Code) for agentic coding. **GPT-4o** for code generation + explanation. **DeepSeek V3.2** for open-weight coding. For IDE use: **Cursor** (Claude backend) or **Cline**.
+
+**I need multimodal understanding (vision + text)**
+- **Gemini 2.5 Pro** — Native vision, PDF, audio, video understanding. 2M context.
+- **GPT-4o** — Mature vision API, strong diagram/chart understanding.
+- **Claude Opus 4.7** — Best for complex document image reasoning.
+- **Qwen3-VL 72B** — Best open-weight multimodal, self-hostable.
+
+**I need very long context (500K+ tokens)**
+- **Gemini 2.5 Pro** — 2M context window, best for entire codebase or book analysis.
+- **Gemini 2.5 Flash** — 1M context, cheaper option.
+- **Kimi K2.6** — 262K context, strong Chinese.
+- **Claude Opus 4.7** — 200K context, best quality within that window.
+
+**I need real-time voice / audio model**
+- **Gemini Live API** — <300ms latency, native Google cloud.
+- **OpenAI Realtime API** — GPT-4o Audio, native function calling during voice.
+- **ElevenLabs v3** — Best TTS quality, 32+ languages.
+- **Voxtral** (Mistral) — Open-weight audio model, transcription + understanding.
+
+**I need the best image generation**
+- **gpt-image-2** (OpenAI) — Best instruction-following, 2K/4K, $0.04–0.17/image.
+- **Flux 2 Pro** (Black Forest Labs) — Photorealistic, fast, API available.
+- **Midjourney V8** — Best artistic quality, no API (web only).
+- **Stable Diffusion 3.5** — Open weights, local deployment, Apache-2.0.
+
+**I need the best video generation**
+- **Veo 3.1** (Google) — High fidelity, physics-aware, best quality 2026.
+- **Kling VIDEO 3.0** (Kuaishou) — Leading post-Sora, strong cinematic style.
+- **Runway Gen-4** — Precise motion control, professional use.
+- **Seedance 2.0** (ByteDance) — Fast, cost-effective, strong for social media.
+
+**I need an open-weight model (MIT or Apache license)**
+- **Llama 3.3 70B** (Meta, Apache-2.0) — Best English open-weight.
+- **Qwen3 235B A22B** (Alibaba, Apache-2.0) — Best Chinese + coding open-weight.
+- **Mistral Small 4** (Mistral AI, Apache-2.0) — Fast, multilingual.
+- **DeepSeek V3.2** (MIT) — Best open-weight coding.
+- **Gemma 4 27B** (Google, Apache-2.0) — Strong multilingual reasoning.
+
+---
+
+### 🏗️ Infrastructure
+
+**I want to run everything locally (privacy-first, zero cloud)**
+→ **Ollama** (model runner) + **Open WebUI** (UI) + **Qdrant** (local vector DB) + **Qwen3.6-27B** (16GB VRAM) or **Llama 3.3 70B** (40GB+). Full stack: **OpenClaw** (local mode) or **AnythingLLM**. No data leaves your machine.
+
+**I want to minimize API costs (budget <$50/month)**
+→ Use **DeepSeek V3.2** ($0.14/$0.28) or **Gemini 2.5 Flash** ($0.30/$2.50) for high-volume. Reserve **Claude Sonnet 4.6** for complex tasks only. Use **Anthropic Batch API** (50% off) for non-real-time work. Cache aggressively (prompt caching saves ~70% on repeated context).
+
+**I want to scale to enterprise (millions of requests/month)**
+→ **Google Vertex AI** (managed Gemini, auto-scale, SLAs) or **Azure OpenAI** (GPT-4o, compliance, dedicated capacity). Add **LangFuse** for observability. For routing: **PortKey** or **LiteLLM** as unified gateway.
+
+**I want to deploy in an air-gapped / regulated environment**
+→ **Ollama** (local inference) + **Qwen3 235B A22B / Llama 3.3 70B** (open weights) + **Qdrant** (local vector DB). For enterprise needs: **IBM watsonx** (on-prem) or **Azure Government** (FedRAMP). Compliance certifications matter more than model quality here.
+
+**I want to build for edge / mobile deployment**
+→ **Core ML** (Apple, iOS/macOS) + **Phi-4 14B** or **Gemma 4 2B** (quantized). For Android: **MediaPipe** + **Gemma 4**. For cross-platform: **llama.cpp** + GGUF models. Check **Qualcomm AI Hub** for Snapdragon-optimized models.
+
+**I need multi-cloud / want to avoid vendor lock-in**
+→ **LiteLLM** (unified API proxy for 100+ providers) + **LangGraph** (framework-agnostic) + provider-agnostic embeddings (**BGE-M3** open-weight). Store all state in self-hosted **Qdrant** or **Postgres+pgvector**.
+
+**I want to self-host everything (no managed services at all)**
+→ **Ollama** (models) + **Qdrant** (vectors) + **Langfuse** (observability, self-host Docker) + **n8n** (workflows) + **OpenClaw** (agent runtime). GPU recommendations: 2× RTX 4090 (24GB each = 48GB) for 70B models; single RTX 4090 for 27B.
+
+---
+
+### 📊 Evaluation & Monitoring
+
+**I want to evaluate agent output quality**
+→ **DeepEval** (rich metric suite: faithfulness, relevancy, hallucination) + **Langfuse** (traces + evals). For custom: **LangSmith** (tight LangChain integration). Open-source: **Agenta** (self-host).
+
+**I want to debug why my agent is failing**
+→ **Langfuse** (trace each tool call + LLM call with timing) + **Arize Phoenix** (root cause analysis). Enable verbose logging in your framework (LangGraph / CrewAI all support it). Use **LLM-as-judge** to flag low-confidence steps.
+
+**I want to monitor production agents in real-time**
+→ **Langfuse** (OpenTelemetry-native, self-host) or **Helicone** (zero-latency proxy logging). Set up cost + latency + error-rate dashboards. Alert on error spikes via **Grafana** or **Datadog** integration.
+
+**I want to A/B test different models or prompts**
+→ **Braintrust** (experiment tracking, online/offline eval) or **LangSmith** (prompt playground + evals). For open-source: **Agenta** + **Langfuse** experiments feature.
+
+**I want to benchmark models on my specific tasks**
+→ **LMSYS Chatbot Arena** custom eval + **Evals by OpenAI** (open framework) + **DeepEval** (custom metric). Run your own eval harness: prepare 50–200 golden examples, measure precision/recall on your actual task.
+
+**I want to evaluate MCP server security**
+→ **mcp-scan** (Invariant Labs) — Detects prompt injection, tool poisoning, shadow tools in MCP servers. Run before production deployment. See also: [Agent Security](#️-agent-security).
+
+---
+
+### 🌍 Ecosystem Choices
+
+**I want to build within the OpenAI ecosystem**
+→ **OpenAI Agents SDK** + **GPT-4o** + **E2B** sandbox + **LangSmith** eval. Benefits: widest third-party tooling, most community examples. Cost: premium pricing.
+
+**I want to build within the Anthropic Claude ecosystem**
+→ **Claude Code** (agentic IDE/CLI) + **Claude Sonnet 4.6 / Opus 4.7** + **MCP protocol** (Claude Desktop) + **Langfuse** (observability). Benefits: best coding quality, MCP is Claude-native. Cost: ~mid-tier.
+
+**I want to build within the Google Gemini ecosystem**
+→ **Google ADK** (Agent Development Kit) + **Gemini 2.5 Pro/Flash** + **Vertex AI** (deployment) + **Vertex AI Eval** + **AlloyDB / BigQuery** (data). Benefits: 2M context, multimodal, cheap Flash tier. Cost: scales well.
+
+**I want to build for the Chinese market (domestic cloud / regulation)**
+→ **Qwen3 235B** (Alibaba Cloud DashScope) + **Baidu ERNIE 5** or **Kimi K2.6** (Moonshot) as fallback + **Alibaba Cloud PAI** (deployment). All data stays within China borders. ICP-compliant.
+
+**I want a TypeScript-first stack**
+→ **Mastra** (TS workflows, MCP, A2A, Elastic-2.0) + **Vercel AI SDK** (streaming, RSC-friendly) + **Qdrant JS client** + **Langfuse JS SDK**. Alternative: **LangChain.js** + **LangGraph.js**.
+
+**I want an open-source-only stack (zero proprietary)**
+→ **Ollama** + **Llama 3.3 70B** or **DeepSeek V3.2** (model) + **LangGraph** (MIT, framework) + **Qdrant** (Apache-2.0, vector DB) + **Langfuse** (MIT, observability) + **E2B** (Apache-2.0, sandbox). Fully self-hosted, no vendor dependencies.
+
+---
+
+## 📋 Stack Recipes — Curated Tool Combinations
+
+*8 battle-tested multi-tool setups for common use cases. Copy and adapt.*
+
+| # | Recipe Name | Stack | Best For |
+|---|------------|-------|----------|
+| 1 | **Lean Coding Agent** | Claude Code + E2B + Langfuse | Solo dev / startup, best quality per dollar |
+| 2 | **Open-Source SWE Agent** | OpenHands + Ollama + Qwen3.6-27B + Qdrant | Full local, privacy-first coding |
+| 3 | **Enterprise RAG** | LlamaIndex + Qdrant + Cohere embed-v4 + Langfuse + Claude Sonnet 4.6 | Production Q&A on internal docs |
+| 4 | **Voice Assistant Pipeline** | LiveKit + Whisper (STT) + Claude Sonnet 4.6 + ElevenLabs v3 (TTS) | Custom branded voice AI |
+| 5 | **Browser Automation** | Browser Use + Stagehand + Claude Sonnet 4.6 + Langfuse | Reliable web scraping + form filling |
+| 6 | **Local-Only Privacy Stack** | Ollama + Qwen3.6-27B + Open WebUI + Qdrant + n8n | Zero cloud, air-gapped use |
+| 7 | **TypeScript Agent** | Mastra + Vercel AI SDK + Gemini 2.5 Flash + Qdrant + Langfuse | TS-first production SaaS |
+| 8 | **Chinese Market Stack** | Qwen3 235B API + RAGFlow + Milvus + Langfuse | Domestic China deployment, ICP-compliant |
+
+---
+
+## ⚠️ Anti-Picks — What NOT to Use For…
+
+*Avoid common mistakes. These recommendations are based on observed production failures in 2026.*
+
+| ❌ Don’t Use | ❌ For This | ✅ Use Instead | Why |
+|------------|-----------|---------------|-----|
+| LangChain v0.x | New production agents | **LangGraph** | LangChain chains are deprecated; LangGraph has proper state management |
+| AutoGPT (legacy) | Production workloads | **OpenHands** or **LangGraph** | AutoGPT’s 2023 architecture has poor reliability at scale |
+| GPT-3.5-Turbo | Complex reasoning | **Gemini 2.5 Flash** or **Claude Haiku 4.5** | GPT-3.5 deprecated, same cost range as modern models |
+| Pinecone Starter | Self-hosted / cost-sensitive | **Qdrant** or **pgvector** | Pinecone Starter tier removed 2025; OSS alternatives are cheaper |
+| LLM for real-time stock trading | Financial execution | **Deterministic rule engine** | LLMs hallucinate numbers; catastrophic for live trading |
+| ChatGPT Plus | Production API workflows | **OpenAI API** direct | ChatGPT Plus is consumer; no SLA, no rate control, no observability |
+| Hugging Face Inference API (free) | Production load | **Modal** or **self-hosted Ollama** | Free tier has extreme rate limits, cold starts >30s |
+| Autonomous agents without human-in-loop | Medical / legal decisions | Any model + **mandatory human review step** | No current model is reliable enough for high-stakes autonomous decisions |
+| PDF viewer MCP for sensitive docs | Compliance environments | **Local LlamaIndex + on-prem Qdrant** | Sending sensitive PDFs to cloud MCP servers violates data residency rules |
+| CrewAI for single-agent tasks | Simple one-shot tasks | **Direct API call** | CrewAI’s multi-agent overhead adds latency and cost when only one agent is needed |
+| Midjourney | Programmatic / API image gen | **gpt-image-2** or **Flux 2 Pro API** | Midjourney has no public API; requires Discord bot workaround |
+| GPT-4o Vision for OCR | High-accuracy document OCR | **Tesseract 5** + **Azure Document Intelligence** | LLM OCR has ~2-5% error rate; dedicated OCR is 10x cheaper and more accurate |
+| Sora | Any video generation (2026) | **Kling VIDEO 3.0** or **Veo 3.1** | Sora discontinued by OpenAI, April 2026 |
+| Vector DB without reranking | High-precision RAG | Vector DB + **BGE reranker** or **Cohere Rerank** | Raw vector search recall is ~70%; reranking brings it to ~90%+ |
+| Gemini 2.5 Flash-Lite | Complex legal/medical reasoning | **Claude Opus 4.7** or **Gemini 2.5 Pro** | Flash-Lite optimized for speed, not accuracy on high-stakes tasks |
+
+---
+
 ## 🌟 Notable Agent Projects of 2026
 
 *Standout projects and developments that shaped the AI agent landscape in 2026.*
@@ -1145,7 +1741,7 @@ This list is released under [MIT License](LICENSE).
 
 **⭐ If you find this list useful, please give it a star! ⭐**
 
-*360+ resources across 25 categories — from foundation models to agent protocols to generative AI.*
+*420+ resources across 25 categories — from foundation models to agent protocols to generative AI.*
 
 Made with ❤️ by [Zijian Ni](https://github.com/Zijian-Ni)
 

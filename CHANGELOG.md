@@ -3,6 +3,23 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+## 2026-05-20 — Mega expansion: Scenario Guide + 20 Compare tables + Start Here
+
+### + Added
+- 🗺️ **Scenario Guide** — 50+ curated scenario-to-tool mappings across 5 categories (Building / Model Selection / Infrastructure / Eval / Ecosystem)
+- 🧩 **Stack Recipes** — 8 curated multi-tool combinations for common use cases
+- ⚠️ **Anti-Picks** — 15 “what not to use for” recommendations based on 2026 production reality
+- 🚀 **Start Here** guide for new readers (EN + zh-CN + ja)
+- 📊 **20 new Compare tables**: Foundation Models API / Foundation Models Local / Agent Memory / Voice & Audio / Image Gen / Video Gen / RAG Frameworks / Vector DBs / Personal AI Assistants / MCP Servers / Enterprise Platforms / Embeddings / Security Tools / Computer Use / Physical AI / Chinese AI / TypeScript Frameworks / Meta-Comparison / Mobile AI / Anti-Picks
+- 🏷️ **6 new Status badges**: 🔥 Hot / ⚡ Updated / 🧪 Experimental / 💰 Freemium / 🔐 Audited / 🇨🇳 China-first
+- zh-CN / ja parity for all additions (localized, not machine-translated)
+
+### ~ Changed
+- Resources badge: 380+ → 420+
+- Footer resource count updated to 420+
+
+---
+
 ## 2026-05-20 — Weekly refresh: May 16–20 expansion (Google I/O 2026 + Alibaba Hangzhou) + zh-CN / ja sync
 
 ### + Added (≈21 new entries across 7 sections)

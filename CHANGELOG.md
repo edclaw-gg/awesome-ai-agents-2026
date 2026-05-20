@@ -3,6 +3,52 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+## 2026-05-20 — Weekly refresh: May 16–20 expansion (Google I/O 2026 + Alibaba Hangzhou) + zh-CN / ja sync
+
+### + Added (≈21 new entries across 7 sections)
+
+**Foundation Models** (this week's centre of gravity):
+- **Google I/O 2026** — [Gemini 3.5 Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) GA as default Gemini app + Search AI Mode model (~4× faster, beats 3.1 Pro on key benchmarks); [Gemini Omni / Omni Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) world-model line toward AGI; [Gemini Spark](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) 24/7 personal agent with ~30+ MCP tool integrations; new [Google AI Ultra](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) $100/mo tier.
+- **Alibaba Cloud Summit Hangzhou (May 20)** — [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) GA, agentic-coding flagship designed for long-horizon multi-step missions; T-Head **Zhenwu M890** AI accelerator; full-stack AI infra upgrade; preview ladder [Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) (May 18, top Chinese model on LM Arena text+vision).
+- **OpenAI** — [OpenAI ↔ Dell Codex](https://openai.com/news/company-announcements/) (May 18, on-prem Codex distribution); [ChatGPT safety upgrade](https://www.edtechinnovationhub.com/news/openai-updates-chatgpt-safety-systems-to-track-risk-across-sensitive-conversations) (May 18, cross-session risk tracking); [OpenAI Guaranteed Capacity / Compute Annual Pass](https://openai.com/news/company-announcements/) (May 19, 1/2/3-year compute reservations); [OpenAI ↔ Google SynthID + C2PA content provenance](https://openai.com/index/advancing-content-provenance/) (May 19).
+- **Anthropic** — [Bristol Myers Squibb ↔ Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) (May 20, top-5 pharma); [Anthropic briefs FSB on Claude Mythos](https://www.theguardian.com/technology/2026/may/18/anthropic-ai-claude-mythos-cyber-financial-stability-board-fsb) (May 18); [Code with Claude 2026 sessions on YouTube](https://www.infoq.com/news/2026/05/code-with-claude/) (May 18); [Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) (May 19).
+- **DeepSeek** — [Agent Harness team](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) (May 19, Jane Street hire, signal of DeepSeek pivoting to autonomous-agent productisation).
+
+**Physical AI** —
+- [Figure F.03 vs human 8h package-sort challenge](https://incrypted.com/en/figure-ai-held-a-human-vs-robot-marathon/) (May 18, human 12,924 vs robot 12,732, narrowest published gap to date).
+- [Boston Dynamics Atlas 100-lb manipulation + Hyundai 25K plan](https://www.techtimes.com/articles/316854/20260519/boston-dynamics-reveals-how-atlas-learned-lift-100-pound-loads-hyundai-plans-30000-per-year.htm) (May 18-19).
+- [Unitree G1 at JAL Haneda](https://www.techtimes.com/articles/316862/20260519/jal-deploys-unitree-g1-robots-haneda-us-congress-moves-blacklist-supplier-national-security.htm) (first commercial-airline humanoid trial; US Congress moves to entity-list Unitree same week).
+
+**Frameworks** —
+- [LlamaIndex ↔ Google Agents API integration](https://www.kucoin.com/news/flash/google-launches-agents-api-llama-index-integrates-llamaparse-for-unstructured-document-processing) (May 20) — LlamaParse / LiteParse + Sandboxed-Lit runtime + ParseBench (first OCR benchmark for agents).
+
+**Multimodal / Video** —
+- [Runway Agent](https://chatlyai.app/news/runway-agent-launch-may-2026) (May 13, end-to-end "brief-to-finished-video" agent on Gen-4 / Aleph). Backfilled — missed in the May 16 cut.
+
+**Enterprise Platforms** —
+- OpenAI Guaranteed Capacity duplicated under Enterprise as a structural reply to Anthropic Priority Tier.
+- Bristol Myers Squibb Claude Enterprise rollout duplicated as the year's most concrete pharma agent commitment.
+
+**Notable Projects of 2026** — added Google I/O 2026 keynote, Alibaba Hangzhou summit, and OpenAI Guaranteed Capacity launches as the three biggest May 16–20 turning points.
+
+### ~ Changed
+
+- **Header badges** — `Last Updated` → `May 20, 2026`, `Spam_Audited` → `2026-05-20`, `Resources` 360+ → **380+** across all three READMEs.
+- **Quick Navigation counts** — Foundation Models 75+ → **80+** (I/O 2026 + Alibaba Hangzhou), Physical AI 19+ → **22+**, Enterprise Platforms 14+ → **16+**.
+- **2026 AI Timeline** — 16 new May 17–20 rows (plus a backfilled May 13 Runway Agent row) across `README.md` / `README.zh-CN.md` / `README.ja.md`; the placeholder "I/O 2026 starts" stub replaced with concrete announcements.
+- **zh-CN / ja parity** — every new English entry mirrored with locale-appropriate phrasing (not literal translation).
+
+### ✕ Not added (explicit anti-spam holds)
+
+- **Computex 2026 NVIDIA keynote** — scheduled June 1, 2026 (Taiwan time); too early.
+- **AMD Advancing AI 2026** — scheduled July 22-23, 2026; too early.
+- **Microsoft Build 2026** — scheduled June 2-3, 2026; only May rollouts of Copilot Studio governance already captured under existing entries.
+- **Tesla Optimus Fremont conversion** — covered as a Q3 production-line reshuffle inside the existing Optimus Gen 3 entry; no public May 17-20 product announcement of its own.
+- **Unitree mecha GD01** — already added in the previous refresh (May 12 announcement).
+- **Sakana / Zyphra weekly updates** — no new ship beyond the May 14 Diffusion-Preview entry.
+
+---
+
 ## 2026-05-16 — Weekly refresh: May 11–16 expansion + zh-CN / ja sync
 
 ### + Added (≈24 new entries across 6 sections)

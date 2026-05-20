@@ -6,8 +6,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/awesome-ai-agents-2026?style=social)](https://github.com/Zijian-Ni/awesome-ai-agents-2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2016%2C%202026-blue.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--16-success.svg)](#️-ステータス凡例)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2020%2C%202026-blue.svg)](#)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--20-success.svg)](#️-ステータス凡例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![中文](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
 
@@ -83,6 +83,10 @@
 - [OpenAI Deployment Company (DeployCo)](https://openai.com/index/openai-launches-the-deployment-company/) - 🆕 **2026-05-11**。OpenAI が过半所有するエンタープライズ AI 導入サービス企業。初期資金 $4B+（TPG / Advent / Bain Capital / Brookfield / Goldman Sachs / SoftBank + Bain & Company / Capgemini / McKinsey など），Forward Deployed Engineers モデルを中核にし Tomoro コンサルティングチーム（~150 名）を取り込む。
 - [Codex on Mobile](https://9to5mac.com/2026/05/14/openai-brings-codex-control-to-chatgpt-for-iphone-and-android/) - 🆕 **2026-05-14**。ChatGPT iOS / Android から Mac 上の Codex デスクトップ App をリモート操作 —— 出力のレビュー、アクション承認、モデル切り替え、タスク起動が可能。ファイル / 資格情報 / 権限はローカルに留まる。Free / Plus / Go プレビュー。
 - [OpenAI ↔ Malta パートナーシップ](https://openai.com/index/malta-chatgpt-plus-partnership/) - 🆕 **2026-05-16**。初の国家レベル提携。マルタ大学提供の 2 時間 AI リテラシー講座を修了した 14 歳以上のマルタ国民 / 居住者に 1 年間の ChatGPT Plus を無償提供。"OpenAI for Countries" イニシアチブの第一弾。
+- [OpenAI ↔ Dell Codex 提携](https://openai.com/news/company-announcements/) - 🆕 **2026-05-18**。Dell のハイブリッドクラウド / オンプレミス基盤を経由して Codex を企業現場に届ける。データ主権と規制遵拠が求められる分野にとって初めての主要なパブリッククラウド以外への Codex 配信チャネル。
+- [ChatGPT 安全システムアップデート](https://www.edtechinnovationhub.com/news/openai-updates-chatgpt-safety-systems-to-track-risk-across-sensitive-conversations) - 🆕 **2026-05-18**。長いセッションを跨いだとしても、自殺 / 自傷 / 他者への危害などの高リスクシグナルを継続的に追跡・検出できるように安全システムを更新。
+- [OpenAI Guaranteed Capacity（Compute Annual Pass）](https://openai.com/news/company-announcements/) - 🆕 **2026-05-19**。企業の AI プロダクト / エージェント / ワークフロー向けにコンピュートを長期予約する製品（期間 1 / 2 / 3 年、長期コミットほど値引きが拡大）。Anthropic の Priority Tier に対する製品としての回答。
+- [OpenAI ↔ Google SynthID + C2PA コンテンツ出所検証](https://openai.com/index/advancing-content-provenance/) - 🆕 **2026-05-19**。OpenAI が Google と連携し、ChatGPT/Sora 生成画像に耐久性のある **SynthID** クロスプラットフォームウォーターマークを追加、C2PA に加盟し、**「この画像は OpenAI のものか」**検証ツールをプレビューとして公開。主要フロンティア lab 同士初のウォーターマーク相互運用。
 
 ### Anthropic
 
@@ -99,12 +103,20 @@
 - [Claude for Small Business](https://www.anthropic.com/news/claude-for-small-business) - 🆕 **2026-05-13**。Claude Cowork 内の中小企業トグル —— 財務 / オペレーション / 営業 / マーケティング / HR / カスタマーサポートをカバーする 15 個のエージェントワークフローと、QuickBooks / PayPal / HubSpot / Canva / DocuSign / Google Workspace / Microsoft 365 へのコネクタ。PayPal 協赞の無料講座と米国 10 都市を回るツアー付き。
 - [Anthropic ↔ Gates Foundation $200M](https://www.anthropic.com/news/gates-foundation-partnership) - 🆕 **2026-05-14**。4 年間 $200M パートナーシップ。助成金 + Claude 利用クレジット + Anthropic エンジニアをグローバルヘルス / ライフサイエンス / 教育 / 農業のプログラムに投入。生まれるツールはすべて無償公開。
 - [Anthropic ↔ PwC 提携拡大](https://www.pwc.com/us/en/about-us/newsroom/press-releases/anthropic-pwc-expand-alliance-agentic-enterprise.html) - 🆕 **2026-05-14**。PwC は Claude Code + Claude Cowork のグローバル展開、PwC プロフェッショナル 30,000 名の認定、共同「Agentic Enterprise」センターオブエクセレンスを掲げる —— エージェント構築、AI ネイティブの M&A、財務 / サプライチェーン / HR の再設計に集中。
+- [Anthropic ↔ 金融安定理事会（FSB）Claude Mythos ブリーフィング](https://www.theguardian.com/technology/2026/may/18/anthropic-ai-claude-mythos-cyber-financial-stability-board-fsb) - 🆕 **2026-05-18**。Anthropic が G20 レベルの金融安定規制当局に、フロンティアモデル（Claude Mythos）の攻撃的サイバー能力を初めて説明。金融システムリスク評価の予備資料となる。
+- [Code with Claude 2026 セッションを YouTube で公開](https://www.infoq.com/news/2026/05/code-with-claude/) - 🆕 **2026-05-18 公開**。5 月 6 日開催の開発者カンファレンス全セッションをアーカイブ公開：Claude Code のロードマップ、Claude Developer Platform のアップデート、Managed Agents の dreaming とマルチエージェントオーケストレーション、パートナー展開事例。
+- [Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) - 🆕 **2026-05-19**。宗教 / 哲学 / 先住民伝統など「智恵の伝統」とフロンティア AI 安全を話し合うための枠組みを公開。パブリックエンゲージメントシリーズの一环。
+- [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS が Claude Enterprise を 30,000+ 名の社員の共通インテリジェンス基盤として採用し、創薬・開発・デリバリーの全工程にエージェント化 Claude を組み込む。世界トップ 5 製薬企業で初めての公社規模での Claude 全社展開。
 
 ### Google DeepMind
 
 - [Gemini 3.1 Pro](https://deepmind.google/technologies/gemini/) - 2026-02 公開。BenchLM 94、GPQA Diamond 94.3%（世界記録）、ARC AGI2 77.1%。Google 最強モデル、フラッグシップ価格 `$2/1M tokens`。
 - [Gemini 3.1 Flash Live](https://deepmind.google/technologies/gemini/) - 🆕 2026-04。音声アシスタント・対話エージェント向けリアルタイムマルチモーダルストリーミング。低遅延・長文脈。
 - [Gemini 3.1 Flash-Lite (GA)](https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available) - 🆕 **2026-05-08**。Gemini API / AI Studio / Vertex AI で一般提供開始。Gemini 3 ファミリーで最も高速かつコストパフォーマンスの高いモデル —— コード補完、リアルタイム UX、エージェント型開発ツール向け。Gemini 2.5 Flash 並みの品質を大幅に低いコストで提供。
+- [Gemini 3.5 Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。Gemini App と Google 検索 AI Mode の新しいデフォルトモデル。公式によると出力トークン速度は同類のフロンティアモデルより **約 4 倍高速**、主要ベンチマークで Gemini 3.1 Pro を上回る。Gemini 3.5 Pro は 6 月以降に公開予定。
+- [Gemini Omni / Omni Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。Google DeepMind の AGI を見揮えた新しい**ワールドモデル**ファミリー。Omni Flash は**任意の入力から任意のモダリティを生成**（まずビデオから、画像とテキストは順次拡張）でき、Gemini Robotics / Genie の路線を受け継ぐ。
+- [Gemini Spark（24/7 パーソナル AI エージェント）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。クラウド上で 24/7 動作し、まず Gmail / Chat とネイティブ連携した上で、MCP を介して ~30+ のサードパーティツール（Adobe / Dropbox / Uber など）に拡張。Google AI Ultra 加入者限定。
+- [Google AI Ultra（$100/月）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。開発者・クリエイター・ヘビーユーザー向けの新たなコンシューマーサブスクリプション最上位ティア。Gemini Spark、最高 Gemini 3.5 クオータ、さらに今後公開予定の Gemini 3.5 Pro をアンロック。
 - [Gemini 3.1 Flash / Flash Lite](https://deepmind.google/technologies/gemini/) - 高スループット用途向けの高速・低コストモデル。
 - [Gemini 4 (Open)](https://deepmind.google/technologies/gemini/) - 🆕 2026-04 公開。オープンモデル: 2B / 4B / 26B / 31B。科学推論と文書理解、ローカル展開向け。
 - [Gemini 2.5 Pro / Flash](https://deepmind.google/technologies/gemini/) - 2025-06 GA。Thinking モデル + 1M コンテキスト。
@@ -144,6 +156,7 @@
 
 ### DeepSeek 🇨🇳
 
+- [DeepSeek Agent Harness チーム](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) - 🆕 **2026-05-19**。DeepSeek が Jane Street 出身のエンジニアを迎え、DeepSeek V4 を**収益を生む自律型エージェント**に仮定する「AI harness」チームを新設。DeepSeek が素のモデル R&D からエージェント製品化へ軸足を辻りたことを示す初の明確なシグナル。
 - [DeepSeek-V4-Pro](https://api-docs.deepseek.com/news/news260424) - 🆕 **2026-04-24**。1.6T 総 / 49B アクティブ MoE、1M トークン。MIT。エージェント能力・世界知識・推論でリード。オープンソースベンチマーク首位。
 - [DeepSeek-V4-Flash](https://api-docs.deepseek.com/news/news260424) - 🆕 2026-04-24。284B 総 / 13B アクティブ MoE、1M コンテキスト。MIT。コスト効率版。
 - [DeepSeek-V3.2](https://www.deepseek.com/) - 2025-12 公開。671B MoE、V3.2 Speciale 推論強化版あり。
@@ -153,6 +166,8 @@
 
 ### Alibaba (Qwen) 🇨🇳
 
+- [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) - 🆕 **2026-05-20 — アリババクラウド杭州サミット**。AI エージェントの基盤として設計された新フラッグシップ。エージェント型コーディング、複雑推論、**長い見通しのマルチステップテイスク**に強い。同期に T-Head の **Zhenwu M890** AI アクセラレーターとフルスタック AI 基盤アップグレードも公開。世界中の開発者 / 企業へ順次提供。
+- [Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) - 🆕 **2026-05-18**。杭州サミットの前哨プレビュー。LM Arena においてテキストとビジョンの両方で**中国モデルとして最高スコア**を取得。
 - [Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b) - 🆕 **2026-04-22**。27B 密マルチモーダル。オープン化。エージェントコーディング + 思考文脈保持。
 - [Qwen3.6-Max-Preview](https://qwen.ai/) - 🆕 **2026-04-18**。プロプライエタリのフロンティアプレビュー。1M コンテキスト、中国モデルでコーディング首位級。
 - [Qwen3.6-35B-A3B](https://qwen.ai/blog?id=qwen3.6-35b-a3b) - 🆕 **2026-04-15**。MoE 35B 総 / 3B アクティブ。Apache 2.0。安定性・実用性の改善。
@@ -355,6 +370,7 @@
 - [Microsoft AI Agent Governance Toolkit](https://www.helpnetsecurity.com/2026/04/03/microsoft-ai-agent-governance-toolkit/) - 🆕 **2026-04-03**。LangChain や AutoGen などフレームワーク横断でランタイムセキュリティポリシーを強制するオープンソースツールキット。
 - [Bernstein](https://github.com/sipyourdrink-ltd/bernstein) - 🆕 40+ の CLI 型コーディングエージェント（Claude Code / Codex / Gemini CLI / Cursor / Aider など）を一つにまとめる Python オーケストレーター。LLM は事前プランニング一回だけ使い、スケジューリング・git worktree 隔離・品質ゲート・HMAC 連鎖監査は決定論的。Apache 2.0。![GitHub stars](https://img.shields.io/github/stars/sipyourdrink-ltd/bernstein?style=flat-square)
 - [Genkit Middleware](https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps/) - 🆕 **2026-05-14**。Google の OSS エージェントフレームワーク Genkit にミドルウェアを追加。generate / model / tool の 3 階層でコンポーザブルなフックを提供 —— 指数バックオフでのリトライ、モデルフォールバック、ツールタその人手承認ゲート、SKILL.md スキル注入、スコープを限定したファイルアクセス。TS / Go / Dart、Python 予定。
+- [LlamaIndex ↔ Google Agents API 連携](https://www.kucoin.com/news/flash/google-launches-agents-api-llama-index-integrates-llamaparse-for-unstructured-document-processing) - 🆕 **2026-05-20**。LlamaIndex が Google の新 Agents API 向けのテンプレートを公開し、サンドボックスの Linux 環境上で **LlamaParse** / **LiteParse** を提供して非構造化文書を処理。同リリースにはサンドボックスランタイム **Sandboxed-Lit** とエージェント向け初の OCR ベンチマーク **ParseBench** も含まれる。
 
 ---
 
@@ -520,6 +536,9 @@
 - [Tesla Optimus Gen3](https://www.tesla.com/) - 🆕 2026 年夏量産。汎用タスク向けの高度ヒューマノイド。
 - [Figure 04](https://autonews.gasgoo.com/articles/news/figure-founder-f04-robot-initiates-component-delivery-process-2054560059634376705) - 🆕 **2026-05-13**。CEO の Brett Adcock が Figure 04 の設計確定と部品出荷開始を表明。F.03 の後継、Helix VLA モデルを搭載。
 - [Helix 02 パッケージ仕分け 72h 連続運転](https://www.businessinsider.com/figure-ai-turned-a-humanoid-sorting-packages-must-see-tv-2026-5) - 🆕 **2026-05-13～16**。Figure F.03 フリートが Helix 02 でパッケージ仕分けラインを完全自律で運転 —— 初日 8 時間で ~22K 個、最初の 24 時間で ~30K 個、ストレステストでは機械故障まで約 72 時間で ~88K 個を処理。初めて公開された家庭型ヒューマノイドの長時間稼働データ。
+- [Figure F.03 対 人間 8 時間仕分けチャレンジ](https://incrypted.com/en/figure-ai-held-a-human-vs-robot-marathon/) - 🆕 **2026-05-18**。Figure 初の公開人間 vs ロボット対決。同じライン上で 8 時間、人間社員が 12,924 個（2.79 秒 / 個）と F.03 の 12,732 個（2.83 秒 / 個）をわずかに上回り勝利。実業務で公開されたうち人間に最も迫ったスループット。
+- [Boston Dynamics Atlas 100ポンド操作 + Hyundai 25K 台計画](https://www.techtimes.com/articles/316854/20260519/boston-dynamics-reveals-how-atlas-learned-lift-100-pound-loads-hyundai-plans-30000-per-year.htm) - 🆕 **2026-05-18 / 19**。Boston Dynamics が Atlas が強化学習 + 大規模シミュレーションで **100 ポンド超**の荷重（冷蔵庫 / 洗濯機）を持ち上げて運ぶ動画と技術ブログを公開。Hyundai Motor Group は 2028 年ジョージアのアセンブリエ工場を手始めに、Hyundai/Kia 工場へ **25,000+ 台の Atlas** を配備する計画を発表。
+- [Unitree G1 を JAL 羽田に導入](https://www.techtimes.com/articles/316862/20260519/jal-deploys-unitree-g1-robots-haneda-us-congress-moves-blacklist-supplier-national-security.htm) - 🆕 **2026-05**。日本航空が羽田の地上業務（获物積み込み / コンテナ輸送 / 機内清掝）で Unitree G1 ヒューマノイドの実証を開始し、**隊位性を保つロボットを現役投入する世界初の商用航空例**としてアピール。同週、米連邦議会は Unitree をエンティティリストに加える動きを見せ、embodied AI サプライチェーンのジオポリティクス化が進む。
 - [Honour (荣耀) Humanoid](https://www.honor.com/) - 🇨🇳 🆕 2026 ハーフマラソンで人型ロボット世界記録。
 - [Zhiyuan (智元) AGIBOT](https://www.agibot.com/) - 🇨🇳 🆕 2026-04。新しいヒューマノイドボディ、基盤モデル、ソリューションスイート。「展開元年」と表現。
 - [Unitree H シリーズ](https://www.unitree.com/) - 🇨🇳 Boston Dynamics の中国競争相手。
@@ -671,6 +690,8 @@
 - [Sema4.ai](https://sema4.ai/) - 🆕 Python ファースト、ガバナンス内蔵の企業 AI エージェントプラットフォーム。
 - [SAP Business AI Platform + Joule Studio 2.0](https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/) - 🆕 **SAP Sapphire 2026（2026-05-11～13）**。SAP は BTP + Business Data Cloud + Business AI を 1 つのプラットフォームに統合し、Joule をエージェントのオペレーティングレイヤーとして再定義。**Joule Studio 2.0**（2026-06 以降顺次顧客に提供）は LangGraph / AutoGen スタイルのフレームワークで SAP データに乗りたエージェントを構築。**Autonomous Suite** は 50+ 領域の Joule Assistant と 200+ のエージェントを導入。
 - [Microsoft Agent 365 + Microsoft 365 E7](https://techcommunity.microsoft.com/blog/agent-365-blog/microsoft-365-e7--agent365-from-where-you-are-to-enterprise-ai-at-scale/4519969) - 🆕 **2026-05-01 GA**、5 月中に拡充。アイデンティティ中心の AI エージェントコントロールプレーン。単体 $15/ユーザー/月、もしくは新しい Microsoft 365 E7「Frontier」スイートに含めて $99/ユーザー/月。5 月の追加で AWS Bedrock / Google Cloud とのレジストリ同期、Intune / Defender プレビューポリシー、エージェント向け SASE を追加。
+- [OpenAI Guaranteed Capacity（Compute Annual Pass）](https://openai.com/news/company-announcements/) - 🆕 **2026-05-19**。企業の AI プロダクト / エージェント / ワークフロー向けに 1 / 2 / 3 年期のコンピュート予約を製品化 —— GPT-5.5 級エージェントの企業導入でコスト / 供給不安を下げるための、Anthropic Priority Tier への製品としての回答。
+- [Bristol Myers Squibb ↔ Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS が Claude Enterprise を 30,000+ 名の社員の共通インテリジェンス基盤として採用し、創薬・開発・デリバリーの全工程にエージェント型 Claude を組み込む。世界トップ 5 製薬企業では初めての社全体規模での Claude 導入。
 
 ---
 
@@ -943,6 +964,23 @@
 | **2026-05-16** | [教皇レオ 14 世がバチカン AI 委員会を設置](https://www.americamagazine.org/vatican-dispatch/2026/05/16/pope-leo-establishes-new-vatican-commission-on-artificial-intelligence/) — 部署を跨ぐ AI 委員会。初の AI 主題とする回勅が高い見込み | 業界 |
 | **2026-05-16** | [OpenAI ↔ Malta パートナーシップ](https://openai.com/index/malta-chatgpt-plus-partnership/) — 14 歳以上のすべてのマルタ居住者に 2 時間 AI リテラシー講座修了で 1 年間の ChatGPT Plus（"OpenAI for Countries"）| 業界 |
 | **2026-05-16** | [DeepSeek 国家ファンド主導 $4B ラウンド](https://www.techtimes.com/articles/316717/20260516/chinas-state-ai-fund-backs-deepseek-4-billion-round-efficiency-challenge-nvidia-dependent.htm) — 国家 AI 産業ファンド + 大ファンド III + Tencent 主導、~$50B 評価額の初めての外部ラウンド | 業界 |
+| **2026-05-13** | [Runway Agent](https://chatlyai.app/news/runway-agent-launch-may-2026) リリース — 台本を渡すと Gen-4 / Aleph でマルチショットの完成動画をエンドツーエンドで仕上げる | ツール |
+| **2026-05-18** | [OpenAI ↔ Dell Codex 提携](https://openai.com/news/company-announcements/) — ハイブリッド / オンプレミス企業環境へ Codex を拡張 | 業界 |
+| **2026-05-18** | [アリババ Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) — LM Arena で中国モデル最高スコア（テキスト + ビジョン）| モデル |
+| **2026-05-18** | [Boston Dynamics Atlas 100ポンド超の荷重操作](https://www.techtimes.com/articles/316854/20260519/boston-dynamics-reveals-how-atlas-learned-lift-100-pound-loads-hyundai-plans-30000-per-year.htm) + Hyundai が 2028 年以降 Hyundai/Kia 工場に **25K+ 台の Atlas** を配備予定 | ロボティクス |
+| **2026-05-18** | [Figure F.03 対 人間 8 時間仕分けチャレンジ](https://incrypted.com/en/figure-ai-held-a-human-vs-robot-marathon/) — 人間社員が 12,924 個、F.03 が 12,732 個でわずかに人間勝（2.79 vs 2.83 秒 / 個）| ロボティクス |
+| **2026-05-18** | [Anthropic が FSB に Claude Mythos ブリーフィング](https://www.theguardian.com/technology/2026/may/18/anthropic-ai-claude-mythos-cyber-financial-stability-board-fsb) — フロンティア lab 初の G20 金融安定規制当局への説明 | 業界 |
+| **2026-05-18** | [ChatGPT 安全システムアップデート](https://www.edtechinnovationhub.com/news/openai-updates-chatgpt-safety-systems-to-track-risk-across-sensitive-conversations) — 長いセッションを跨いでリスクシグナル（自殺 / 自傷 / 他者への危害）を追跡 | 業界 |
+| **2026-05-19** | **Google I/O 2026** — [Gemini 3.5 Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) を Gemini App + Google 検索 AI Mode のデフォルトモデルとして公開（公式によると同類のフロンティアモデルより約 4 倍高速）。Gemini 3.5 Pro は 6 月入り | モデル |
+| **2026-05-19** | **Google I/O 2026** — [Gemini Omni / Omni Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)、Google DeepMind の AGI を見揮えたワールドモデルファミリー | モデル |
+| **2026-05-19** | **Google I/O 2026** — [Gemini Spark](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) 24/7 パーソナル AI エージェント + ~30+ の MCP サードパーティーツール連携、新たな **Google AI Ultra ($100/月)** サブスクリプション限定 | ツール |
+| **2026-05-19** | [OpenAI Guaranteed Capacity （Compute Annual Pass）](https://openai.com/news/company-announcements/) リリース — 1 / 2 / 3 年期の企業コンピュート予約 | 業界 |
+| **2026-05-19** | [OpenAI ↔ Google SynthID + C2PA コンテンツ出所検証](https://openai.com/index/advancing-content-provenance/) — フロンティア lab 同士初のクロスプラットフォーム AI 画像ウォーターマーク相互運用と公開検証ツールプレビュー | 業界 |
+| **2026-05-19** | [Anthropic：Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) — 「智恵の伝統」を取り込んだフロンティア AI 安全対話の枠組み | 業界 |
+| **2026-05-19** | [DeepSeek が Jane Street 出身のエンジニアを迎え AI harness チームを新設](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) — モデル R&D からエージェント製品化への軸足 | 業界 |
+| **2026-05-20** | **アリババクラウド杭州サミット** — [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) GA、エージェント型コーディングと長期タスク向け；同期で T-Head **Zhenwu M890** AI チップとフルスタック AI 基盤アップグレード | モデル |
+| **2026-05-20** | [BMS ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) — 30K+ 名の社員が Claude Enterprise を共通インテリジェンス基盤として採用、世界トップ 5 製薬企業で初めての社全体規模 | 業界 |
+| **2026-05-20** | [LlamaIndex ↔ Google Agents API](https://www.kucoin.com/news/flash/google-launches-agents-api-llama-index-integrates-llamaparse-for-unstructured-document-processing) — Google Agents API サンドボックス内に LlamaParse / LiteParse を法出し、Sandboxed-Lit + ParseBench も同リリース | フレームワーク |
 | **2026-04** | Gartner は 2026 年末までに企業アプリの 40% が AI エージェントを組み込むと予測 | 業界 |
 | **2026-04** | Google が Anthropic へ最大 $40B の投資をコミット（初期 $10B） | 業界 |
 | **2026 進行中** | A2A Protocol のパートナー組織が 150+ に増加 | プロトコル |

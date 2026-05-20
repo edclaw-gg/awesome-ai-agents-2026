@@ -6,8 +6,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/awesome-ai-agents-2026?style=social)](https://github.com/Zijian-Ni/awesome-ai-agents-2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2016%2C%202026-blue.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--16-success.svg)](#️-状态图例)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2020%2C%202026-blue.svg)](#)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--20-success.svg)](#️-状态图例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![日本語](https://img.shields.io/badge/Lang-日本語-red.svg)](README.ja.md)
 
@@ -83,6 +83,10 @@
 - [OpenAI Deployment Company (DeployCo)](https://openai.com/index/openai-launches-the-deployment-company/) - 🆕 **2026-05-11**。OpenAI 控股的企业 AI 落地服务公司，$4B+ 启动资金，TPG / Advent / Bain Capital / Brookfield / Goldman Sachs / SoftBank 与 Bain & Company / Capgemini / McKinsey 等共投。围绕 Forward Deployed Engineers 体系，并吸收 Tomoro 咨询团队（~150 人）。
 - [Codex on Mobile](https://9to5mac.com/2026/05/14/openai-brings-codex-control-to-chatgpt-for-iphone-and-android/) - 🆕 **2026-05-14**。ChatGPT iOS / Android 远程操控 Mac 上的 Codex 桌面 App —— 查看输出、批准操作、切换模型、启动新任务，文件 / 凭据 / 权限仍留在本机。Free / Plus / Go 预览。
 - [OpenAI ↔ Malta 合作](https://openai.com/index/malta-chatgpt-plus-partnership/) - 🆕 **2026-05-16**。首次国家级合作：完成马耳他大学开发的 2 小时 AI 素养课程后，所有 14 岁以上马耳他公民 / 居民可免费获得 1 年 ChatGPT Plus。"OpenAI for Countries" 计划的首站。
+- [OpenAI ↔ Dell Codex 合作](https://openai.com/news/company-announcements/) - 🆕 **2026-05-18**。借助 Dell 的混合云 / 本地部署能力，Codex 首次走出公有云，面向需要数据主权 / 合规隔离的强监管行业。
+- [ChatGPT 安全系统更新](https://www.edtechinnovationhub.com/news/openai-updates-chatgpt-safety-systems-to-track-risk-across-sensitive-conversations) - 🆕 **2026-05-18**。ChatGPT 加入跨会话的潜在风险跟踪（自杀 / 自伤 / 伤他），能识别微妙、逐步升级的变化。
+- [OpenAI Guaranteed Capacity（算力年发）](https://openai.com/news/company-announcements/) - 🆕 **2026-05-19**。面向企业 AI 产品 / Agent / Workflow 的长期算力预订产品：1 / 2 / 3 年期，期限越长折扣越高。对度 Anthropic Priority Tier 的产品化回应。
+- [OpenAI ↔ Google SynthID + C2PA 内容源头验证](https://openai.com/index/advancing-content-provenance/) - 🆕 **2026-05-19**。OpenAI 联手 Google，为 ChatGPT/Sora 生成的图片加上 **SynthID** 跨平台水印，加入 C2PA，并预览一个公开的 **"这张图是 OpenAI 生成的吗"** 验证器。两家顶级 lab 首次在水印上互通。
 
 ### Anthropic
 
@@ -99,12 +103,20 @@
 - [Claude for Small Business](https://www.anthropic.com/news/claude-for-small-business) - 🆕 **2026-05-13**。Claude Cowork 中的中小企业开关 —— 15 个预置 Agent 工作流，覆盖财务 / 运营 / 销售 / 营销 / HR / 客服；原生连 QuickBooks、PayPal、HubSpot、Canva、DocuSign、Google Workspace、Microsoft 365。配套免费课程 + 美国 10 城线下工作坊巡讲。
 - [Anthropic ↔ Gates Foundation $200M](https://www.anthropic.com/news/gates-foundation-partnership) - 🆕 **2026-05-14**。4 年 $200M 合作：资助 + Claude 使用额度 + Anthropic 工程师投入到全球健康、生命科学、教育、农业，所有产出工具公开免费；首批方向包括小儿麻痹 / HPV / 子痫前期疫苗研发与农业版 Claude。
 - [Anthropic ↔ PwC 战略扩张](https://www.pwc.com/us/en/about-us/newsroom/press-releases/anthropic-pwc-expand-alliance-agentic-enterprise.html) - 🆕 **2026-05-14**。PwC 全球铺开 Claude Code + Claude Cowork，认证 30,000 名员工，共建 "Agentic Enterprise" 卓越中心；聚焦 Agent 构建、AI 原生并购，以及财务 / 供应链 / HR 重塑。
+- [Anthropic ↔ 金融稳定委员会（FSB）就 Claude Mythos 进行汇报](https://www.theguardian.com/technology/2026/may/18/anthropic-ai-claude-mythos-cyber-financial-stability-board-fsb) - 🆕 **2026-05-18**。Anthropic 首次向 G20 级别的金融稳定监管机构介绍顶级模型（Claude Mythos）的攻击性网络能力，为金融系统风险评估提供依据。
+- [Code with Claude 2026 会议录像上线](https://www.infoq.com/news/2026/05/code-with-claude/) - 🆕 **2026-05-18 发布**。5 月 6 日的开发者大会全部场次公开：Claude Code 路线图、Claude Developer Platform 更新、Managed Agents 的 dreaming 与多 Agent 编排、合作伙伴部署。
+- [《Widening the conversation on frontier AI》](https://www.anthropic.com/news/widening-conversation-ai) - 🆕 **2026-05-19**。Anthropic 发布与宗教 / 哲学 / 原住民传统等“智慧传统”就顶级 AI 安全展开对话的框架，公共参与系列后续。
+- [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS 将 Claude Enterprise 作为 30,000+ 员工的共享智能平台，嵌入药物发现 / 开发 / 交付的全链路。全球前 5 大药企中首个全公司级 Claude 部署。
 
 ### Google DeepMind
 
 - [Gemini 3.1 Pro](https://deepmind.google/technologies/gemini/) - 2026-02 发布。BenchLM 94，GPQA Diamond 94.3%（世界纪录），ARC-AGI 2 77.1%。Google 最强模型，旗舰定价 `$2/1M tokens`。
 - [Gemini 3.1 Flash Live](https://deepmind.google/technologies/gemini/) - 🆕 2026-04。语音助手与交互式 Agent 的实时多模态流式接口，低延迟长上下文。
 - [Gemini 3.1 Flash-Lite (GA)](https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available) - 🆕 **2026-05-08**。Gemini API / AI Studio / Vertex AI 全面 GA。Gemini 3 家族中最快、最省的型号，面向超低延迟代码补全、实时 UX、Agent 开发工具；质量持平 Gemini 2.5 Flash，成本明显更低。
+- [Gemini 3.5 Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。推出即成为 Gemini App + Google 搜索 AI Mode 的默认模型，官方称输出 token 速度 **约 4 倍于**同类顶级模型，在关键 benchmark 上超越 Gemini 3.1 Pro。Gemini 3.5 Pro 预计 6 月上线。
+- [Gemini Omni / Omni Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。DeepMind 面向 AGI 的新**世界模型**家族，Omni Flash 能从**任意输入输出任意模态**（首以视频起步，后续拓展到图像与文本），与 Gemini Robotics / Genie 路线一脉相承。
+- [Gemini Spark（24/7 个人 AI Agent）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。云端 24/7 常驻的个人 AI Agent，首期接入 Gmail / Chat，后续加入 ~30+ 个第三方工具（Adobe / Dropbox / Uber 等）以 MCP 協议调用。限 Google AI Ultra 付费用户。
+- [Google AI Ultra（$100/月）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。新的消费者顶端订阅层级，面向开发者 / 创作者 / 重度用户，解锁 Gemini Spark、最高 Gemini 3.5 额度以及即将发布的 Gemini 3.5 Pro。
 - [Gemini 3.1 Flash / Flash Lite](https://deepmind.google/technologies/gemini/) - 高吞吐应用的高性价比选择。
 - [Gemini 4 (Open)](https://deepmind.google/technologies/gemini/) - 🆕 2026-04 发布。开源家族：2B / 4B / 26B / 31B 变体。科学推理与文档理解强，本地部署友好。
 - [Gemini 2.5 Pro / Flash](https://deepmind.google/technologies/gemini/) - 2025-06 GA。Thinking 模型，1M 上下文。
@@ -144,6 +156,7 @@
 
 ### DeepSeek 🇨🇳
 
+- [DeepSeek Agent Harness 团队](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) - 🆕 **2026-05-19**。DeepSeek 从 Jane Street 挨角一名资深工程师，为新设的 "AI harness" 团队搭建把 DeepSeek V4 所能生产化为 **能收费的自主 Agent** 的硬调度 / 程序化套件 —— 首个明确信号：DeepSeek 开始从原生模型 R&D 跳到 Agent 产品化。
 - [DeepSeek-V4-Pro](https://api-docs.deepseek.com/news/news260424) - 🆕 **2026-04-24**。1.6T 总 / 49B 激活 MoE，1M 上下文。MIT。Agent、世界知识、推理领域开源标杆。
 - [DeepSeek-V4-Flash](https://api-docs.deepseek.com/news/news260424) - 🆕 2026-04-24。284B 总 / 13B 激活 MoE，1M 上下文。MIT。性价比层。
 - [DeepSeek-V3.2](https://www.deepseek.com/) - 2025-12 发布。671B MoE，V3.2 Speciale 推理增强。
@@ -153,6 +166,8 @@
 
 ### Alibaba (Qwen) 🇨🇳
 
+- [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) - 🆕 **2026-05-20 — 阿里云杭州峰会**。为 AI Agent 量身打造的新一代顶级：代理型编程、复杂推理、「长静间距」多步任务能力；同期亊相新的 T-Head **珄武 M890** AI 算力芯片与全栈 AI 基础设施升级。面向全球开发者 / 企业即将上线。
+- [Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) - 🆕 **2026-05-18**。杭州峰会前的预览梯队；LM Arena 上文本 + 视觉双赛道均为**中文世界最高分**中国模型。
 - [Qwen3.6-27B](https://qwen.ai/blog?id=qwen3.6-27b) - 🆕 **2026-04-22**。27B 密集多模态。开源。Agent 编程 + 思维上下文保持。
 - [Qwen3.6-Max-Preview](https://qwen.ai/) - 🆕 **2026-04-18**。闭源前沿预览。1M 上下文，中文模型编程榜顶尖。
 - [Qwen3.6-35B-A3B](https://qwen.ai/blog?id=qwen3.6-35b-a3b) - 🆕 **2026-04-15**。MoE 35B 总 / 3B 激活。Apache 2.0。稳定性与实用性增强。
@@ -288,6 +303,7 @@
 - [LTX Studio](https://ltx.studio/) - 🆕 AI 电影化视频创作平台。
 - [Tianma (天马) AI](https://www.alibabacloud.com/) - 🇨🇳 🆕 **2026-04-27** 公测。阿里图生视频。
 - [Sora](https://openai.com/sora/) - ⚠️ *2026-04 关停*。OpenAI 文生视频模型，因成本与战略关停。
+- [Runway Agent](https://chatlyai.app/news/runway-agent-launch-may-2026) - 🆕 **2026-05-13**。对话式 Agent，接过写好的脚本为你递交一段**多镜头完成品视频**：分镜脚本→生成→剪接→配音全路贯通，底层调用 Gen-4 / Gen-4 Turbo / Aleph 编辑。首个可用的「提示词到粗剪」产业级 Agent。
 
 ### 音频与音乐
 
@@ -355,6 +371,7 @@
 - [Microsoft AI Agent Governance Toolkit](https://www.helpnetsecurity.com/2026/04/03/microsoft-ai-agent-governance-toolkit/) - 🆕 **2026-04-03**。开源治理工具包，把运行时安全策略以策略即代码方式应用到 LangChain / AutoGen 等框架。
 - [Bernstein](https://github.com/sipyourdrink-ltd/bernstein) - 🆕 Python 编排器，统一管理 40+ 个 CLI 编程 Agent（Claude Code、Codex、Gemini CLI、Cursor、Aider 等）。一次 LLM 计划调用后，调度、git worktree 隔离、质量闸门、HMAC 链式审计都是确定性的。Apache 2.0。![GitHub stars](https://img.shields.io/github/stars/sipyourdrink-ltd/bernstein?style=flat-square)
 - [Genkit Middleware](https://developers.googleblog.com/announcing-genkit-middleware-intercept-extend-and-harden-your-agentic-apps/) - 🆕 **2026-05-14**。Google 为开源 Genkit 框架增加中间件体系 —— 在 generate / model / tool 三层给出可组合 hooks：重试、模型降级、工具人工审批、SKILL.md 技能注入、限定范围的文件访问。先支持 TS / Go / Dart，Python 跟进中。
+- [LlamaIndex ↔ Google Agents API 集成](https://www.kucoin.com/news/flash/google-launches-agents-api-llama-index-integrates-llamaparse-for-unstructured-document-processing) - 🆕 **2026-05-20**。LlamaIndex 为 Google 刚发布的 Agents API 交付模板，在沙箱化 Linux 环境里暴露 **LlamaParse** / **LiteParse** 处理非结构化文档；同期上线的还有沙箱运行时 **Sandboxed-Lit** 与面向 Agent 的首个 OCR 评测集 **ParseBench**。
 
 ---
 
@@ -520,6 +537,9 @@
 - [Tesla Optimus Gen3](https://www.tesla.com/) - 🆕 2026 夏季量产。
 - [Figure 04](https://autonews.gasgoo.com/articles/news/figure-founder-f04-robot-initiates-component-delivery-process-2054560059634376705) - 🆕 **2026-05-13**。Brett Adcock 宕告 Figure 04 设计定型，零部件已开始交付，使用 Helix VLA 型号。
 - [Helix 02 包裹分拧 72h 运行](https://www.businessinsider.com/figure-ai-turned-a-humanoid-sorting-packages-must-see-tv-2026-5) - 🆕 **2026-05-13 – 16**。Figure F.03 机器人队靠 Helix 02 完全自主在包裹分拧线上运行：首天 8 小时 ~22K 包裹，24 小时 ↑到 ~30K，压力测试下约 72 小时 ~88K 包裹后出现机械故障。首份公开的家用型人形机器人连续作业证据。
+- [Figure F.03 vs 人类 8 小时分拧挑战](https://incrypted.com/en/figure-ai-held-a-human-vs-robot-marathon/) - 🆕 **2026-05-18**。Figure 首场公开的人机对决：在同一条分拧线上，人类员工以 12,924 件（2.79 秒 / 件）势均微赢 F.03 机器人的 12,732 件（2.83 秒 / 件）。这是到目前为止公开资料中人与机器在实际产业任务上最贴近的一次。
+- [Boston Dynamics Atlas 100 磅操作 + 现代集团 25K 刷屏计划](https://www.techtimes.com/articles/316854/20260519/boston-dynamics-reveals-how-atlas-learned-lift-100-pound-loads-hyundai-plans-30000-per-year.htm) - 🆕 **2026-05-18 / 19**。Boston Dynamics 发布视频与技术博文，展示 Atlas 通过强化学习 + 大规模仿真能举起并携带 **超 100 磅**负荷（冰箱 / 洗衣机），全身控制能适应重量转移，不依赖逐件识别。现代汽车集团承诺从 2028 年起在 Hyundai/Kia 工厂部署 **25,000+ 台 Atlas**。
+- [Unitree G1 进驻 JAL 羽田机场](https://www.techtimes.com/articles/316862/20260519/jal-deploys-unitree-g1-robots-haneda-us-congress-moves-blacklist-supplier-national-security.htm) - 🆕 **2026-05**。日本航空在羽田启动地面运作试点（行李装卸 / 集装箱运输 / 机舱清洁），官方定义为 **全球首家在运营航空业务中录用双足机器人**的航司。同一周美国国会推动将 Unitree 列入实体清单，embodied AI 供应链加速地缘政治化。
 - [Honour (荣耀) Humanoid](https://www.honor.com/) - 🇨🇳 🆕 2026 年人形半马世界纪录。
 - [Zhiyuan (智元) AGIBOT](https://www.agibot.com/) - 🇨🇳 🆕 2026-04 新本体 + 基模 + 解决方案。把 2026 称为 "Deployment Year Zero"。
 - [Unitree H 系列](https://www.unitree.com/) - 🇨🇳 国产 Boston Dynamics 对手，2026 持续迭代。
@@ -669,6 +689,8 @@
 - [Sema4.ai](https://sema4.ai/) - 🆕 Python 优先 + 内置治理的企业 Agent 平台。
 - [SAP Business AI Platform + Joule Studio 2.0](https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/) - 🆕 **SAP Sapphire 2026（2026-05-11 – 13）**。SAP 把 BTP + Business Data Cloud + Business AI 合并为一个平台，重新定位 Joule 为 Agent 操作层。**Joule Studio 2.0**（2026-06 起陆续到达客户）可以用 LangGraph / AutoGen 类框架底座着 SAP 的实时业务数据构建 Agent；**Autonomous Suite** 带来 50+ 领域 Joule Assistant 与 200+ Agent。
 - [Microsoft Agent 365 + Microsoft 365 E7](https://techcommunity.microsoft.com/blog/agent-365-blog/microsoft-365-e7--agent365-from-where-you-are-to-enterprise-ai-at-scale/4519969) - 🆕 **2026-05-01 GA**，5 月持续补充。以身份为中心的 AI Agent 控制面：独立 $15/用户/月，或 $99/用户/月随新推的 Microsoft 365 E7 "Frontier" 套套；5 月补丁加上了 AWS Bedrock + Google Cloud 注册表同步、Intune / Defender 预览策略，以及 Agent 专用 SASE。
+- [OpenAI Guaranteed Capacity（算力年发）](https://openai.com/news/company-announcements/) - 🆕 **2026-05-19**。面向企业 AI 产品 / Agent / Workflow 的长期算力预订产品（可选 1/2/3 年期，期限越长折扣越高）—— 面向 GPT-5.5 级 Agent 的企业部署降低成本 / 产能不确定性，OpenAI 对 Anthropic Priority Tier 的产品化回应。
+- [Bristol Myers Squibb ↔ Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS 将 Claude Enterprise 作为 30,000+ 员工的共享智能平台，嵌入药物发现 / 开发 / 交付的全链路。全球前 5 大药企中首个全公司级 Claude 部署。
 
 ---
 
@@ -869,6 +891,9 @@
 - [Anthropic ↔ SpaceX Colossus 1](https://www.siliconrepublic.com/business/anthropic-joins-forces-with-spacex-for-colossus-capacity) - 🆕 **2026-05-06**。Anthropic 拿下 SpaceX 300+ MW / 22 万 GPU 的 Colossus 1 所有可用算力；SpaceX 在收购 xAI 后重新定位为 AI 基础设施提供商，Anthropic 则翻倍付费计划下 Claude Code 的限流。
 - [DeepSeek $4B 国家背景轮次](https://www.techtimes.com/articles/316717/20260516/chinas-state-ai-fund-backs-deepseek-4-billion-round-efficiency-challenge-nvidia-dependent.htm) - 🆕 **2026-05-16**。中国国家人工智能产业投资基金 + 大基金三期 + 腾讯 接近完成对 DeepSeek 首次外部轮次，~$4B 金额在 ~$50B 估值上，也是大基金三期已知首次 LLM 投资。
 - [教宗利奥 14 世 → 梵蒂冈 AI 委员会](https://www.americamagazine.org/vatican-dispatch/2026/05/16/pope-leo-establishes-new-vatican-commission-on-artificial-intelligence/) - 🆕 **2026-05-16**。教宗利奥 14 世发布 rescriptum 设立梵蒂冈跨部门 AI 委员会（人类整体发展部统筹，叠加信仰部、文化与教育部、传信部、宿呀领生命 / 科学 / 社会科学馆），任期 1 年可续；首份 AI 为题的通谕即将发布。
+- [Google I/O 2026 — Gemini 3.5 + Omni + Spark + AI Ultra](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19**。Google 今年最大的 Agent + AGI 发布会：Gemini 3.5 Flash GA （默认模型）、Gemini Omni 世界模型家族、Gemini Spark 24/7 个人 Agent（~30+ MCP 接入的第三方工具）以及新 Google AI Ultra $100/月级别。Pichai 公布 Google 每月处理 **3.2 千万亿个 token**。
+- [阿里云杭州峰会 — Qwen 3.7-Max + 珄武 M890](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) - 🆕 **2026-05-20**。阿里推出 Qwen 3.7-Max（面向长静间距任务的代理型编程顶级型）、T-Head **珄武 M890** AI 计算芯片以及全栈 AI 基础设施升级——中国迫迫“AI 工厂”的代表作。
+- [OpenAI Guaranteed Capacity（算力年发）](https://openai.com/news/company-announcements/) - 🆕 **2026-05-19**。面向企业 AI 产品 / Agent / Workflow 的长期算力预订产品（可选 1 / 2 / 3 年期，期限越长折扣越高）：OpenAI 对 Anthropic Priority Tier 与顶级模型推理供给吃紧的产品化回应。
 
 ---
 
@@ -941,6 +966,23 @@
 | **2026-05-16** | [教宗利奥 14 世设立梵蒂冈 AI 委员会](https://www.americamagazine.org/vatican-dispatch/2026/05/16/pope-leo-establishes-new-vatican-commission-on-artificial-intelligence/) — 跨部门机构，首份 AI 通谕即将发布 | 产业 |
 | **2026-05-16** | [OpenAI ↔ Malta 合作](https://openai.com/index/malta-chatgpt-plus-partnership/) — 所有 14 岁以上马耳他居民在完成 2 小时 AI 素养课后获得一年免费 ChatGPT Plus（"OpenAI for Countries"）| 产业 |
 | **2026-05-16** | [DeepSeek 国家背景 $4B 轮次](https://www.techtimes.com/articles/316717/20260516/chinas-state-ai-fund-backs-deepseek-4-billion-round-efficiency-challenge-nvidia-dependent.htm) — 国家 AI 产业基金 + 大基金三期 + 腾讯 主导，~$50B 估值首次外部轮 | 产业 |
+| **2026-05-13** | [Runway Agent](https://chatlyai.app/news/runway-agent-launch-may-2026) 发布 — 以脚本为输入、在 Gen-4 / Aleph 上端到端交付多镜头完成品视频 | 工具 |
+| **2026-05-18** | [OpenAI ↔ Dell Codex 合作](https://openai.com/news/company-announcements/) — Codex 首次进入混合云 / 本地部署，面向需要数据主权的强监管行业 | 产业 |
+| **2026-05-18** | [阿里 Qwen 3.7-Max-Preview / Plus-Preview](https://www.scmp.com/tech/tech-trends/article/3354087/alibaba-teases-new-qwen-previews-highest-ranking-chinese-ai-models-arena) — LM Arena 上中文世界最高分中国模型（文本 + 视觉双赛道）| 模型 |
+| **2026-05-18** | [Boston Dynamics Atlas 100 磅操作](https://www.techtimes.com/articles/316854/20260519/boston-dynamics-reveals-how-atlas-learned-lift-100-pound-loads-hyundai-plans-30000-per-year.htm) — 现代集团承诺从 2028 起在乔治亚部署 **25K+ 台 Atlas** | 机器人 |
+| **2026-05-18** | [Figure F.03 vs 人类 8 小时分拧挑战](https://incrypted.com/en/figure-ai-held-a-human-vs-robot-marathon/) — 人类以 12,924 微赢 12,732（2.79 vs 2.83 秒 / 件）| 机器人 |
+| **2026-05-18** | [Anthropic 就 Claude Mythos 向 FSB 汇报](https://www.theguardian.com/technology/2026/may/18/anthropic-ai-claude-mythos-cyber-financial-stability-board-fsb) — 顶级 lab 首次向 G20 金融稳定监管机构介绍顶级模型的攻击性网络能力 | 产业 |
+| **2026-05-18** | [ChatGPT 安全系统更新](https://www.edtechinnovationhub.com/news/openai-updates-chatgpt-safety-systems-to-track-risk-across-sensitive-conversations) — 加入跨会话的风险跟踪（自杀 / 自伤 / 伤他）| 产业 |
+| **2026-05-19** | **Google I/O 2026** — [Gemini 3.5 Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) 上线即成为 Gemini App + Google 搜索 AI Mode 默认模型（官方称输出 token 速度约 4 倍于同类顶级模型）；Gemini 3.5 Pro 预计 6 月 | 模型 |
+| **2026-05-19** | **Google I/O 2026** — [Gemini Omni / Omni Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/)，DeepMind 面向 AGI 的世界模型家族（任意输入 → 任意输出，视频起步）| 模型 |
+| **2026-05-19** | **Google I/O 2026** — [Gemini Spark](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) 24/7 个人 AI Agent + ~30+ 个 MCP 接入的第三方工具，限 **Google AI Ultra ($100/月)** 订阅 | 工具 |
+| **2026-05-19** | [OpenAI Guaranteed Capacity（算力年发）](https://openai.com/news/company-announcements/) 发布 — 1/2/3 年期企业算力预订产品 | 产业 |
+| **2026-05-19** | [OpenAI ↔ Google SynthID + C2PA 内容源头验证](https://openai.com/index/advancing-content-provenance/) — 顶级 lab 首次在跨平台 AI 图片水印上互通，附公开验证器预览 | 产业 |
+| **2026-05-19** | [Anthropic：Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) — 与智慧传统展开顶级 AI 安全对话的框架 | 产业 |
+| **2026-05-19** | [DeepSeek 招募 Jane Street 前工程师组建 AI harness 团队](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) — DeepSeek 从模型 R&D 向 Agent 产品化转向 | 产业 |
+| **2026-05-20** | **阿里云杭州峰会** — [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) GA，代理型编程与长静间距任务；同期上线 T-Head **珄武 M890** AI 芯片与全栈 AI 基础设施升级 | 模型 |
+| **2026-05-20** | [BMS ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) — 30K+ 员工统一标准 Claude Enterprise，首个顶 5 药企全公司级部署 | 产业 |
+| **2026-05-20** | [LlamaIndex ↔ Google Agents API](https://www.kucoin.com/news/flash/google-launches-agents-api-llama-index-integrates-llamaparse-for-unstructured-document-processing) — LlamaParse / LiteParse 进入 Google Agents API 沙箱；Sandboxed-Lit + ParseBench 同期上线 | 框架 |
 | **2026-04** | Gartner 预计 2026 年底 40% 企业应用嵌入 AI Agent | 产业 |
 | **2026-04** | Google 承诺对 Anthropic 跟进最高 $40B 投资（首期 $10B） | 产业 |
 | **2026 持续** | A2A Protocol 合作伙伴增至 150+ | 协议 |

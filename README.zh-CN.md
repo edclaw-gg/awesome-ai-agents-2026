@@ -6,8 +6,9 @@
 [![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/awesome-ai-agents-2026?style=social)](https://github.com/Zijian-Ni/awesome-ai-agents-2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2025%2C%202026-blue.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--25-success.svg)](#️-状态图例)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2030%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-440%2B-orange.svg)](#)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--30-success.svg)](#️-状态图例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![日本語](https://img.shields.io/badge/Lang-日本語-red.svg)](README.ja.md)
 
@@ -130,6 +131,7 @@
 - [Code with Claude 2026 会议录像上线](https://www.infoq.com/news/2026/05/code-with-claude/) - 🆕 **2026-05-18 发布**。5 月 6 日的开发者大会全部场次公开：Claude Code 路线图、Claude Developer Platform 更新、Managed Agents 的 dreaming 与多 Agent 编排、合作伙伴部署。
 - [《Widening the conversation on frontier AI》](https://www.anthropic.com/news/widening-conversation-ai) - 🆕 **2026-05-19**。Anthropic 发布与宗教 / 哲学 / 原住民传统等“智慧传统”就顶级 AI 安全展开对话的框架，公共参与系列后续。
 - [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS 将 Claude Enterprise 作为 30,000+ 员工的共享智能平台，嵌入药物发现 / 开发 / 交付的全链路。全球前 5 大药企中首个全公司级 Claude 部署。
+- [Claude Opus 4.8](https://www.anthropic.com/claude/opus) - 🆕 **2026-05-28**。Opus 重大迭代：代码库级别的迁移能力、更准的 Agent 判断，推出研究预览的「动态工作流」能在单 session 里并发几百个子 Agent，加入手动调节推理投入的「努力控制」面板；**Fast 模式价格降 3 倍**，输入 / 输出仍为 $5 / $25 每百万 token。Anthropic 原生、Amazon Bedrock、AWS Claude Platform、Google Cloud、Microsoft Foundry 上线。同时预告面向小范围企业的 **Mythos 级别**新一代模型。
 
 ### Google DeepMind
 
@@ -138,6 +140,7 @@
 - [Gemini 3.1 Flash-Lite (GA)](https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available) - 🆕 **2026-05-08**。Gemini API / AI Studio / Vertex AI 全面 GA。Gemini 3 家族中最快、最省的型号，面向超低延迟代码补全、实时 UX、Agent 开发工具；质量持平 Gemini 2.5 Flash，成本明显更低。
 - [Gemini 3.5 Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。推出即成为 Gemini App + Google 搜索 AI Mode 的默认模型，官方称输出 token 速度 **约 4 倍于**同类顶级模型，在关键 benchmark 上超越 Gemini 3.1 Pro。Gemini 3.5 Pro 预计 6 月上线。
 - [Gemini Omni / Omni Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。DeepMind 面向 AGI 的新**世界模型**家族，Omni Flash 能从**任意输入输出任意模态**（首以视频起步，后续拓展到图像与文本），与 Gemini Robotics / Genie 路线一脉相承。
+- [Gemini Omni Flash · 对话式视频编辑上线](https://www.techtimes.com/articles/317309/20260528/google-gemini-omni-flash-brings-voice-controlled-ai-video-editing-future-conversational-ai.htm) - 🆕 **2026-05-28**。Omni Flash 面向消费者推送，在 Gemini App、**Google Flow**和 **YouTube Shorts** 里作为编辑引擎：用文字 / 语音 / 图像 / 音频提示完成电影式推拉镜、背景替换、天气改动等操作，不再需要传统非线性编辑。
 - [Gemini Spark（24/7 个人 AI Agent）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。云端 24/7 常驻的个人 AI Agent，首期接入 Gmail / Chat，后续加入 ~30+ 个第三方工具（Adobe / Dropbox / Uber 等）以 MCP 協议调用。限 Google AI Ultra 付费用户。
 - [Google AI Ultra（$100/月）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。新的消费者顶端订阅层级，面向开发者 / 创作者 / 重度用户，解锁 Gemini Spark、最高 Gemini 3.5 额度以及即将发布的 Gemini 3.5 Pro。
 - [Gemini 3.1 Flash / Flash Lite](https://deepmind.google/technologies/gemini/) - 高吞吐应用的高性价比选择。
@@ -375,6 +378,7 @@
 ### Model Context Protocol (MCP)
 
 - [MCP Specification](https://modelcontextprotocol.io/) - 🆕 "AI 的 USB-C" —— Anthropic 主推、用于让 LLM 接入工具与数据源的开放协议。2025-12 捐赠给 Linux Foundation 旗下 Agentic AI Foundation。
+- [MCP 2026-07 Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) - 🆕 **2026 年 5 月发布，正式版计划 7 月 28 日上线**。MCP 下一大版升级候选版：**无状态协议核心**（可横向扩展、服务端更简单）、新增**扩展机制**、服务端渲染 UI 的 **MCP Apps**能力、Tasks 下沉为扩展、与 OAuth / OpenID Connect 对齐的授权强化。
 - [MCP Servers](https://github.com/modelcontextprotocol/servers) - 官方参考 MCP 服务实现。![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - 官方 TypeScript SDK。![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/typescript-sdk?style=flat-square)
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) - 官方 Python SDK。![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/python-sdk?style=flat-square)
@@ -397,6 +401,7 @@
 
 *用来构建自主 AI Agent 的框架与库。*
 
+- [Koog 1.0](https://github.com/JetBrains/koog) - 🆕 **2026-05-28 · KotlinConf 2026**。JetBrains 针对 **Kotlin + Java** 的开源 Agent 框架进入稳定 1.0，并带有一年的 API 稳定性保证。Kotlin Multiplatform 跨端部署（JVM / Android / iOS / JS / WASM）、Java 互操作无需包装模块、Android 本地 LiteRT、OpenTelemetry 跨端可观测、图状工作流、Spring Boot / Ktor 集成，提供商 OpenAI / Anthropic / Google / Bedrock 均原生支持。Apache-2.0。 ![GitHub stars](https://img.shields.io/github/stars/JetBrains/koog?style=flat-square)
 - [LangChain](https://github.com/langchain-ai/langchain) - 上下文感知推理应用的基础框架。![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat-square)
 - [LangGraph](https://github.com/langchain-ai/langgraph) - 把 Agent 建模为有状态、多 actor 协作的图。v0.3.19（2026-04-27）：预制 Agent 拆出 `langgraph-prebuilt` —— Supervisor / Swarm / LangMem / Trustcall。Agent 工作流的生产级标准。![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square)
 - [CrewAI](https://github.com/crewAIInc/crewAI) - 角色扮演式 Agent 团队编排。![GitHub stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat-square)
@@ -1570,6 +1575,10 @@
 | **2026-05-22** | [Kore.ai Artemis Agent Platform](https://venturebeat.com/technology/kore-ai-launches-artemis-ai-agent-platform-expands-challenge-to-microsoft-and-salesforce) 在 Azure 上线 — AI 原生企业 Agent 平台，核心是声明式的 **Agent Blueprint Language (ABL)** | 产业 |
 | **2026-05-22** | [FPT Flezi Foundry™](https://lasvegassun.com/news/2026/may/22/fpt-launches-flezi-foundry-advancing-ai-augmented-/) 发布 — “Service-as-a-Software” 治理下的 AI 增强交付平台，提供 Agentic Development Lifecycle (ADLC) 与 Agentic Managed Services (AMS) 两种模式 | 产业 |
 | **2026-05-22** | [JetBrains Rider AI 测试生成 skill](https://blog.jetbrains.com/dotnet/2026/05/22/claude-codex-ai-agent-skill-for-writing-tests/) — 将 .NET 覆盖率数据喂给 Claude Code / Codex，让 Agent 只写未覆盖分支的测试 | 工具 |
+| **2026-05-28** | [Claude Opus 4.8](https://www.anthropic.com/claude/opus) Anthropic 发布 — 代码库级迁移、动态工作流预览（并发几百个子 Agent）、努力控制面板、Fast 模式价格降 3 倍；预告 **Mythos 级**模型 | 模型 |
+| **2026-05-28** | [Koog 1.0](https://blog.jetbrains.com/ai/2026/05/koog-1-0-is-out-stable-core-better-interop-and-multiplatform-observability/) KotlinConf 2026 发布 — JetBrains 的开源 Kotlin / Java AI Agent 框架达到稳定 1.0，Kotlin Multiplatform 部署、跨端 OpenTelemetry | 框架 |
+| **2026-05-28** | [Gemini Omni Flash 对话式视频编辑](https://www.techtimes.com/articles/317309/20260528/google-gemini-omni-flash-brings-voice-controlled-ai-video-editing-future-conversational-ai.htm) 在 Gemini App / Google Flow / YouTube Shorts 上线 — 语音 + 文字驱动的电影式编辑取代传统 NLE | 工具 |
+| **2026-05-29** | [MCP 2026-07 Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) 发布 — 无状态协议核心、扩展机制、MCP Apps 服务端渲染 UI、OAuth/OIDC 加固，正式版目标7月 28 日 | 协议 |
 | **2026-04** | Gartner 预计 2026 年底 40% 企业应用嵌入 AI Agent | 产业 |
 | **2026-04** | Google 承诺对 Anthropic 跟进最高 $40B 投资（首期 $10B） | 产业 |
 | **2026 持续** | A2A Protocol 合作伙伴增至 150+ | 协议 |

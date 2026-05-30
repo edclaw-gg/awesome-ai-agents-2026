@@ -3,6 +3,41 @@
 All notable changes to **Awesome AI Agents 2026** are recorded here.
 Format: `YYYY-MM-DD  +Added  -Removed  ~Changed`.
 
+## 2026-05-30 — Weekly refresh: May 25–30 · Claude Opus 4.8 / Koog 1.0 / Gemini Omni Flash rollout / MCP 2026-07 RC
+
+### + Added (5 new entries across 4 sections, mirrored to zh-CN / ja)
+
+**Foundation Models — Anthropic** —
+- [Claude Opus 4.8](https://www.anthropic.com/claude/opus) (May 28, 2026) — codebase-scale migrations, **dynamic workflows** research preview that fans out hundreds of parallel sub-agents in one session, a manual **effort-control** panel, and **3× cheaper Fast mode** at the same $5 / $25 per million in/out. Live on Anthropic native + Amazon Bedrock + AWS Claude Platform + Google Cloud + Microsoft Foundry. Teases a forthcoming **Mythos-class** model line for limited orgs.
+
+**Foundation Models — Google DeepMind** —
+- [Gemini Omni Flash consumer rollout](https://www.techtimes.com/articles/317309/20260528/google-gemini-omni-flash-brings-voice-controlled-ai-video-editing-future-conversational-ai.htm) (May 28, 2026) — Omni Flash starts shipping to consumers in the Gemini app, **Google Flow**, and **YouTube Shorts** as the editing engine; conversational cinematic zooms / background swaps / weather edits driven by text + voice + image + audio prompts. Replaces traditional NLEs for short-form video.
+
+**Agent Protocols & Standards** —
+- [MCP 2026-07 Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) (May 2026, final July 28, 2026) — next major MCP spec revision: **stateless protocol core**, **extensions framework**, **MCP Apps** (server-rendered UI), Tasks graduated to an extension, hardened authorization aligned with OAuth / OpenID Connect.
+
+**Agent Frameworks** —
+- [Koog 1.0](https://github.com/JetBrains/koog) (May 28, 2026, KotlinConf 2026) — JetBrains' open-source **Kotlin + Java** agent framework hits stable 1.0 with a 1-year API stability guarantee. Kotlin Multiplatform deployment (JVM / Android / iOS / JS / WASM), Java interop without wrapper modules, local Android LiteRT, OpenTelemetry across all targets, graph workflows, Spring Boot / Ktor integration, OpenAI / Anthropic / Google / Bedrock providers. Apache-2.0.
+
+**Enterprise Agent Platforms** —
+- [Sistava](https://sistava.com) (merged from community PR #24) — AI agent orchestration platform for deploying multi-channel sales / marketing / finance / support agents reachable via Slack, WhatsApp, email, voice, Telegram, API, MCP, A2A, webhooks, plus on-host computer use.
+
+### ~ Changed
+
+- **Header badges** — `Last Updated` → `May 30, 2026`, `Spam_Audited` → `2026-05-30`, `Resources` 435+ → **440+** (all three READMEs; zh-CN / ja now also carry the Resources badge).
+- **2026 AI Timeline** — 5 new May 28–29 rows added across `README.md` / `README.zh-CN.md` / `README.ja.md`.
+
+### ✕ Not added / held for revision (anti-spam holds)
+
+- **PR #25 — CorpusIQ MCP** — marketing registry link returned **HTTP 404** at audit time, and the submission had no public artefact (no GitHub repo, no MCP Registry listing) beyond the corpusiq.io domain. Held with reviewer comment asking for a primary source.
+- **PR #26 — AgentGate** — the patch inserts the same entry twice in the Agent Security section, mixes bullet styles (`*   [...]` vs `- [...]`), and drops a bare marketing URL on its own line. Underlying project (6 stars at audit; created 2026-05-08; submitter disclosed parallel submissions to 15+ awesome lists) would land with ⚠️ **Unverified**. Held pending a clean single-bullet patch.
+- **PR #27 — GreenOps Agent** — repository created 2026-05-26 (4 days old at submission) with 0 stars, branch name `greenops-zijian` shows the submission is tailored to this list rather than reflecting external adoption, patch uses a doubled bullet prefix (`- - [...]`), and the quality-checklist line for third-party adoption is checked without linked evidence. Held with reviewer comment asking for primary sources.
+- **"PilotDeck" (OpenBMB)** — covered by a single Medium write-up and the upstream GitHub README; needs an independent primary source describing scope and a clear license before listing.
+- **"MiniMax M3"** — only a teaser as of late May 2026; no public weights, no API, no model card. Will revisit on launch (second half of 2026 per MiniMax).
+- **"ChatGPT-5.5" / "Claude 4.8" lifestyle-blog round-ups** — secondary, non-authoritative listicles; relying on first-party announcements (covered above) instead.
+
+---
+
 ## 2026-05-25 — Weekly refresh: May 18–24 expansion + full zh-CN / ja sync
 
 ### + Added (15 new entries across 7 sections)

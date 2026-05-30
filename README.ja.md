@@ -6,8 +6,9 @@
 [![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/awesome-ai-agents-2026?style=social)](https://github.com/Zijian-Ni/awesome-ai-agents-2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2025%2C%202026-blue.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--25-success.svg)](#️-ステータス凡例)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2030%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-440%2B-orange.svg)](#)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--30-success.svg)](#️-ステータス凡例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![中文](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
 
@@ -130,6 +131,7 @@
 - [Code with Claude 2026 セッションを YouTube で公開](https://www.infoq.com/news/2026/05/code-with-claude/) - 🆕 **2026-05-18 公開**。5 月 6 日開催の開発者カンファレンス全セッションをアーカイブ公開：Claude Code のロードマップ、Claude Developer Platform のアップデート、Managed Agents の dreaming とマルチエージェントオーケストレーション、パートナー展開事例。
 - [Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) - 🆕 **2026-05-19**。宗教 / 哲学 / 先住民伝統など「智恵の伝統」とフロンティア AI 安全を話し合うための枠組みを公開。パブリックエンゲージメントシリーズの一环。
 - [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **2026-05-20**。BMS が Claude Enterprise を 30,000+ 名の社員の共通インテリジェンス基盤として採用し、創薬・開発・デリバリーの全工程にエージェント化 Claude を組み込む。世界トップ 5 製薬企業で初めての公社規模での Claude 全社展開。
+- [Claude Opus 4.8](https://www.anthropic.com/claude/opus) - 🆕 **2026-05-28**。Opus シリーズの大規模アップデート：コードベース規模のマイグレーション、エージェント判断の鮮明化、「ダイナミックワークフロー」リサーチプレビューで 1 セッション中に数百のサブエージェントを並列実行可能、手動「エフォートコントロール」パネル、**Fast モード 3 倍安い**（入力 $5 / 出力 $25 / 100 万 token は同価）。Anthropic ネイティブ、Amazon Bedrock、AWS Claude Platform、Google Cloud、Microsoft Foundry で利用可。限定企業向けに **Mythos クラス** モデルを予告。
 
 ### Google DeepMind
 
@@ -138,6 +140,7 @@
 - [Gemini 3.1 Flash-Lite (GA)](https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available) - 🆕 **2026-05-08**。Gemini API / AI Studio / Vertex AI で一般提供開始。Gemini 3 ファミリーで最も高速かつコストパフォーマンスの高いモデル —— コード補完、リアルタイム UX、エージェント型開発ツール向け。Gemini 2.5 Flash 並みの品質を大幅に低いコストで提供。
 - [Gemini 3.5 Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。Gemini App と Google 検索 AI Mode の新しいデフォルトモデル。公式によると出力トークン速度は同類のフロンティアモデルより **約 4 倍高速**、主要ベンチマークで Gemini 3.1 Pro を上回る。Gemini 3.5 Pro は 6 月以降に公開予定。
 - [Gemini Omni / Omni Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。Google DeepMind の AGI を見揮えた新しい**ワールドモデル**ファミリー。Omni Flash は**任意の入力から任意のモダリティを生成**（まずビデオから、画像とテキストは順次拡張）でき、Gemini Robotics / Genie の路線を受け継ぐ。
+- [Gemini Omni Flash ・ 会話型ビデオ編集をロールアウト](https://www.techtimes.com/articles/317309/20260528/google-gemini-omni-flash-brings-voice-controlled-ai-video-editing-future-conversational-ai.htm) - 🆕 **2026-05-28**。Omni Flash が消費者向けに Gemini App、**Google Flow**、**YouTube Shorts** に順次展開・編集エンジンとして、テキスト / 音声 / 画像 / 音響のプロンプトでシネマ風ズーム、背景入れ替え、天候変更などを実行し、従来のノンリニア編集ソフトを不要にする。
 - [Gemini Spark（24/7 パーソナル AI エージェント）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。クラウド上で 24/7 動作し、まず Gmail / Chat とネイティブ連携した上で、MCP を介して ~30+ のサードパーティツール（Adobe / Dropbox / Uber など）に拡張。Google AI Ultra 加入者限定。
 - [Google AI Ultra（$100/月）](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **2026-05-19 — Google I/O 2026**。開発者・クリエイター・ヘビーユーザー向けの新たなコンシューマーサブスクリプション最上位ティア。Gemini Spark、最高 Gemini 3.5 クオータ、さらに今後公開予定の Gemini 3.5 Pro をアンロック。
 - [Gemini 3.1 Flash / Flash Lite](https://deepmind.google/technologies/gemini/) - 高スループット用途向けの高速・低コストモデル。
@@ -375,6 +378,7 @@
 ### Model Context Protocol (MCP)
 
 - [MCP Specification](https://modelcontextprotocol.io/) - 🆕 "AI 用の USB-C" —— Anthropic 製、LLM をツール・データソースに接続するオープンプロトコル。2025-12 に Linux Foundation 傘下の Agentic AI Foundation へ寄贈。
+- [MCP 2026-07 Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) - 🆕 **2026-05 公開、正式版は 2026-07-28 予定**。MCP 次月メジャーリビジョンの RC：**ステートレスプロトコルコア**（スケーラビリティ・サーバ実装の簡素化）、**拡張フレームワーク**、サーバ側レンダリング UI をサポートする **MCP Apps**、Tasks の拡張へのグラデュエート、OAuth / OpenID Connect と整合した認可強化を含む。
 - [MCP Servers](https://github.com/modelcontextprotocol/servers) - MCP サーバーの公式リファレンス実装集。![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - 公式 TypeScript SDK。![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/typescript-sdk?style=flat-square)
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) - 公式 Python SDK。![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/python-sdk?style=flat-square)
@@ -397,6 +401,7 @@
 
 *自律 AI エージェントを構築するためのフレームワークとライブラリ。*
 
+- [Koog 1.0](https://github.com/JetBrains/koog) - 🆕 **2026-05-28 · KotlinConf 2026**。JetBrains による **Kotlin + Java** 向けオープンソースエージェントフレームワークが安定版 1.0 に到達し、1 年間の API 安定保証付き。Kotlin Multiplatform でのクロスデプロイ（JVM / Android / iOS / JS / WASM）、ラッパー不要の Java 相互運用、Android ローカル LiteRT、全ターゲットでの OpenTelemetry、グラフベースワークフロー、Spring Boot / Ktor 連携、OpenAI / Anthropic / Google / Bedrock プロバイダーをサポート。Apache-2.0。 ![GitHub stars](https://img.shields.io/github/stars/JetBrains/koog?style=flat-square)
 - [LangChain](https://github.com/langchain-ai/langchain) - LLM を使った文脈認識推論アプリの基盤。![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat-square)
 - [LangGraph](https://github.com/langchain-ai/langgraph) - エージェントを状態を持つマルチアクターのグラフとしてモデル化。v0.3.19（2026-04-27）: プリビルトエージェントが `langgraph-prebuilt` に分離 —— Supervisor / Swarm / LangMem / Trustcall。エージェントワークフローのプロダクション標準。![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square)
 - [CrewAI](https://github.com/crewAIInc/crewAI) - ロールプレイ型自律エージェントチームのオーケストレーションフレームワーク。![GitHub stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat-square)
@@ -1517,6 +1522,10 @@
 | **2026-05-22** | [Kore.ai Artemis Agent Platform](https://venturebeat.com/technology/kore-ai-launches-artemis-ai-agent-platform-expands-challenge-to-microsoft-and-salesforce) を Azure で公開 — AI ネイティブのエンタープライズエージェント基盤。核は宣言型の **Agent Blueprint Language (ABL)** | 業界 |
 | **2026-05-22** | [FPT Flezi Foundry™](https://lasvegassun.com/news/2026/may/22/fpt-launches-flezi-foundry-advancing-ai-augmented-/) ローンチ — “Service-as-a-Software” ガバナンス下の AI 強化デリバリー基盤。ADLC と AMS の 2 モードを提供 | 業界 |
 | **2026-05-22** | [JetBrains Rider AI テスト生成 skill](https://blog.jetbrains.com/dotnet/2026/05/22/claude-codex-ai-agent-skill-for-writing-tests/) — .NET カバレッジ情報を Claude Code / Codex に渡し、未カバー分岐に絞り込んだテスト生成を可能に | ツール |
+| **2026-05-28** | [Claude Opus 4.8](https://www.anthropic.com/claude/opus) Anthropic がリリース — コードベース規模のマイグレーション、動的ワークフロープレビュー（数百のサブエージェント並列）、エフォートコントロールパネル、Fast モード 3 倍安、**Mythos クラス** を予告 | モデル |
+| **2026-05-28** | [Koog 1.0](https://blog.jetbrains.com/ai/2026/05/koog-1-0-is-out-stable-core-better-interop-and-multiplatform-observability/) KotlinConf 2026 でリリース — JetBrains の OSS Kotlin/Java エージェントフレームワークが安定 1.0、Kotlin Multiplatform デプロイ、全ターゲット OpenTelemetry | フレームワーク |
+| **2026-05-28** | [Gemini Omni Flash 会話型ビデオ編集](https://www.techtimes.com/articles/317309/20260528/google-gemini-omni-flash-brings-voice-controlled-ai-video-editing-future-conversational-ai.htm) が Gemini App / Google Flow / YouTube Shorts へロールアウト — 音声・テキスト騆動のシネマ風編集が従来の NLE を置換 | ツール |
+| **2026-05-29** | [MCP 2026-07 Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) 公開 — ステートレスコア、拡張フレームワーク、MCP Apps サーバレンダリング UI、OAuth/OIDC 強化。正式版は 7 月 28 日予定 | プロトコル |
 | **2026-04** | Gartner は 2026 年末までに企業アプリの 40% が AI エージェントを組み込むと予測 | 業界 |
 | **2026-04** | Google が Anthropic へ最大 $40B の投資をコミット（初期 $10B） | 業界 |
 | **2026 進行中** | A2A Protocol のパートナー組織が 150+ に増加 | プロトコル |

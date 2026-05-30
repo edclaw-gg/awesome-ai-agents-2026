@@ -6,10 +6,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/awesome-ai-agents-2026?style=social)](https://github.com/Zijian-Ni/awesome-ai-agents-2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2025%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-435%2B-orange.svg)](#)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2030%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-440%2B-orange.svg)](#)
 [![Categories](https://img.shields.io/badge/Categories-25-purple.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--25-success.svg)](#️-status-legend)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--30-success.svg)](#️-status-legend)
 [![Chinese](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
 [![Japanese](https://img.shields.io/badge/Lang-日本語-purple.svg)](README.ja.md)
 
@@ -175,6 +175,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Code with Claude 2026 sessions on YouTube](https://www.infoq.com/news/2026/05/code-with-claude/) - 🆕 **May 18, 2026 (sessions published)**. Full developer-conference recordings (May 6 event) go public: Claude Code roadmap, Claude Developer Platform updates, Managed Agents dreaming + multi-agent orchestration, and partner deployments.
 - [Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) - 🆕 **May 19, 2026**. Anthropic publishes its framework for engaging diverse traditions (religious, philosophical, indigenous) in frontier-AI safety dialogue. Companion to ongoing public-engagement work.
 - [Bristol Myers Squibb ↔ Anthropic Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **May 20, 2026**. BMS adopts Claude Enterprise as its shared intelligence platform for 30,000+ employees globally, embedding agentic Claude into drug-discovery / development / delivery workflows. First top-5 pharma enterprise-wide Claude deployment.
+- [Claude Opus 4.8](https://www.anthropic.com/claude/opus) - 🆕 **May 28, 2026**. Major Opus refresh: codebase-scale migrations, sharper agentic judgment, **dynamic workflows** research preview with hundreds of parallel sub-agents in a single session, manual **effort-control** panel, **3× cheaper Fast mode** at the same $5 / $25 per million in/out. Available on Anthropic native + Amazon Bedrock + AWS Claude Platform + Google Cloud + Microsoft Foundry. Teases an upcoming **Mythos-class** model series for limited orgs.
 
 ### Google DeepMind
 
@@ -183,6 +184,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Gemini 3.1 Flash-Lite (GA)](https://cloud.google.com/blog/products/ai-machine-learning/gemini-3-1-flash-lite-is-now-generally-available) - 🆕 **May 8, 2026**. Generally available on Gemini API / AI Studio / Vertex AI. Fastest and most cost-efficient model in the Gemini 3 family — built for low-latency code completion, real-time UX, and agentic developer tools; matches Gemini 2.5 Flash quality at significantly lower cost.
 - [Gemini 3.5 Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **May 19, 2026 — Google I/O 2026**. Default model powering the Gemini app and Google Search AI Mode. Marketed as **~4× faster** than other frontier models in output tokens/sec while outperforming Gemini 3.1 Pro on key benchmarks. Gemini 3.5 Pro slated for June 2026.
 - [Gemini Omni / Omni Flash](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **May 19, 2026 — Google I/O 2026**. New Google DeepMind multimodal **world-model** family aimed at AGI. Omni Flash, the first shipped variant, can take any input modality and generate any output (starting with video; image and text generation following). Direct lineage to Gemini Robotics / Genie line of work.
+- [Gemini Omni Flash — voice-controlled video editing rollout](https://www.techtimes.com/articles/317309/20260528/google-gemini-omni-flash-brings-voice-controlled-ai-video-editing-future-conversational-ai.htm) - 🆕 **May 28, 2026**. Omni Flash starts rolling out to consumers via the Gemini app, **Google Flow**, and **YouTube Shorts** as the editing engine — conversational cinematic zooms / background swaps / weather edits driven by text, voice, image, or audio prompts; no traditional NLE required.
 - [Gemini Spark (24/7 personal AI agent)](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **May 19, 2026 — Google I/O 2026**. Cloud-resident personal AI agent that runs **24/7** on user intent, integrates Gmail / Chat first, then ~30+ third-party tools via MCP (Adobe / Dropbox / Uber). Available to Google AI Ultra subscribers in the US within the I/O week.
 - [Google AI Ultra ($100/month tier)](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) - 🆕 **May 19, 2026 — Google I/O 2026**. New top consumer subscription targeted at developers / creators / power users. Gates Gemini Spark, highest Gemini 3.5 quotas, and the upcoming Gemini 3.5 Pro.
 - [Gemini 3.1 Flash / Flash Lite](https://deepmind.google/technologies/gemini/) - Fast, cost-efficient models for high-throughput applications.
@@ -430,6 +432,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 ### Model Context Protocol (MCP)
 
 - [MCP Specification](https://modelcontextprotocol.io/) - 🆕 The "USB-C for AI" — open protocol by Anthropic for connecting LLMs to tools and data sources. Donated to Agentic AI Foundation (Linux Foundation) in Dec 2025.
+- [MCP 2026-07 Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) - 🆕 **May 2026 (final July 28, 2026)**. Release candidate for the next major MCP spec revision: **stateless protocol core** (scalability + simpler servers), an **extensions framework**, the new **MCP Apps** capability for server-rendered UI, Tasks graduated to an extension, and hardened authorization aligned with OAuth / OpenID Connect.
 - [MCP Servers](https://github.com/modelcontextprotocol/servers) - Official reference implementations of MCP servers for popular services. ![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/servers?style=flat-square)
 - [MCP TypeScript SDK](https://github.com/modelcontextprotocol/typescript-sdk) - Official TypeScript SDK for building MCP clients and servers. ![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/typescript-sdk?style=flat-square)
 - [MCP Python SDK](https://github.com/modelcontextprotocol/python-sdk) - Official Python SDK for MCP implementation. ![GitHub stars](https://img.shields.io/github/stars/modelcontextprotocol/python-sdk?style=flat-square)
@@ -452,6 +455,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 *Frameworks and libraries for building autonomous AI agents.*
 
+- [Koog 1.0](https://github.com/JetBrains/koog) - 🆕 **May 28, 2026 — KotlinConf 2026**. JetBrains' open-source agent framework for **Kotlin + Java** hits a stable 1.0 with a 1-year API stability guarantee. Kotlin Multiplatform deployment (JVM / Android / iOS / JS / WASM), Java interop without wrapper modules, local Android LiteRT, OpenTelemetry across all targets, graph-based workflows, Spring Boot / Ktor integration, and providers for OpenAI / Anthropic / Google / Bedrock. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/JetBrains/koog?style=flat-square)
 - [LangChain](https://github.com/langchain-ai/langchain) - Build context-aware reasoning applications with LLMs. ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langchain?style=flat-square)
 - [LangGraph](https://github.com/langchain-ai/langgraph) - Build resilient language agents as graphs with stateful, multi-actor orchestration. v0.3.19 (April 27, 2026) split prebuilt agents into `langgraph-prebuilt` (Supervisor, Swarm, LangMem, Trustcall). **v1.2 (May 2026)** adds per-node timeouts / error recovery / graceful shutdown, a new `DeltaChannel` to cut checkpoint overhead on long threads, and a content-block-centric streaming API v3. ![GitHub stars](https://img.shields.io/github/stars/langchain-ai/langgraph?style=flat-square)
 - [CrewAI](https://github.com/crewAIInc/crewAI) - Framework for orchestrating role-playing autonomous AI agents in collaborative teams. ![GitHub stars](https://img.shields.io/github/stars/crewAIInc/crewAI?style=flat-square)
@@ -1213,7 +1217,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 | [OpenAI text-embedding-3-large](https://platform.openai.com/docs/guides/embeddings) | 3072 | 8K | ❌ | ✅ | Multi | Proprietary | ~64 |
 | [Cohere embed-v4](https://cohere.com/embed) | 1024 | 512 | ❌ | ✅ | Multi | Proprietary | ~66 |
 | [Gemini text-embedding-004](https://ai.google.dev/) | 768 | 2K | ❌ | ✅ | Multi | Proprietary | ~63 |
-| [BGE-M3](https://github.com/FlagAI-Open/FlagEmbedding) | 1024 | 8K | ✅ | ❌ | Multi | MIT | ~65 |
+| [BGE-M3](https://github.com/FlagOpen/FlagEmbedding) | 1024 | 8K | ✅ | ❌ | Multi | MIT | ~65 |
 | [Jina-embeddings-v3](https://github.com/jina-ai/jina) | 1024 | 8K | ✅ | ✅ | Multi | CC-BY-NC | ~65 |
 | [Nomic-embed-text-v2](https://github.com/nomic-ai/nomic) | 768 | 8K | ✅ | ✅ | Multi | Apache-2.0 | ~62 |
 | [Voyage-3](https://www.voyageai.com/) | 1024 | 32K | ❌ | ✅ | Multi | Proprietary | ~67 |
@@ -1748,6 +1752,10 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 | **May 22, 2026** | [Kore.ai Artemis Agent Platform](https://venturebeat.com/technology/kore-ai-launches-artemis-ai-agent-platform-expands-challenge-to-microsoft-and-salesforce) launched on Azure — AI-native enterprise platform with **Agent Blueprint Language (ABL)** for declarative multi-agent workflows | Industry |
 | **May 22, 2026** | [FPT Flezi Foundry™](https://lasvegassun.com/news/2026/may/22/fpt-launches-flezi-foundry-advancing-ai-augmented-/) launched — AI-augmented delivery platform with Agentic Development Lifecycle (ADLC) and Agentic Managed Services (AMS) modes under "Service-as-a-Software" governance | Industry |
 | **May 22, 2026** | [JetBrains Rider AI test-writing skill](https://blog.jetbrains.com/dotnet/2026/05/22/claude-codex-ai-agent-skill-for-writing-tests/) — surfaces .NET coverage data to Claude Code / Codex so agents focus tests on untested branches | Tools |
+| **May 28, 2026** | [Claude Opus 4.8](https://www.anthropic.com/claude/opus) released by Anthropic — codebase-scale migrations, dynamic-workflows research preview (hundreds of parallel sub-agents), effort-control panel, 3× cheaper Fast mode; teases upcoming **Mythos-class** models | Models |
+| **May 28, 2026** | [Koog 1.0](https://blog.jetbrains.com/ai/2026/05/koog-1-0-is-out-stable-core-better-interop-and-multiplatform-observability/) released at KotlinConf 2026 — JetBrains' open-source Kotlin/Java AI-agent framework hits stable, Kotlin Multiplatform deployment, OpenTelemetry across targets | Frameworks |
+| **May 28, 2026** | [Gemini Omni Flash conversational video editing](https://www.techtimes.com/articles/317309/20260528/google-gemini-omni-flash-brings-voice-controlled-ai-video-editing-future-conversational-ai.htm) starts rolling out via Gemini app / Google Flow / YouTube Shorts — voice-and-text-driven cinematic edits replace NLEs | Tools |
+| **May 29, 2026** | [MCP 2026-07 Release Candidate](https://blog.modelcontextprotocol.io/posts/2026-07-28-release-candidate/) published — stateless protocol core, extensions framework, MCP Apps server-rendered UI, hardened OAuth/OIDC alignment; final spec target July 28, 2026 | Protocols |
 | **Apr 2026** | Gartner predicts 40% of enterprise apps will embed AI agents by end of 2026 | Industry |
 | **Apr 2026** | Google commits up to $40B investment in Anthropic (initial $10B) | Industry |
 | **2026 (ongoing)** | A2A Protocol grows to 150+ partner organizations | Protocols |

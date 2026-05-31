@@ -6,10 +6,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/awesome-ai-agents-2026?style=social)](https://github.com/Zijian-Ni/awesome-ai-agents-2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2030%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-440%2B-orange.svg)](#)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2031%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-445%2B-orange.svg)](#)
 [![Categories](https://img.shields.io/badge/Categories-25-purple.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--30-success.svg)](#️-status-legend)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--31-success.svg)](#️-status-legend)
 [![Chinese](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
 [![Japanese](https://img.shields.io/badge/Lang-日本語-purple.svg)](README.ja.md)
 
@@ -449,6 +449,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 - [OpenAI Agents SDK](https://github.com/openai/openai-agents-python) - 🆕 [Major update April 15, 2026](https://openai.com/index/the-next-evolution-of-the-agents-sdk/): native sandbox execution, first-class MCP integration, sub-agent / handoff patterns, and Codex-style filesystem tools for production-ready multi-agent workflows. ![GitHub stars](https://img.shields.io/github/stars/openai/openai-agents-python?style=flat-square)
 - [Agentic AI Foundation](https://www.linuxfoundation.org/) - 🆕 Linux Foundation fund co-founded by Anthropic, Block, and OpenAI to govern open agent standards.
+- [Kuberna Labs](https://github.com/kawacukennedy/kuberna-labs) - ⚠️ **Unverified.** Cross-chain intent execution protocol for AI agents. Claims ERC-8004 on-chain identity, zkTLS/TEE attestation, and a typed intent schema enabling agents to autonomously execute transactions across NEAR, Base, and Mantle with verifiable execution proofs. New repo, independent adoption unverified — listed for visibility, evaluate before depending on it.
 
 ---
 
@@ -567,6 +568,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 
 *Tools and frameworks for securing AI agents against prompt injection, data leaks, and misuse.*
 
+- [AgentGate](https://github.com/ElamOlame31/agentgate-public) - 🆕 Pre-execution authorization PDP for autonomous AI agents. Scores trust across 4 dimensions per request, detects 24h kill-chain patterns (BULK_READ_THEN_EXFIL, SENSITIVITY_RAMP), Merkle-chained audit trail. MIT license, drop-in with LangGraph, LangChain, and AutoGen. [tryagentgate.com](https://www.tryagentgate.com/)
 - [prompt-firewall](https://github.com/Zijian-Ni/prompt-firewall) - Firewall for LLM prompts — detect and block prompt injection attacks. ![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/prompt-firewall?style=flat-square)
 - [LLM Guard](https://github.com/protectai/llm-guard) - The Security Toolkit for LLM Interactions — input/output scanners for AI. ![GitHub stars](https://img.shields.io/github/stars/protectai/llm-guard?style=flat-square)
 - [Rebuff](https://github.com/protectai/rebuff) - 📦 **Archived** (2024-08). Self-hardening prompt injection detector — detect, deflect, and report. Listed for historical reference; no longer maintained. ![GitHub stars](https://img.shields.io/github/stars/protectai/rebuff?style=flat-square)
@@ -809,6 +811,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Gemini Intelligence](https://blog.google/products-and-platforms/products/chrome/bringing-chrome-ai-to-android/) - 🆕 **May 12, 2026** (Android Show: I/O Edition). Proactive agentic AI features integrated into Googlebooks laptops, Wear OS, Android Auto, Android XR, and starting on the latest Samsung Galaxy + Pixel devices. Auto-creates shopping carts from grocery lists, books spin classes, filler-word removal via the Rambler speech-to-text.
 - [Gemini Spark](https://9to5google.com/2026/05/14/gemini-spark-insight/) - 🆕 **May 14, 2026** (pre-I/O leak / insight). Upcoming branded agent capability inside the Gemini app for autonomously running multi-step processes; sits above Gemini 3.1 Pro reasoning stack.
 - [QwenPaw](https://github.com/agentscope-ai/QwenPaw) - 🆕 🇨🇳 **May 2026 rebrand from CoPaw**. Self-hostable personal assistant in the Qwen / AgentScope family. Local-first memory, hot-loadable skills, multi-agent collaboration, multi-channel (DingTalk / Feishu / WeChat / Discord / Telegram), tool guard + skill scanner. Apache-2.0. ![GitHub stars](https://img.shields.io/github/stars/agentscope-ai/QwenPaw?style=flat-square)
+- [AI Growth Agents for Marketers](https://github.com/thaolst/ai-growth-agents-for-marketers) - 🆕 Growth marketing prompts and Python agents built from real fintech campaigns in Southeast Asia. Covers campaign briefs, MEU planning, and A/B test analysis with multi-agent workflows. Agent Skills format — installable via `npx skills add`. Bilingual VI + EN. MIT.
 
 ---
 
@@ -849,6 +852,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Bristol Myers Squibb ↔ Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **May 20, 2026**. BMS standardises on Claude Enterprise as its shared intelligence platform for **30,000+ employees**, embedding agentic Claude into drug-discovery / development / delivery pipelines. First top-5 pharma to make a public, company-wide Claude commitment.
 - [Kore.ai Artemis Agent Platform](https://venturebeat.com/technology/kore-ai-launches-artemis-ai-agent-platform-expands-challenge-to-microsoft-and-salesforce) - 🆕 **May 22, 2026** (launched on Azure). AI-native enterprise agent platform built around the new YAML-style **Agent Blueprint Language (ABL)** for declarative multi-agent workflows. Kore.ai's structural challenge to Copilot Studio and Agentforce.
 - [FPT Flezi Foundry™](https://lasvegassun.com/news/2026/may/22/fpt-launches-flezi-foundry-advancing-ai-augmented-/) - 🆕 **May 22, 2026**. AI-augmented delivery platform with two governed Service-as-a-Software modes — **Agentic Development Lifecycle (ADLC)** for full SDLC agent crews and **Agentic Managed Services (AMS)** for incident-resolution agents on top of existing ITOps.
+- [GreenOps Agent](https://github.com/raghu-putta/greenops-agent) - 🆕 A 4-agent GCP cost and carbon optimization pipeline built on Google ADK, Gemini Flash, and Cloud Run. Detects idle VMs, unattached disks, and unused reserved IPs to calculate CO₂ footprint and execute cleanups with human approval.
 
 ## 📊 Agent Evaluation & Observability
 

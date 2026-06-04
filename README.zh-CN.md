@@ -6,9 +6,9 @@
 [![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/awesome-ai-agents-2026?style=social)](https://github.com/Zijian-Ni/awesome-ai-agents-2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2030%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-440%2B-orange.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--30-success.svg)](#️-状态图例)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-June%204%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-460%2B-orange.svg)](#)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--06--04-success.svg)](#️-状态图例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![日本語](https://img.shields.io/badge/Lang-日本語-red.svg)](README.ja.md)
 
@@ -102,7 +102,8 @@
 - [GPT-5.2](https://openai.com/) - 2025-12 发布。SOTA 推理 + 长上下文 + 视觉。
 - [GPT-5](https://openai.com/index/introducing-gpt-5/) - 2025-08 发布，ChatGPT 默认模型，替代 GPT-4o。多模态 + gpt-5 / mini / nano 三档变体。
 - [GPT-4o](https://openai.com/index/hello-gpt-4o/) - Omni 模型，原生支持文本/视觉/音频。2026-02 从 ChatGPT 下线，API 仍可用。
-- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - 思维链推理模型。2025-04 发布。
+- [GPT-4.5](https://openai.com/) - ⚠️ **2026 年 6 月 27 日从 ChatGPT 退役**（API 继续可用）。最初于 2025 年 2 月作为研究预览发布，随着 GPT-5.5 家族的全面接管而退役；o3 也计划于 2026 年 8 月 26 日退役。
+- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - 思维链推理模型。2025-04 发布。o3 将于 2026-08-26 退役。
 - [Codex CLI](https://github.com/openai/codex) - OpenAI 出品的开源终端编程 Agent。![GitHub stars](https://img.shields.io/github/stars/openai/codex?style=flat-square)
 - [OpenAI Deployment Company (DeployCo)](https://openai.com/index/openai-launches-the-deployment-company/) - 🆕 **2026-05-11**。OpenAI 控股的企业 AI 落地服务公司，$4B+ 启动资金，TPG / Advent / Bain Capital / Brookfield / Goldman Sachs / SoftBank 与 Bain & Company / Capgemini / McKinsey 等共投。围绕 Forward Deployed Engineers 体系，并吸收 Tomoro 咨询团队（~150 人）。
 - [Codex on Mobile](https://9to5mac.com/2026/05/14/openai-brings-codex-control-to-chatgpt-for-iphone-and-android/) - 🆕 **2026-05-14**。ChatGPT iOS / Android 远程操控 Mac 上的 Codex 桌面 App —— 查看输出、批准操作、切换模型、启动新任务，文件 / 凭据 / 权限仍留在本机。Free / Plus / Go 预览。
@@ -114,7 +115,7 @@
 
 ### Anthropic
 
-- [Claude Opus 4.7](https://www.anthropic.com/news/claude-opus-4-7) - 🆕 2026-04-16 发布。SWE-bench Verified 87.6% 的工程能力，视觉增强、主动代码验证。支持 `/think xhigh` 推理档位。1M token 上下文。
+- [Claude Opus 4.8](https://www.anthropic.com/claude/opus) - 🆕 **2026-05-28 发布**。代码库级迁移，增强判断力。带来动态工作流（单会话并发上百个子 Agent）研究预览版，手动努力控制面板，以及降价 3 倍的 Fast 模式（依然为 $5/$25/1M）。
 - [Claude Opus 4.6](https://www.anthropic.com/) - 2026-02 发布。1M token 上下文，14.5 小时任务执行。LMArena 对话榜首。
 - [Claude Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6) - 2026-02 发布。前沿编程与 Agent 表现，1M token 上下文。
 - [Claude Mythos Preview](https://www.anthropic.com/) - 🆕 2026-04 受邀研究预览。BenchLM 99（榜首），SWE-bench Verified 93.9%。Project Glasswing 合作伙伴专属。
@@ -592,6 +593,7 @@
 - [Qodo](https://www.qodo.ai/) - 🆕 AI 代码评审平台：质量 + 安全 + 测试生成。
 - [Codex Security](https://developers.openai.com/codex/changelog) - 🆕 **2026 年 3 月**。应用安全 Agent，负责发现并修复软件漏洞；OSS 维护者可通过 Codex-for-OSS 计划使用。
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) - 🆕 Google 的终端优先编码 Agent，擅长大上下文重构。 ![GitHub stars](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=flat-square)
+- [OpenCode](https://github.com/opencode-ai/opencode) - 🆕 开源终端优先编码 Agent，内置原生 TUI，到 2026 年中已超 16.5 万 GitHub stars。支持 OpenAI、Claude、Gemini、Ollama 等模型以及代码智能提示 (LSP)。基于 Go，架构解耦。MIT。 ![GitHub stars](https://img.shields.io/github/stars/opencode-ai/opencode?style=flat-square)
 - [Grok Build](https://x.ai/news/grok-build-cli) - 🆕 **2026 年 5 月 14 日（早期 beta）**。xAI 的 Agent 化 CLI 编码工具，由 **grok-code-fast-1** 驱动。子 Agent 并行运行于隔离环境，每日发布 release notes，仅 SuperGrok Heavy 订阅可用（首 6 个月每月 99 美元，之后 300 美元）。xAI 对 Claude Code / Codex CLI 的正面回应。
 - [Antigravity CLI](https://antigravity.google/blog/introducing-google-antigravity-2-0) - 🆕 **2026 年 5 月 19 日（Google I/O 2026）**。Antigravity 2.0 的轻量 CLI 伴侣——直接从终端创建并使用 Google 的 Agent harness。支持 macOS / Linux / Windows。
 - [Roo Code](https://roocode.com/) - 🆕 开源 VS Code 扩展，跨多文件读写、执行命令，model-agnostic；除自带 API 外免费。
@@ -681,6 +683,7 @@
 - [GDPval / GDPval-MM](https://artificialanalysis.ai/evaluations/gdpval-aa) - 🆕 **2026 年 2 月**。OpenAI 推出的经济价值 benchmark，覆盖 44 个职业 / 9 个行业，含 1,320 个专家构建任务。2026 年 5 月榜首：GPT-5.5 在 GDPval-MM 上 84.9%。
 - [Hieroglyphic Benchmark](https://juliangoldie.com/google-gemini-3-5/) - 🆕 横向 / 抽象推理 benchmark；Gemini 3.5 "Snowbunny" 80%（泄露版）。
 - [LLM-Stats Live Leaderboard](https://llm-stats.com/llm-updates) - 🆕 实时更新的跨 benchmark 模型对比看板。
+- [Gartner 2026 魔力象限：企业 AI 编程 Agent](https://cursor.com/blog/cursor-leads-gartner-mq-2026) - 🆕 **2026 年**。Gartner 首个企业级编程 Agent MQ。**Cursor** 和 **OpenAI Codex** 被评为领导者，Cline 和 Windsurf 入选挑战者。标志着编程 Agent 市场迈入企业级成熟期。
 
 ---
 
@@ -783,7 +786,8 @@
 - [Moveworks](https://www.moveworks.com/) - 跨系统企业 copilot。
 - [UiPath Agentic Automation](https://www.uipath.com/) - 🆕 在 RPA 之上叠加 Agent 推理。
 - [AgentX](https://www.agentx.so/) - 🆕 即插即用的企业 Agent 自动化。
-- [OutSystems](https://www.outsystems.com/) - 🆕 关键应用快速构建 + Agent 治理。
+- [Amazon Bedrock AgentCore Payments](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore-payments-preview/) - 🆕 **2026 年 4-5 月**。Bedrock AgentCore 的托管支付功能预览 —— Agent 可通过集成的 Coinbase 和 Stripe 自主为 API 等资源付费。同期扩展至 AWS GovCloud (US-West) 以满足合规需求。
+- [OutSystems Agentic Systems Platform](https://www.outsystems.com/) - 🆕 **2026 年 6 月**。低代码巨头将其平台定位为“AI 原生”的 agentic 开发环境。提供开放式 AI 治理、自带模型、多 Agent 编排以及企业级合规，直接对标 Copilot Studio 与 Agentforce。
 - [Sema4.ai](https://sema4.ai/) - 🆕 Python 优先 + 内置治理的企业 Agent 平台。
 - [SAP Business AI Platform + Joule Studio 2.0](https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/) - 🆕 **SAP Sapphire 2026（2026-05-11 – 13）**。SAP 把 BTP + Business Data Cloud + Business AI 合并为一个平台，重新定位 Joule 为 Agent 操作层。**Joule Studio 2.0**（2026-06 起陆续到达客户）可以用 LangGraph / AutoGen 类框架底座着 SAP 的实时业务数据构建 Agent；**Autonomous Suite** 带来 50+ 领域 Joule Assistant 与 200+ Agent。
 - [Microsoft Agent 365 + Microsoft 365 E7](https://techcommunity.microsoft.com/blog/agent-365-blog/microsoft-365-e7--agent365-from-where-you-are-to-enterprise-ai-at-scale/4519969) - 🆕 **2026-05-01 GA**，5 月持续补充。以身份为中心的 AI Agent 控制面：独立 $15/用户/月，或 $99/用户/月随新推的 Microsoft 365 E7 "Frontier" 套套；5 月补丁加上了 AWS Bedrock + Google Cloud 注册表同步、Intune / Defender 预览策略，以及 Agent 专用 SASE。
@@ -905,6 +909,7 @@
 ### 开发者工具
 
 - [Kilo Code](https://www.kilocode.com/) - 2026 中文社区热门的 Cursor 替代。默认 MiniMax 模型。
+- [CoderPlan](https://coderplan.ai/) - 面向中国开发者的统一 LLM API 网关（Claude / OpenAI / Gemini，一行配置支持 Claude Code），按量付费，支持支付宝 & 微信支付。
 - [Cherry Studio](https://github.com/CherryHQ/cherry-studio) - 中文开发者圈装机量最高的开源桌面 LLM 客户端，多提供商 + 知识库。![GitHub stars](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat-square)
 - [ScienceOne 100 / 磐石100](https://english.cas.cn/newsroom/cas-in-media/202604/t20260429_1158251.shtml) - 🆕 中科院科研推理 Agent 系统，50+ 中科院研究所、100+ 科研场景、带 2000+ 研究工具。
 
@@ -1561,6 +1566,8 @@
 | **2026-05-19** | **Google I/O 2026** — [Gemini Spark](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) 24/7 个人 AI Agent + ~30+ 个 MCP 接入的第三方工具，限 **Google AI Ultra ($100/月)** 订阅 | 工具 |
 | **2026-05-19** | [OpenAI Guaranteed Capacity（算力年发）](https://openai.com/news/company-announcements/) 发布 — 1/2/3 年期企业算力预订产品 | 产业 |
 | **2026-05-19** | [OpenAI ↔ Google SynthID + C2PA 内容源头验证](https://openai.com/index/advancing-content-provenance/) — 顶级 lab 首次在跨平台 AI 图片水印上互通，附公开验证器预览 | 产业 |
+| **2026-06-27** | GPT-4.5 计划从 ChatGPT 正式退役（API 仍保留）—— OpenAI 全力转向 GPT-5.5 家族 | 模型 |
+| **2026-06** | [OutSystems Agentic Systems Platform](https://www.outsystems.com/) 发布 — 低代码平台转型为“AI 原生”多 Agent 编排底座 | 产业 |
 | **2026-05-19** | [Anthropic：Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) — 与智慧传统展开顶级 AI 安全对话的框架 | 产业 |
 | **2026-05-19** | [DeepSeek 招募 Jane Street 前工程师组建 AI harness 团队](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) — DeepSeek 从模型 R&D 向 Agent 产品化转向 | 产业 |
 | **2026-05-20** | **阿里云杭州峰会** — [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) GA，代理型编程与长静间距任务；同期上线 T-Head **珄武 M890** AI 芯片与全栈 AI 基础设施升级 | 模型 |

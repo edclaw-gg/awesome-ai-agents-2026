@@ -6,10 +6,10 @@
 [![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/awesome-ai-agents-2026?style=social)](https://github.com/Zijian-Ni/awesome-ai-agents-2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-June%201%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-445%2B-orange.svg)](#)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-June%204%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-460%2B-orange.svg)](#)
 [![Categories](https://img.shields.io/badge/Categories-25-purple.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--31-success.svg)](#️-status-legend)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--06--04-success.svg)](#️-status-legend)
 [![Chinese](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
 [![Japanese](https://img.shields.io/badge/Lang-日本語-purple.svg)](README.ja.md)
 
@@ -150,7 +150,8 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [GPT-5.2](https://openai.com/) - Released Dec 2025. State-of-the-art reasoning, long-context understanding, and vision.
 - [GPT-5](https://openai.com/index/introducing-gpt-5/) - Launched August 2025. The default model in ChatGPT, replacing GPT-4o. Multimodal with variants: gpt-5, gpt-5-mini, gpt-5-nano.
 - [GPT-4o](https://openai.com/index/hello-gpt-4o/) - Omni model with native text, vision, and audio. Retired from ChatGPT Feb 2026 but still available via API.
-- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - Reasoning models with chain-of-thought for complex problem solving. Released April 2025.
+- [GPT-4.5](https://openai.com/) - ⚠️ **Retiring Jun 27, 2026 from ChatGPT** (API access continues). Released Feb 2025 as a research preview. Phased out as GPT-5.5 family takes over; o3 also retiring Aug 26, 2026.
+- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - Reasoning models with chain-of-thought for complex problem solving. Released April 2025. o3 retiring Aug 26, 2026.
 - [Codex CLI](https://github.com/openai/codex) - Open-source terminal-based coding agent powered by OpenAI models. ![GitHub stars](https://img.shields.io/github/stars/openai/codex?style=flat-square)
 
 ### Anthropic
@@ -620,6 +621,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Codex Security](https://developers.openai.com/codex/changelog) - 🆕 **March 2026**. Application-security agent that finds and fixes software vulnerabilities; available to OSS maintainers via the Codex-for-OSS program.
 - [Aider](https://github.com/Aider-AI/aider) - AI pair programming in your terminal — works with any LLM, with first-class git commit handling. ![GitHub stars](https://img.shields.io/github/stars/Aider-AI/aider?style=flat-square)
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) - 🆕 Google's terminal-first coding agent for large-context refactors. ![GitHub stars](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=flat-square)
+- [OpenCode](https://github.com/opencode-ai/opencode) - 🆕 Open-source terminal-first coding agent with a native TUI, 165K+ GitHub stars by mid-2026. Supports OpenAI, Claude, Gemini, Ollama (local models), and LSP for code intelligence. Multi-session, model-agnostic, Go-based. MIT. ![GitHub stars](https://img.shields.io/github/stars/opencode-ai/opencode?style=flat-square)
 - [Grok Build](https://x.ai/news/grok-build-cli) - 🆕 **May 14, 2026** (early beta). xAI's agentic CLI coding agent powered by **grok-code-fast-1**. Parallel sub-agents in isolated environments, daily release notes, available to SuperGrok Heavy subscribers ($99/mo intro for 6 months, then $300/mo). xAI's reply to Claude Code and Codex CLI.
 - [Antigravity CLI](https://antigravity.google/blog/introducing-google-antigravity-2-0) - 🆕 **May 19, 2026** (Google I/O 2026). Lightweight CLI companion to Antigravity 2.0 — create and interact with Google agent harnesses directly from the terminal. macOS / Linux / Windows.
 
@@ -737,6 +739,7 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [SWE-bench Pro](https://www.swebench.com/) - 🆕 Repository-level engineering successor to Verified. Claude Opus 4.7 64.3% > GPT-5.5 58.6% (Claude leads on long-horizon repo work).
 - [Hieroglyphic Benchmark](https://juliangoldie.com/google-gemini-3-5/) - 🆕 Lateral / abstract-reasoning benchmark; Gemini 3.5 "Snowbunny" 80% (leaked).
 - [LLM-Stats Live Leaderboard](https://llm-stats.com/llm-updates) - 🆕 Continuously-refreshed cross-benchmark dashboard for newly-released models.
+- [Gartner Magic Quadrant 2026 — Enterprise AI Coding Agents](https://cursor.com/blog/cursor-leads-gartner-mq-2026) - 🆕 **2026**. Gartner's first MQ for Enterprise AI Coding Agents. **Cursor** and **OpenAI Codex** named as Leaders; Cline and Windsurf as Challengers. Signals the coding-agent market reaching enterprise maturity.
 
 ---
 
@@ -854,6 +857,8 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 - [Bristol Myers Squibb ↔ Claude Enterprise](https://news.bms.com/news/corporate-financial/2026/Bristol-Myers-Squibb-Announces-Strategic-Agreement-with-Anthropic-to-Position-Claude-Enterprise-as-the-Shared-Intelligence-Platform-Across-Its-Global-Operations/default.aspx) - 🆕 **May 20, 2026**. BMS standardises on Claude Enterprise as its shared intelligence platform for **30,000+ employees**, embedding agentic Claude into drug-discovery / development / delivery pipelines. First top-5 pharma to make a public, company-wide Claude commitment.
 - [Kore.ai Artemis Agent Platform](https://venturebeat.com/technology/kore-ai-launches-artemis-ai-agent-platform-expands-challenge-to-microsoft-and-salesforce) - 🆕 **May 22, 2026** (launched on Azure). AI-native enterprise agent platform built around the new YAML-style **Agent Blueprint Language (ABL)** for declarative multi-agent workflows. Kore.ai's structural challenge to Copilot Studio and Agentforce.
 - [FPT Flezi Foundry™](https://lasvegassun.com/news/2026/may/22/fpt-launches-flezi-foundry-advancing-ai-augmented-/) - 🆕 **May 22, 2026**. AI-augmented delivery platform with two governed Service-as-a-Software modes — **Agentic Development Lifecycle (ADLC)** for full SDLC agent crews and **Agentic Managed Services (AMS)** for incident-resolution agents on top of existing ITOps.
+- [Amazon Bedrock AgentCore Payments](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore-payments-preview/) - 🆕 **April-May 2026**. Managed payment capabilities for Bedrock AgentCore agents — agents can autonomously pay for APIs and other resources via Coinbase and Stripe integrations. Also expanded to AWS GovCloud (US-West) for regulated workloads.
+- [OutSystems Agentic Systems Platform](https://www.outsystems.com/) - 🆕 **June 2026**. OutSystems positions its low-code platform as an "AI-native" agentic development environment. Open and governed AI, BYO model, multi-agent orchestration, and enterprise compliance tooling. Challenger to Copilot Studio and Agentforce.
 - [GreenOps Agent](https://github.com/raghu-putta/greenops-agent) - 🆕 A 4-agent GCP cost and carbon optimization pipeline built on Google ADK, Gemini Flash, and Cloud Run. Detects idle VMs, unattached disks, and unused reserved IPs to calculate CO₂ footprint and execute cleanups with human approval.
 
 ## 📊 Agent Evaluation & Observability
@@ -1746,6 +1751,8 @@ Entries may carry one or more status tags so readers can judge maturity at a gla
 | **May 19, 2026** | **Google I/O 2026** — [Gemini Spark](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/), a 24/7 personal AI agent integrating ~30+ third-party tools via MCP, gated behind the new **Google AI Ultra ($100/mo)** tier | Tools |
 | **May 19, 2026** | [OpenAI Guaranteed Capacity / Compute Annual Pass](https://openai.com/news/company-announcements/) launches — 1/2/3-year long-term compute reservations for enterprise AI products & agents | Industry |
 | **May 19, 2026** | [OpenAI ↔ Google SynthID + C2PA content provenance](https://openai.com/index/advancing-content-provenance/) — first major frontier-lab interop on durable cross-platform AI image watermarking and a public verifier preview | Industry |
+| **Jun 27, 2026** | GPT-4.5 scheduled to be retired from ChatGPT (API access remains) — OpenAI focuses on GPT-5.5 family | Models |
+| **Jun 2026** | [OutSystems Agentic Systems Platform](https://www.outsystems.com/) launched — low-code platform pivots to "AI-native" multi-agent orchestration | Industry |
 | **May 19, 2026** | [Anthropic: Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) — framework for engaging wisdom traditions in frontier-AI safety dialogue | Industry |
 | **May 19, 2026** | [DeepSeek hires former Jane Street engineer to build AI harness team](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) — DeepSeek pivoting from model R&D toward autonomous, revenue-generating agents | Industry |
 | **May 13, 2026** | [Runway Agent](https://chatlyai.app/news/runway-agent-launch-may-2026) launches — conversational agent that takes a written brief and ships a multi-shot finished video end-to-end on Gen-4 / Aleph | Tools |
@@ -1789,10 +1796,10 @@ This list is released under [MIT License](LICENSE).
 
 **⭐ If you find this list useful, please give it a star! ⭐**
 
-*440+ resources across 25 categories — from foundation models to agent protocols to generative AI.*
+*460+ resources across 25 categories — from foundation models to agent protocols to generative AI.*
 
 Made with ❤️ by [Zijian Ni](https://github.com/Zijian-Ni)
 
-*Last updated: May 30, 2026*
+*Last updated: June 4, 2026*
 
 </div>

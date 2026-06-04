@@ -6,9 +6,9 @@
 [![GitHub stars](https://img.shields.io/github/stars/Zijian-Ni/awesome-ai-agents-2026?style=social)](https://github.com/Zijian-Ni/awesome-ai-agents-2026)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
-[![Last Updated](https://img.shields.io/badge/Last%20Updated-May%2030%2C%202026-blue.svg)](#)
-[![Resources](https://img.shields.io/badge/Resources-440%2B-orange.svg)](#)
-[![Audited](https://img.shields.io/badge/Spam_Audited-2026--05--30-success.svg)](#️-ステータス凡例)
+[![Last Updated](https://img.shields.io/badge/Last%20Updated-June%204%2C%202026-blue.svg)](#)
+[![Resources](https://img.shields.io/badge/Resources-460%2B-orange.svg)](#)
+[![Audited](https://img.shields.io/badge/Spam_Audited-2026--06--04-success.svg)](#️-ステータス凡例)
 [![English](https://img.shields.io/badge/Lang-English-informational.svg)](README.md)
 [![中文](https://img.shields.io/badge/Lang-中文-red.svg)](README.zh-CN.md)
 
@@ -102,7 +102,8 @@
 - [GPT-5.2](https://openai.com/) - 2025-12 公開。最先端の推論・長文脈・視覚。
 - [GPT-5](https://openai.com/index/introducing-gpt-5/) - 2025-08 公開。ChatGPT のデフォルトモデル、GPT-4o の後継。マルチモーダル、gpt-5 / mini / nano の 3 段階。
 - [GPT-4o](https://openai.com/index/hello-gpt-4o/) - テキスト・視覚・音声をネイティブにサポートする Omni モデル。2026-02 に ChatGPT から退役、API では引き続き利用可能。
-- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - 思考連鎖推論モデル。2025-04 公開。
+- [GPT-4.5](https://openai.com/) - ⚠️ **2026年6月27日に ChatGPT から退役**（API 利用は継続）。2025年2月に研究プレビューとしてリリースされ、GPT-5.5 ファミリーへの完全移行に伴い退役。o3 も 2026年8月26日に退役予定。
+- [o3 / o4-mini](https://openai.com/index/introducing-o3-and-o4-mini/) - 思考連鎖推論モデル。2025-04 公開。o3 は 2026-08-26 退役。
 - [Codex CLI](https://github.com/openai/codex) - OpenAI が公開したオープンソースのターミナルコーディングエージェント。![GitHub stars](https://img.shields.io/github/stars/openai/codex?style=flat-square)
 - [OpenAI Deployment Company (DeployCo)](https://openai.com/index/openai-launches-the-deployment-company/) - 🆕 **2026-05-11**。OpenAI が过半所有するエンタープライズ AI 導入サービス企業。初期資金 $4B+（TPG / Advent / Bain Capital / Brookfield / Goldman Sachs / SoftBank + Bain & Company / Capgemini / McKinsey など），Forward Deployed Engineers モデルを中核にし Tomoro コンサルティングチーム（~150 名）を取り込む。
 - [Codex on Mobile](https://9to5mac.com/2026/05/14/openai-brings-codex-control-to-chatgpt-for-iphone-and-android/) - 🆕 **2026-05-14**。ChatGPT iOS / Android から Mac 上の Codex デスクトップ App をリモート操作 —— 出力のレビュー、アクション承認、モデル切り替え、タスク起動が可能。ファイル / 資格情報 / 権限はローカルに留まる。Free / Plus / Go プレビュー。
@@ -114,7 +115,7 @@
 
 ### Anthropic
 
-- [Claude Opus 4.7](https://www.anthropic.com/news/claude-opus-4-7) - 🆕 2026-04-16 公開。SWE-bench Verified 87.6% の高度なソフトウェアエンジニアリング、視覚強化、能動的なコード検証。`/think xhigh` 推論レベル対応。1M トークンコンテキスト。
+- [Claude Opus 4.8](https://www.anthropic.com/claude/opus) - 🆕 **2026-05-28 公開**。コードベース規模のマイグレーション対応、判断力の強化。数百のサブエージェントを単一セッションで並列実行する「動的ワークフロー」のプレビュー版、手動エフォートコントロール、そして価格が 1/3 になった Fast モード（それでも $5/$25/1M）を導入。
 - [Claude Opus 4.6](https://www.anthropic.com/) - 2026-02 公開。1M トークン、14.5 時間のタスク完了。Arena 会話リーダーボード首位。
 - [Claude Sonnet 4.6](https://www.anthropic.com/news/claude-sonnet-4-6) - 2026-02 公開。フロンティア級コーディングとエージェント性能、1M トークンコンテキスト。
 - [Claude Mythos Preview](https://www.anthropic.com/) - 🆕 2026-04 招待制研究プレビュー。BenchLM 99（リーダーボード首位）、SWE-bench Verified 93.9%。Project Glasswing パートナー限定。
@@ -592,6 +593,7 @@
 - [Qodo](https://www.qodo.ai/) - 🆕 品質・セキュリティ・テスト生成に特化した AI コードレビュープラットフォーム。
 - [Codex Security](https://developers.openai.com/codex/changelog) - 🆕 **2026 年 3 月**。ソフトウェア脆弱性を発見・修正するアプリケーションセキュリティエージェント。OSS メンテナは Codex-for-OSS プログラム経由で利用可能。
 - [Gemini CLI](https://github.com/google-gemini/gemini-cli) - 🆕 Google のターミナル特化コーディングエージェント。大規模コンテキストのリファクタが得意。 ![GitHub stars](https://img.shields.io/github/stars/google-gemini/gemini-cli?style=flat-square)
+- [OpenCode](https://github.com/opencode-ai/opencode) - 🆕 ターミナル向けのオープンソース AI コーディングエージェント。ネイティブ TUI を搭載し、2026 年半ばまでに 16.5 万以上の GitHub stars を獲得。OpenAI、Claude、Gemini、Ollama（ローカル）をサポートし、LSP によるコード解析にも対応。Go 言語で構築されたマルチセッション・モデル非依存アーキテクチャ。MIT。 ![GitHub stars](https://img.shields.io/github/stars/opencode-ai/opencode?style=flat-square)
 - [Grok Build](https://x.ai/news/grok-build-cli) - 🆕 **2026 年 5 月 14 日（early beta）**。xAI が出した **grok-code-fast-1** ベースの agentic CLI コーディングエージェント。サブエージェントが隔離環境で並列実行、毎日リリースノートを公開、SuperGrok Heavy 契約者のみ利用可（最初 6 か月は月 99 ドル、以降 300 ドル）。xAI による Claude Code / Codex CLI への正面回答。
 - [Antigravity CLI](https://antigravity.google/blog/introducing-google-antigravity-2-0) - 🆕 **2026 年 5 月 19 日（Google I/O 2026）**。Antigravity 2.0 の軽量 CLI コンパニオン。ターミナルから直接 Google のエージェント harness を起動・操作できる。macOS / Linux / Windows。
 - [Roo Code](https://roocode.com/) - 🆕 オープンソースの VS Code 拡張。複数ファイルを跨いで読み書きし、コマンド実行が可能、model-agnostic。自前の LLM API 以外は無料。
@@ -681,6 +683,7 @@
 - [GDPval / GDPval-MM](https://artificialanalysis.ai/evaluations/gdpval-aa) - 🆕 **2026 年 2 月**。OpenAI が公開した経済価値ベンチマーク。44 職種 / 9 業界、1,320 の専門家作問タスクを収録。2026 年 5 月時点の首位は GPT-5.5 の GDPval-MM 84.9%。
 - [Hieroglyphic Benchmark](https://juliangoldie.com/google-gemini-3-5/) - 🆕 横断的 / 抽象推論のベンチマーク。Gemini 3.5 "Snowbunny" が 80%（リーク）。
 - [LLM-Stats Live Leaderboard](https://llm-stats.com/llm-updates) - 🆕 新しくリリースされたモデルを横断ベンチで継続更新するライブダッシュボード。
+- [Gartner 2026 マジッククアドラント: エンタープライズ AI コーディングエージェント](https://cursor.com/blog/cursor-leads-gartner-mq-2026) - 🆕 **2026 年**。エンタープライズ向け AI コーディングエージェントに関する初の MQ。**Cursor** と **OpenAI Codex** がリーダー、Cline と Windsurf がチャレンジャーとして選出され、コーディングエージェント市場がエンタープライズの成熟期に入ったことを示す。
 
 ---
 
@@ -785,7 +788,8 @@
 - [Moveworks](https://www.moveworks.com/) - あらゆるシステムで動作する AI のエンタープライズコパイロットプラットフォーム。
 - [UiPath Agentic Automation](https://www.uipath.com/) - 🆕 RPA ボット資産にエージェント推論を重ねたインテリジェントプロセス自動化。
 - [AgentX](https://www.agentx.so/) - チャットボットをプラグアンドプレイで提供しスケーラブルな AI 自動化を提供する企業エージェントソリューション。
-- [OutSystems](https://www.outsystems.com/) - 🆕 ミッションクリティカルなアプリとエージェントガバナンスを素早く構築する AI 開発プラットフォーム。
+- [Amazon Bedrock AgentCore Payments](https://aws.amazon.com/about-aws/whats-new/2026/04/amazon-bedrock-agentcore-payments-preview/) - 🆕 **2026 年 4-5 月**。Bedrock AgentCore エージェント向けのマネージド決済機能のプレビュー版。エージェントが Coinbase や Stripe の統合を通じて API などのリソースに自律的に支払うことが可能。コンプライアンス要件の高い AWS GovCloud (US-West) にも拡張。
+- [OutSystems Agentic Systems Platform](https://www.outsystems.com/) - 🆕 **2026 年 6 月**。ローコードプラットフォームを「AI ネイティブ」なエージェント開発環境へとピボット。オープンかつ統制された AI 開発、自社モデル持ち込み、マルチエージェント・オーケストレーション、エンタープライズコンプライアンスツールを提供。Copilot Studio や Agentforce に対抗。
 - [Sema4.ai](https://sema4.ai/) - 🆕 Python ファースト、ガバナンス内蔵の企業 AI エージェントプラットフォーム。
 - [SAP Business AI Platform + Joule Studio 2.0](https://news.sap.com/2026/05/sap-sapphire-sap-unveils-autonomous-enterprise/) - 🆕 **SAP Sapphire 2026（2026-05-11～13）**。SAP は BTP + Business Data Cloud + Business AI を 1 つのプラットフォームに統合し、Joule をエージェントのオペレーティングレイヤーとして再定義。**Joule Studio 2.0**（2026-06 以降顺次顧客に提供）は LangGraph / AutoGen スタイルのフレームワークで SAP データに乗りたエージェントを構築。**Autonomous Suite** は 50+ 領域の Joule Assistant と 200+ のエージェントを導入。
 - [Microsoft Agent 365 + Microsoft 365 E7](https://techcommunity.microsoft.com/blog/agent-365-blog/microsoft-365-e7--agent365-from-where-you-are-to-enterprise-ai-at-scale/4519969) - 🆕 **2026-05-01 GA**、5 月中に拡充。アイデンティティ中心の AI エージェントコントロールプレーン。単体 $15/ユーザー/月、もしくは新しい Microsoft 365 E7「Frontier」スイートに含めて $99/ユーザー/月。5 月の追加で AWS Bedrock / Google Cloud とのレジストリ同期、Intune / Defender プレビューポリシー、エージェント向け SASE を追加。
@@ -907,6 +911,7 @@
 ### 開発者ツール
 
 - [Kilo Code](https://www.kilocode.com/) - 2026 中国コミュニティで人気の Cursor 代替。デフォルトモデル: MiniMax。
+- [CoderPlan](https://coderplan.ai/) - 中国開発者向け統合 LLM API ゲートウェイ（Claude / OpenAI / Gemini、Claude Code 一行設定対応）、従量課金制・Alipay & WeChat Pay 対応。
 - [Cherry Studio](https://github.com/CherryHQ/cherry-studio) - 中国開発者サークルで最もインストールされているオープンソースデスクトップ LLM クライアント —— マルチプロバイダ会話 + ナレッジベース。![GitHub stars](https://img.shields.io/github/stars/CherryHQ/cherry-studio?style=flat-square)
 - [ScienceOne 100 / 磐石100](https://english.cas.cn/newsroom/cas-in-media/202604/t20260429_1158251.shtml) - 🆕 中国科学院の科学推論エージェントシステム。50+ 中科院研究所、100+ 研究シナリオ、付属 2,000+ 研究ツール。
 
@@ -1508,6 +1513,8 @@
 | **2026-05-19** | **Google I/O 2026** — [Gemini Spark](https://blog.google/innovation-and-ai/sundar-pichai-io-2026/) 24/7 パーソナル AI エージェント + ~30+ の MCP サードパーティーツール連携、新たな **Google AI Ultra ($100/月)** サブスクリプション限定 | ツール |
 | **2026-05-19** | [OpenAI Guaranteed Capacity （Compute Annual Pass）](https://openai.com/news/company-announcements/) リリース — 1 / 2 / 3 年期の企業コンピュート予約 | 業界 |
 | **2026-05-19** | [OpenAI ↔ Google SynthID + C2PA コンテンツ出所検証](https://openai.com/index/advancing-content-provenance/) — フロンティア lab 同士初のクロスプラットフォーム AI 画像ウォーターマーク相互運用と公開検証ツールプレビュー | 業界 |
+| **2026-06-27** | GPT-4.5 が ChatGPT から正式に退役予定（API は継続）—— OpenAI は GPT-5.5 ファミリーへ完全移行 | モデル |
+| **2026-06** | [OutSystems Agentic Systems Platform](https://www.outsystems.com/) ローンチ — ローコードプラットフォームが「AI ネイティブ」なマルチエージェントオーケストレーション基盤へとピボット | 業界 |
 | **2026-05-19** | [Anthropic：Widening the conversation on frontier AI](https://www.anthropic.com/news/widening-conversation-ai) — 「智恵の伝統」を取り込んだフロンティア AI 安全対話の枠組み | 業界 |
 | **2026-05-19** | [DeepSeek が Jane Street 出身のエンジニアを迎え AI harness チームを新設](https://www.scmp.com/tech/big-tech/article/3354113/deepseek-recruits-former-jane-street-engineer-catch-ai-agents-revenue-race) — モデル R&D からエージェント製品化への軸足 | 業界 |
 | **2026-05-20** | **アリババクラウド杭州サミット** — [Qwen 3.7-Max](https://www.scmp.com/tech/big-tech/article/3354212/alibaba-unveils-new-qwen-model-custom-chips-bid-become-chinas-ai-factory) GA、エージェント型コーディングと長期タスク向け；同期で T-Head **Zhenwu M890** AI チップとフルスタック AI 基盤アップグレード | モデル |
